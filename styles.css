@@ -164,6 +164,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 26px var(--gutter) 10px; }
   :root { --gutter: 18px; }
   .top { padding-top: 38px; }
   .filter-row { gap: 10px; }
+  /* On small screens the full filter bar is taller than the viewport; letting
+     it stick covers the race list while scrolling. Scroll it away instead. */
+  .controls { position: static; }
 }
 .card__fees { margin: 0; color: var(--ink); font-size: 14px; font-weight: 700; }
 .card__gst { margin: 0; color: #6b4100; font-size: 13px; }
