@@ -51,12 +51,36 @@ async function fetchPuneRunners() {
 // --- Connector 2: AIMS member directory (India) ---
 async function fetchAims() {
   const html = await getText('https://aims-worldrunning.org/directory.html');
-  const text = strip(html);
   const races = [];
-  // Race blocks carry "Next confirmed event: <date>" or "Last event: <date>".
-  const re = /([A-Z][A-Za-z0-9 .&'()\/-]{4,80?}?)\s+(?:[A-Z][a-z]+ [A-Z][a-z]+ )?(?:(?:Last event: [A-Za-z0-9 ,]+?)\s+)?Next confirmed event: ([A-Za-z0-9 ,]+)/g;
-  let m;
-  while ((m = re.exec(text))) races.push({ raw: m[1].trim(), next: m[2].trim() });
+  // The India section runs from the IND country anchor to the next country anchor.
+  const start = html.indexOf('name="IND"');
+  const rest = html.slice(start);
+  const endM = rest.slice(20).match(/name="[A-Z]{3}"/);
+  const india = endM ? rest.slice(0, 20 + endM.index) : rest;
+  const blocks = india.split('<div class="rcde row">').slice(1);
+  for (const b of blocks) {
+    const nameM = b.match(/<h3 class="notranslate"><a href="([^"]+)">([^<]+)<\/a>/);
+    if (!nameM) continue;
+    const details = b.match(/<div class="racedetails notranslate"[\s\S]*?<p class="phone">/);
+    const htmlLines = details ? details[0].split(/<br\s*\/?>/) : [];
+    const lines = htmlLines.map(strip).filter(l => l && !/<\/?(div|h3)/.test(l));
+    const stateLine = lines.find(l => /, India$/.test(l)) || '';
+    const orgState = stateLine.replace(/, India$/, '').trim();
+    // The directory address is the ORGANISER's office, often not the race city
+    // (e.g. Procam's Mumbai office for the Bengaluru 10K). Derive location from
+    // the race name first; organiser state is only a flagged fallback.
+    const CITY_STATE = { ahmedabad: 'Gujarat', amdavad: 'Gujarat', vadodara: 'Gujarat', bengaluru: 'Karnataka', bangalore: 'Karnataka', mumbai: 'Maharashtra', pune: 'Maharashtra', satara: 'Maharashtra', delhi: 'Delhi', kolkata: 'West Bengal', durgapur: 'West Bengal', tigerhill: 'West Bengal', chennai: 'Tamil Nadu', hyderabad: 'Telangana', vizag: 'Andhra Pradesh', dehradun: 'Uttarakhand', bhopal: 'Madhya Pradesh', indore: 'Madhya Pradesh', jaipur: 'Rajasthan', abu: 'Rajasthan', kashmir: 'Jammu and Kashmir', ladakh: 'Ladakh', spiti: 'Himachal Pradesh', tawang: 'Arunachal Pradesh', sohra: 'Meghalaya', bodhgaya: 'Bihar', trivandrum: 'Kerala' };
+    const nameL = strip(nameM[2]).toLowerCase();
+    let city = '', state = '', locNote = '';
+    for (const [c, st] of Object.entries(CITY_STATE)) {
+      if (nameL.includes(c)) { city = c.replace(/\b\w/g, x => x.toUpperCase()); state = st; break; }
+    }
+    if (!state && orgState) { state = orgState; locNote = ' State from the organiser address; race venue to confirm.'; }
+    const next = (b.match(/Next confirmed event:\s*<\/em>|Next confirmed event:([\s\S]*?)<i class/) || [])[1] || '';
+    const nextTxt = strip(next);
+    const site = (b.match(/<p class="web"><a href="([^"]+)"/) || [])[1] || '';
+    races.push({ raw: strip(nameM[2]), racePage: nameM[1], city, state, locNote, next: nextTxt, site });
+  }
   return races;
 }
 
@@ -84,7 +108,7 @@ try {
         }
         cur.distances = p.distances; changed = true;
       }
-      cur.lastChecked = `Checked ${TODAY} against punerunners.com/races`;
+      if (!/Fees and requirements checked/.test(cur.lastChecked || '')) cur.lastChecked = `Checked ${TODAY} against punerunners.com/races`;
       if (changed) updated++;
     }
   }
@@ -93,6 +117,11 @@ try {
 
 try {
   const aims = await fetchAims();
+  const ZONE = { North: ['Jammu and Kashmir','Ladakh','Himachal Pradesh','Punjab','Haryana','Delhi','Uttarakhand','Uttar Pradesh','Rajasthan','Chandigarh'],
+    South: ['Tamil Nadu','Kerala','Karnataka','Andhra Pradesh','Telangana','Puducherry','Lakshadweep'],
+    East: ['West Bengal','Odisha','Bihar','Jharkhand','Assam','Meghalaya','Manipur','Mizoram','Nagaland','Tripura','Arunachal Pradesh','Sikkim','Andaman and Nicobar Islands'],
+    West: ['Maharashtra','Goa','Gujarat','Madhya Pradesh','Chhattisgarh','Dadra and Nagar Haveli and Daman and Diu'] };
+  const S2Z = {}; for (const [z, ss] of Object.entries(ZONE)) ss.forEach(x => S2Z[x] = z);
   let matched = 0, aimsAdded = 0;
   for (const a of aims) {
     const key = norm(a.raw);
@@ -100,13 +129,14 @@ try {
     if (cur) {
       matched++;
       if (!/AIMS member/i.test(cur.certification || '')) {
-        cur.certification = ((cur.certification || '') + (cur.certification ? ' · ' : '') + 'AIMS member').trim();
+        cur.certification = ((cur.certification || '') + (cur.certification ? ' \u00b7 ' : '') + 'AIMS member').trim();
       }
     } else {
       races.push({
-        id: slug(a.raw), name: a.raw, city: '', state: '', dateText: `Next confirmed: ${a.next}`,
-        month: '', scope: 'india', distances: [], url: '', certification: 'AIMS member',
-        note: 'AIMS member directory listing; city, distances, fees and requirements not yet checked.',
+        id: slug(a.raw), name: a.raw, city: a.city, state: a.state, zone: S2Z[a.state] || '',
+        dateText: a.next ? `Next confirmed: ${a.next}` : 'Date to be confirmed',
+        month: '', scope: 'india', distances: [], url: a.site || a.racePage, certification: 'AIMS member',
+        note: ('AIMS member directory listing; distances, fees and requirements not yet checked.' + (a.locNote || '')).trim(),
         lastChecked: `Checked ${TODAY} against the AIMS member directory`,
         source: 'aims-worldrunning.org/directory.html',
       });

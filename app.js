@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var state = { city: 'Pune', st: '', dist: '', certOnly: false, q: '' };
+  var state = { city: 'Pune', zone: '', st: '', dist: '', certOnly: false, q: '' };
   var races = [];
 
   var el = {
@@ -22,6 +22,7 @@
 
   function matches(r) {
     if (state.city === 'Pune' && r.scope.indexOf('pune') !== 0 && r.scope.indexOf('near-pune') !== 0) return false;
+    if (state.zone && r.zone !== state.zone) return false;
     if (state.st && r.state !== state.st) return false;
     if (state.citySel && r.city !== state.citySel) return false;
     if (state.dist && (r.distances || []).indexOf(state.dist) === -1) return false;
@@ -49,6 +50,7 @@
   function refreshFilterOptions() {
     var states = [], cities = [];
     races.forEach(function (r) {
+      if (state.zone && r.zone !== state.zone) return;
       if (r.state && states.indexOf(r.state) === -1) states.push(r.state);
       if (r.city && cities.indexOf(r.city) === -1) cities.push(r.city);
     });
@@ -113,9 +115,19 @@
     });
     el.empty.hidden = list.length > 0;
     el.count.textContent = list.length + (list.length === 1 ? ' race' : ' races') +
-      (state.city === 'Pune' ? ' in and near Pune' : ' across India');
+      (state.city === 'Pune' ? ' in and near Pune' : state.zone ? ' in ' + state.zone + ' India' : ' across India');
   }
 
+  document.querySelectorAll('[data-zone]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('[data-zone]').forEach(function (b) { b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      state.zone = btn.getAttribute('data-zone');
+      state.st = ''; state.citySel = '';
+      refreshFilterOptions();
+      render();
+    });
+  });
   document.querySelectorAll('[data-city]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       document.querySelectorAll('[data-city]').forEach(function (b) { b.classList.remove('is-on'); });

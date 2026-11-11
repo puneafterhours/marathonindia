@@ -140,3 +140,4 @@ main { max-width: 1180px; margin: 0 auto; padding: 26px var(--gutter) 10px; }
 .card__fees { margin: 0; color: var(--ink); font-size: 14px; font-weight: 700; }
 .card__gst { margin: 0; color: #6b4100; font-size: 13px; }
 .card__req { margin: 0; color: var(--ash); font-size: 13.5px; }
+.zone-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
