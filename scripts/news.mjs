@@ -16,6 +16,7 @@ const INDIA_FEEDS = [
   // General Indian sports desks, filtered down to running / triathlon items.
   { name: 'Times of India Sports', url: 'https://timesofindia.indiatimes.com/rssfeeds/4719148.cms', filterRoad: true },
   { name: 'Indian Express Sports', url: 'https://indianexpress.com/section/sports/feed/', filterRoad: true },
+  { name: 'Hindustan Times Sports', url: 'https://www.hindustantimes.com/feeds/rss/sports/rssfeed.xml', filterRoad: true },
   { name: 'Khel Now', url: 'https://khelnow.com/feed', filterRoad: true },
 ];
 const INDIA_HTML_SOURCES = [
