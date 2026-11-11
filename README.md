@@ -1,5 +1,7 @@
 # MarathonIndia
 
+[![Weekly race fetch](https://github.com/puneafterhours/marathonindia/actions/workflows/fetch.yml/badge.svg)](https://github.com/puneafterhours/marathonindia/actions/workflows/fetch.yml)
+
 India's running race calendar. Static site: `index.html` + `styles.css` + `app.js` + `races.json`. No build step, no backend, no tracking.
 
 - Pune-first default view with an All India toggle, state / city / distance filters, certified-only filter, and search.
