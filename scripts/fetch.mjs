@@ -399,7 +399,8 @@ async function fetchMultisport() {
     { url: 'https://www.lssports.in/zuuperman-triathlon-2027', name: 'Zuuperman Triathlon Series', city: 'Ahmedabad', state: 'Gujarat',
       sport: 'triathlon', distances: ['Triathlon'], legs: 'Swim - bike - run, distances per the race page' },
     { url: 'https://punegrandtour.in/', name: 'Bajaj Pune Grand Tour', city: 'Pune', state: 'Maharashtra',
-      sport: 'cycling', distances: ['Stage race'], legs: 'UCI pro stage race; public Gran Fondo ride - details to be confirmed' },
+      sport: 'cycling', distances: ['Stage race'], legs: 'Professional stage race (UCI 2.1). Public Gran Fondo ride - details unconfirmed.',
+      ctaLabel: 'Official event site' },
   ];
   const races = [];
   for (const d of defs) {
@@ -415,8 +416,8 @@ async function fetchMultisport() {
         id: d.sport.slice(0, 3) + '-' + slug(d.name), name: d.name, city: d.city, state: d.state, zone: S2Z[d.state] || '',
         sport: d.sport,
         dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
-        scope: scopeFor(d.city, []), distances: d.distances, url: d.url, certification: '',
-        note: (d.legs ? d.legs + '. ' : '') + 'Official event site; date per the event page.',
+        scope: scopeFor(d.city, []), distances: d.distances, url: d.url, certification: '', ctaLabel: d.ctaLabel || '',
+        note: (d.legs ? d.legs + ' ' : '') + 'Date per the official event page.',
         lastChecked: `Checked ${TODAY} on ${new URL(d.url).hostname}`, source: new URL(d.url).hostname,
       });
     } catch (e) { /* skip single event failures */ }
@@ -508,6 +509,8 @@ function mergeExternal(races, found, label) {
       if (cur.city && cur.city === cur.state && f.city && f.city !== f.state) cur.city = f.city;
       if ((!cur.dateText || /to be confirmed/i.test(cur.dateText)) && f.dateText && !/to be confirmed/i.test(f.dateText)) cur.dateText = f.dateText;
       if (!cur.url && f.url) cur.url = f.url;
+      if (f.note) cur.note = f.note;
+      if (f.ctaLabel) cur.ctaLabel = f.ctaLabel;
       if ((f.distances || []).length) {
         const both = [...new Set([...(cur.distances || []), ...f.distances])];
         if (both.length !== (cur.distances || []).length) cur.distances = both;
@@ -552,6 +555,7 @@ async function fetchDistrict() {
           const name = String(it.name || '').trim();
           if (name.length < 4 || !KEEP.test(name) || DROP.test(name)) continue;
           const sport = /triathlon/i.test(name) ? 'triathlon' : /(duathlon|aquathlon)/i.test(name) ? 'duathlon' : /cycl/i.test(name) ? 'cycling' : 'run';
+          const community = /(midnight|social|community|group ride|fun ride|casual|rave)/i.test(name);
           const dm = String(it.startDate || '').match(/(\d{4})-(\d{2})-(\d{2})/);
           const dt = dm ? { y: +dm[1], m: +dm[2], d: dm[3], label: `${+dm[3]} ${MONTHS[+dm[2] - 1]} ${dm[1]}` } : null;
           const locCity = normCity((it.location && it.location.address && it.location.address.addressLocality) || city);
@@ -560,8 +564,8 @@ async function fetchDistrict() {
             name, city: locCity, state: normState(locCity) || state, zone: S2Z[normState(locCity) || state] || '',
             sport,
             dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
-            scope: scopeFor(locCity, []), distances: [], url: it.url || '', certification: '',
-            note: 'Ticketed on District; details per the event page.',
+            scope: scopeFor(locCity, []), distances: community ? ['Community ride'] : [], url: it.url || '', certification: '',
+            note: community ? 'Community ride, not a timed race; details per the event page.' : 'Ticketed on District; details per the event page.',
             lastChecked: `Checked ${TODAY} on district.in`, source: 'district.in',
           });
         }
@@ -586,6 +590,7 @@ async function fetchEndorfin() {
         const name = String(it.name || '').trim();
         if (name.length < 4 || DROP.test(name)) continue;
         const sport = /triathlon/i.test(name) ? 'triathlon' : /(duathlon|aquathlon)/i.test(name) ? 'duathlon' : 'run';
+        const community = /(midnight|social|community|group ride|fun ride|casual|rave)/i.test(name);
         const dm = String(it.startDate || '').match(/(\d{4})-(\d{2})-(\d{2})/);
         const dt = dm ? { y: +dm[1], m: +dm[2], d: dm[3], label: `${+dm[3]} ${MONTHS[+dm[2] - 1]} ${dm[1]}` } : null;
         const addr = it.location && it.location.address;
@@ -596,8 +601,8 @@ async function fetchEndorfin() {
           name, city: locCity, state, zone: S2Z[state] || '',
           sport,
           dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
-          scope: scopeFor(locCity, []), distances: [], url: it.url || '', certification: '',
-          note: 'Listed on Endorfin; details per the event page.',
+          scope: scopeFor(locCity, []), distances: community ? ['Community ride'] : [], url: it.url || '', certification: '',
+          note: community ? 'Community ride, not a timed race; details per the event page.' : 'Listed on Endorfin; details per the event page.',
           lastChecked: `Checked ${TODAY} on endorfin.run`, source: 'endorfin.run',
         });
       }
@@ -627,10 +632,21 @@ if (errors.length) { console.error('CONNECTOR ERRORS:', errors); }
 writeFileSync('races.json', JSON.stringify(races, null, 1) + '\n');
 const runUrl = (process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID)
   ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}` : '';
+// Same expiry rule as the client: hidden once the event's end day (IST-ish) has passed.
+const nowUtc = new Date();
+const upcoming = races.filter(r => {
+  const t = r.dateText || '';
+  let m = t.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+  if (m) return new Date(Date.UTC(+m[4], MONTHS.indexOf(m[3].slice(0, 3)), +m[2], 23, 59, 59)) >= nowUtc;
+  m = t.match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+  if (m) return new Date(Date.UTC(+m[3], MONTHS.indexOf(m[2].slice(0, 3)), +m[1], 23, 59, 59)) >= nowUtc;
+  return true; // undated races stay visible as unconfirmed
+}).length;
 writeFileSync('meta.json', JSON.stringify({
   fetchedAt: new Date().toISOString(),
   races: races.length,
-  sources: ['punerunners.com/races', 'aims-worldrunning.org India directory', 'indiarunning.com listings', 'geeksonfeet.com race calendar', 'thehellrace.com calendar', 'ladakhmarathon.com', 'pangongfrozenlakemarathon.com', 'procam.in event sites', 'Eventforce / Fitistan registration pages (fees & categories)'],
+  upcoming,
+  sources: ['punerunners.com/races', 'aims-worldrunning.org India directory', 'indiarunning.com listings', 'geeksonfeet.com race calendar', 'thehellrace.com calendar', 'ladakhmarathon.com', 'pangongfrozenlakemarathon.com', 'procam.in event sites', 'Eventforce / Fitistan registration pages (fees & categories)', 'district.in sports genre pages', 'endorfin.run running-events', 'official multisport event sites (IRONMAN, Zuuperman, Bergman, DuYoska, Pune Grand Tour)'],
   runUrl,
   connectorErrors: errors,
 }, null, 1) + '\n');

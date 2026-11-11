@@ -1,6 +1,7 @@
 {
- "fetchedAt": "2026-11-11T18:41:41.651Z",
+ "fetchedAt": "2026-11-11T18:49:01.962Z",
  "races": 252,
+ "upcoming": 231,
  "sources": [
   "punerunners.com/races",
   "aims-worldrunning.org India directory",
@@ -10,7 +11,10 @@
   "ladakhmarathon.com",
   "pangongfrozenlakemarathon.com",
   "procam.in event sites",
-  "Eventforce / Fitistan registration pages (fees & categories)"
+  "Eventforce / Fitistan registration pages (fees & categories)",
+  "district.in sports genre pages",
+  "endorfin.run running-events",
+  "official multisport event sites (IRONMAN, Zuuperman, Bergman, DuYoska, Pune Grand Tour)"
  ],
  "runUrl": "",
  "connectorErrors": []

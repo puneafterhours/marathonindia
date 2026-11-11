@@ -148,8 +148,9 @@
       if (r.gstNote) html += '<p class="card__gst"></p>';
       if (r.requirements) html += '<p class="card__req"></p>';
       if (r.hasDiscount) html += '<p class="card__discount">Club discount listed - see race page</p>';
+      if (r.note) html += '<p class="card__note"></p>';
       if (r.lastChecked) html += '<p class="card__checked"></p>';
-      if (url) html += '<div class="card__actions"><span class="action">Official site and registration</span></div>';
+      if (url) html += '<div class="card__actions"><span class="action"></span></div>';
       card.innerHTML = html;
       card.querySelector('.card__name').textContent = r.name;
       card.querySelector('.card__place').textContent = [r.city, r.state].filter(Boolean).join(', ');
@@ -161,8 +162,11 @@
       if (reqEl) reqEl.textContent = 'Requirements: ' + r.requirements;
       var chkEl = card.querySelector('.card__checked');
       if (chkEl) chkEl.textContent = r.lastChecked;
+      var noteEl = card.querySelector('.card__note');
+      if (noteEl) noteEl.textContent = r.note;
       if (url) {
         var link = card.querySelector('.action');
+        link.textContent = r.ctaLabel || 'Official site and registration';
         link.addEventListener('click', function () { window.open(url, '_blank', 'noopener'); });
       }
       el.races.appendChild(card);
@@ -251,7 +255,7 @@
     var dot = document.createElement('span');
     dot.className = 'data-status__dot';
     el.appendChild(dot);
-    el.appendChild(document.createTextNode('Updated automatically ' + when + ' from live sources (' + m.races + ' races). '));
+    el.appendChild(document.createTextNode('Updated automatically ' + when + ' from live sources: ' + (m.upcoming || m.races) + ' upcoming races shown (' + m.races + ' records tracked, past editions hidden). '));
     if (m.runUrl) {
       var a = document.createElement('a');
       a.href = m.runUrl; a.textContent = 'Latest fetch run'; a.target = '_blank'; a.rel = 'noopener';
