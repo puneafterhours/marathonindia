@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var state = { city: 'Pune', zone: '', st: '', dist: '', certOnly: false, q: '' };
+  var state = { city: 'Pune', zone: '', st: '', dist: '', certOnly: false, q: '', when: '' };
   var races = [];
 
   var el = {
@@ -20,7 +20,47 @@
     return /AIMS|World Athletics|WA |ITRA/i.test(r.certification || '');
   }
 
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function raceDate(r) {
+    var m = (r.dateText || '').match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+    if (!m) return null;
+    return new Date(Number(m[3]), MONTHS.indexOf(m[2].slice(0, 3)), Number(m[1]));
+  }
+
+  // Next calendar month / next calendar quarter as YYYY-MM keys, computed
+  // from today so labels and filtering stay correct over time.
+  function monthKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0'); }
+  function nextMonths(n) {
+    var d = new Date(); d.setDate(1); d.setMonth(d.getMonth() + 1);
+    var keys = [];
+    for (var i = 0; i < n; i++) { keys.push(monthKey(d)); d.setMonth(d.getMonth() + 1); }
+    return keys;
+  }
+  // Next calendar quarter (e.g. Jan-Mar after any month in Oct-Dec).
+  function nextQuarter() {
+    var d = new Date();
+    var q = new Date(d.getFullYear(), Math.floor(d.getMonth() / 3) * 3 + 3, 1);
+    var keys = [];
+    for (var i = 0; i < 3; i++) { keys.push(monthKey(q)); q.setMonth(q.getMonth() + 1); }
+    return keys;
+  }
+  function thisWeekend() {
+    var d = new Date(); d.setHours(0, 0, 0, 0);
+    var sat = new Date(d); sat.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7));
+    var sun = new Date(sat); sun.setDate(sat.getDate() + 1); sun.setHours(23, 59, 59, 999);
+    return [sat, sun];
+  }
+
   function matches(r) {
+    if (state.when === 'weekend') {
+      var rd = raceDate(r), w = thisWeekend();
+      if (!rd || rd < w[0] || rd > w[1]) return false;
+    } else if (state.when === 'month') {
+      if (r.month !== nextMonths(1)[0]) return false;
+    } else if (state.when === 'quarter') {
+      if (nextQuarter().indexOf(r.month) === -1) return false;
+    }
     if (state.city === 'Pune' && r.scope.indexOf('pune') !== 0 && r.scope.indexOf('near-pune') !== 0) return false;
     if (state.zone && r.zone !== state.zone) return false;
     if (state.st && r.state !== state.st) return false;
@@ -118,6 +158,27 @@
       (state.city === 'Pune' ? ' in and near Pune' : state.zone ? ' in ' + state.zone + ' India' : ' across India');
   }
 
+  // Date chips carry their exact ranges in the label, so 'next month' and
+  // 'next quarter' mean the calendar month/quarter, visible at a glance.
+  (function () {
+    var nm = new Date(); nm.setDate(1); nm.setMonth(nm.getMonth() + 1);
+    var qk = nextQuarter();
+    var q = qk.map(function (k) { return MONTHS[Number(k.slice(5)) - 1]; });
+    var w = thisWeekend();
+    var wtxt = MONTHS[w[0].getMonth()] + ' ' + w[0].getDate() + '-' + (w[0].getMonth() === w[1].getMonth() ? '' : MONTHS[w[1].getMonth()] + ' ') + w[1].getDate();
+    document.querySelectorAll('[data-when]').forEach(function (btn) {
+      var v = btn.getAttribute('data-when');
+      if (v === 'weekend') btn.textContent = 'This weekend (' + wtxt + ')';
+      if (v === 'month') btn.textContent = 'Next month (' + MONTHS[nm.getMonth()] + ')';
+      if (v === 'quarter') btn.textContent = 'Next quarter (' + q[0] + '-' + q[2] + ')';
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-when]').forEach(function (b) { b.classList.remove('is-on'); });
+        btn.classList.add('is-on');
+        state.when = v;
+        render();
+      });
+    });
+  })();
   document.querySelectorAll('[data-zone]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       document.querySelectorAll('[data-zone]').forEach(function (b) { b.classList.remove('is-on'); });
