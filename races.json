@@ -42,7 +42,11 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "bajaj-pune-marathon",
@@ -64,7 +68,12 @@
   "note": "Also called the Bajaj Allianz Pune Half Marathon.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "indiarunning.com",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "ekal-run-pune-marathon",
@@ -194,7 +203,11 @@
   "dateText": "17 Jan 2027",
   "month": "2027-01",
   "scope": "near-pune",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K"
+  ],
   "url": "/races/tata-mumbai-marathon/",
   "certification": "WA course cert per the WA list of 16 March 2026: marathon and 10K to 2030, half marathon to 2027 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
@@ -202,7 +215,12 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: full/10K to 2030, half to 2027",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races",
+   "procam.in"
+  ]
  },
  {
   "id": "vasai-virar-marathon",
@@ -210,7 +228,7 @@
   "city": "Vasai-Virar",
   "state": "Maharashtra",
   "dateText": "Postponed. New date awaited. Date TBC",
-  "month": "",
+  "month": "2026-12",
   "scope": "near-pune",
   "distances": [
    "Full",
@@ -225,7 +243,11 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: full/half to 2026, 5K to 2027",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "skf-goa-river-marathon",
@@ -248,7 +270,11 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "tata-steel-world-25k-kolkata",
@@ -259,7 +285,9 @@
   "month": "2026-12",
   "scope": "india",
   "distances": [
-   "25K"
+   "25K",
+   "Half",
+   "10K"
   ],
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
@@ -268,7 +296,12 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 25K/10K to 2029",
-  "zone": "East"
+  "zone": "East",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races",
+   "procam.in"
+  ]
  },
  {
   "id": "freshworks-chennai-marathon",
@@ -291,7 +324,11 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "AIMS member · WA course cert: full/half/10K to 2028",
-  "zone": "South"
+  "zone": "South",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "tcs-world-10k-bengaluru",
@@ -311,7 +348,11 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 10K to 2029",
-  "zone": "South"
+  "zone": "South",
+  "sources": [
+   "punerunners.com/races",
+   "procam.in"
+  ]
  },
  {
   "id": "cognizant-new-delhi-marathon",
@@ -319,7 +360,7 @@
   "city": "New Delhi",
   "state": "Delhi",
   "dateText": "2027 date conflict: the organiser says 28 February, AIMS says 21 February. Verify before booking. Date TBC",
-  "month": "",
+  "month": "2027-02",
   "scope": "india",
   "distances": [
    "5K",
@@ -334,7 +375,11 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "AIMS member · WA course cert: full/half/10K to 2028",
-  "zone": "North"
+  "zone": "North",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "nmdc-hyderabad-marathon",
@@ -432,7 +477,8 @@
   "scope": "india ultra",
   "distances": [
    "50K",
-   "100K"
+   "100K",
+   "Ultra"
   ],
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
@@ -440,7 +486,11 @@
   "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "South"
+  "zone": "South",
+  "sources": [
+   "punerunners.com/races",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "dudhsagar-ultra-trail",
@@ -526,10 +576,11 @@
   "city": "Gurugram",
   "state": "Haryana",
   "dateText": "2027 date not announced. Last edition 8 February 2026. Date TBC",
-  "month": "",
+  "month": "2027-02",
   "scope": "india ultra",
   "distances": [
-   "50K"
+   "50K",
+   "Ultra"
   ],
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
@@ -537,7 +588,11 @@
   "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "North"
+  "zone": "North",
+  "sources": [
+   "punerunners.com/races",
+   "thehellrace.com"
+  ]
  },
  {
   "id": "silk-route-ultra-trail-narkanda",
@@ -600,7 +655,11 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: half/10K to 2026",
-  "zone": "North"
+  "zone": "North",
+  "sources": [
+   "punerunners.com/races",
+   "procam.in"
+  ]
  },
  {
   "id": "run-bhopal-run",
@@ -657,14 +716,23 @@
   "state": "Gujarat",
   "zone": "West",
   "dateText": "Next confirmed: Sun 29 November 2026",
-  "month": "",
+  "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//www.ahmedabadmarathon.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "kd-amdavad-marathon",
@@ -717,18 +785,27 @@
  {
   "id": "bharat-midnight-marathon",
   "name": "Bharat Midnight Marathon",
-  "city": "",
-  "state": "",
-  "zone": "",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
   "dateText": "Next confirmed: Sat 5 December 2026",
-  "month": "",
+  "month": "2026-12",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//midnightmarathon.in",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "bodhgaya-marathon-run-for-global-peace",
@@ -785,14 +862,23 @@
   "state": "West Bengal",
   "zone": "East",
   "dateText": "Next confirmed: Sun 29 November 2026",
-  "month": "",
+  "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//www.jbgkolkatamarathon.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "indore-marathon",
@@ -817,14 +903,23 @@
   "state": "Rajasthan",
   "zone": "North",
   "dateText": "Next confirmed: Sun 14 February 2027",
-  "month": "",
+  "month": "2027-02",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//www.marathonjaipur.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "kashmir-marathon",
@@ -861,18 +956,27 @@
  {
   "id": "ladakh-marathon-ultra",
   "name": "Ladakh Marathon & Ultra",
-  "city": "Ladakh",
+  "city": "Leh",
   "state": "Ladakh",
   "zone": "North",
   "dateText": "Next confirmed: Thu 9 September 2027–Sun 12 September 2027",
-  "month": "",
+  "month": "2026-09",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "5K",
+   "11.2K",
+   "Half",
+   "Full"
+  ],
   "url": "//www.ladakhmarathon.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "ladakhmarathon.com"
+  ]
  },
  {
   "id": "mumbai-half-marathon",
@@ -881,14 +985,22 @@
   "state": "Maharashtra",
   "zone": "West",
   "dateText": "Next confirmed: Sun 29 August 2027",
-  "month": "",
+  "month": "2027-01",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
   "url": "//www.mumbaihalfmarathon.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "indiarunning.com"
+  ]
  },
  {
   "id": "vedanta-pink-city-half-marathon-jaipur",
@@ -1009,14 +1121,23 @@
   "state": "Kerala",
   "zone": "South",
   "dateText": "Next confirmed: Sun 15 November 2026",
-  "month": "",
+  "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//www.trivandrummarathon.com",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "mg-vadodara-international-marathon",
@@ -1040,15 +1161,23 @@
   "city": "Vizag",
   "state": "Andhra Pradesh",
   "zone": "South",
-  "dateText": "Date to be confirmed",
-  "month": "",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
   "url": "//www.vizagmarathon.run",
   "certification": "AIMS member",
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
-  "source": "aims-worldrunning.org/directory.html"
+  "source": "aims-worldrunning.org/directory.html",
+  "sources": [
+   "aims-worldrunning.org/directory.html",
+   "geeksonfeet.com/races"
+  ]
  },
  {
   "id": "vedanta-zinc-city-half-marathon",
@@ -1065,5 +1194,3648 @@
   "note": "AIMS member directory listing; distances, fees and requirements not yet checked.",
   "lastChecked": "Checked 11 Nov 2026 against the AIMS member directory",
   "source": "aims-worldrunning.org/directory.html"
+ },
+ {
+  "id": "ir-assam_rifles_half_marathon_2026_56508",
+  "name": "ASSAM RIFLES HALF MARATHON 2026",
+  "city": "Shillong",
+  "state": "Meghalaya",
+  "zone": "East",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/assam_rifles_half_marathon_2026_56508",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Innovative Sports and leisure).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-stayfree_goflorun_29082",
+  "name": "GoFloRun - Edition 3 - Women only Run",
+  "city": "Nityanand Nagar",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "28 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "3K",
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/stayfree_goflorun_29082",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Nova Saki Media Private Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mussoorieultra2ndedition-19483",
+  "name": "Mussoorie Ultra 2nd Edition",
+  "city": "The Fern Brentwood Resort",
+  "state": "Uttarakhand",
+  "zone": "North",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half",
+   "42K",
+   "50K"
+  ],
+  "url": "https://indiarunning.com/event/mussoorieultra2ndedition-19483",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Pikusports Entertainment Private Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nirmalbangmaladwalkathon70-23116",
+  "name": "Nirmal Bang Malad Walkathon 7.0",
+  "city": "Malad",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nirmalbangmaladwalkathon70-23116",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Malad Walkathon).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_run_bangla_run_26113",
+  "name": "News18 Run Bangla Run",
+  "city": "Godrej Waterside",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "5 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_run_bangla_run_26113",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Globus Event And Marketing Solutions).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-rotaryqueencityhalfmarathon2026-38601",
+  "name": "Rotary Queen City Half Marathon 2026",
+  "city": "BKC",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "19 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2.5K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/rotaryqueencityhalfmarathon2026-38601",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sports Reconnect).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-times_internet_half_marathon__bengaluru_39648",
+  "name": "TIMES INTERNET HALF MARATHON - BENGALURU",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/times_internet_half_marathon__bengaluru_39648",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Times Internet Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-ekal_run_52496",
+  "name": "EKAL RUN",
+  "city": "Godrej Waterside Building",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "9 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/ekal_run_52496",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: FTS Foundation).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-hindustan_marathon_12th_edition_24063",
+  "name": "HINDUSTAN MARATHON 12th Edition",
+  "city": "Dwarka",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/hindustan_marathon_12th_edition_24063",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Marathon Tak).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-greennoidahalfmarathon20-52434",
+  "name": "Green Noida Half Marathon 2.0",
+  "city": "Sector 153",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/greennoidahalfmarathon20-52434",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Chaser Group).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-indiannavyhalfmarathon2027-21281",
+  "name": "Indian Navy Half Marathon 2027",
+  "city": "Jawaharlal Nehru Stadium",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/indiannavyhalfmarathon2027-21281",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Indian Navy).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chandigarhfastmarathon-45849",
+  "name": "Chandigarh Fast Marathon",
+  "city": "Chandigarh",
+  "state": "Punjab",
+  "zone": "North",
+  "dateText": "13 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "Full"
+  ],
+  "url": "https://indiarunning.com/event/chandigarhfastmarathon-45849",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com",
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "ir-dehradun_ultra_run_2027__4th_edition_20591",
+  "name": "Dehradun Ultra Run 2027 - 4th Edition",
+  "city": "Garhi Cantt",
+  "state": "Uttarakhand",
+  "zone": "North",
+  "dateText": "13 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "25K",
+   "50K"
+  ],
+  "url": "https://indiarunning.com/event/dehradun_ultra_run_2027__4th_edition_20591",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Thrill Zone).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kalimpongultramarathon2027-70352",
+  "name": "KALIMPONG ULTRAMARATHON 2027",
+  "city": "Pedong",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "23 Apr 2027",
+  "month": "2027-04",
+  "scope": "india",
+  "distances": [
+   "21.1K",
+   "65K",
+   "90K"
+  ],
+  "url": "https://indiarunning.com/event/kalimpongultramarathon2027-70352",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Run with Roshni Foundation).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chasegurugramhalfmarathon2026-23209",
+  "name": "Chase Gurugram Half Marathon",
+  "city": "Gurugram",
+  "state": "Haryana",
+  "zone": "North",
+  "dateText": "3 Oct 2027",
+  "month": "2027-10",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/chasegurugramhalfmarathon2026-23209",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Chaser Group).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-seniorcitizenwellnessprogramthane13thnovember2026-39814",
+  "name": "Senior citizen wellness program - Thane- 13th November 2026",
+  "city": "Jambli Naka",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/seniorcitizenwellnessprogramthane13thnovember2026-39814",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-pacex_uttari_betta_sunrise_trek_62240",
+  "name": "PaceX Uttari Betta Sunrise Trek",
+  "city": "Huthribetta",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/pacex_uttari_betta_sunrise_trek_62240",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Book of Youth).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-world_diabetes_day_marathon_2026_38597",
+  "name": "World Diabetes Day Marathon 2026",
+  "city": "Tawang",
+  "state": "Arunachal Pradesh",
+  "zone": "East",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "50K"
+  ],
+  "url": "https://indiarunning.com/event/world_diabetes_day_marathon_2026_38597",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_together_ascend_x_bmc_community_run_20910",
+  "name": "Run together Ascend X BMC Community Run",
+  "city": "Bandstand",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/run_together_ascend_x_bmc_community_run_20910",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_and_socialise_with_pacex_and_playblue_35539",
+  "name": "Run and Coffee Rave with PaceX and PlayBlue",
+  "city": "Agara Village",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "2.5K"
+  ],
+  "url": "https://indiarunning.com/event/run_and_socialise_with_pacex_and_playblue_35539",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Book of Youth).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-thediwalirun2026celebratefitnesscelebratediwali-58530",
+  "name": "The Diwali Run 2026 - Celebrate Fitness Celebrate Diwali",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "7K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/thediwalirun2026celebratefitnesscelebratediwali-58530",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sportz Zone Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mehsana_marathon__edition_2_31729",
+  "name": "Mehsana Marathon Edition 2",
+  "city": "Mehsana",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K",
+   "23K"
+  ],
+  "url": "https://indiarunning.com/event/mehsana_marathon__edition_2_31729",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Run2gether).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-navi_mumbai_fitness_run_82787",
+  "name": "Navi Mumbai Fitness Run",
+  "city": "Sagar Vihar",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/navi_mumbai_fitness_run_82787",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sukarma Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-vedanta_kids_walkathon_36677",
+  "name": "VEDANTA KID'S WALKATHON",
+  "city": "Thiruverkadu",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/vedanta_kids_walkathon_36677",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SPORTENA ACADEMY).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-ektadiwasrun2026runforunity-48640",
+  "name": "Ekta Diwas Run 2026 - Run for Unity",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/ektadiwasrun2026runforunity-48640",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sportz Zone Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mayfair_purnea_marathon_20_22007",
+  "name": "Mayfair Purnea Marathon",
+  "city": "Purnia",
+  "state": "Bihar",
+  "zone": "East",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/mayfair_purnea_marathon_20_22007",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Aavya Enterprises).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-yashoda_medicity_presents__yashoda_half_marathon_40_45823",
+  "name": "Yashoda Medicity Presents - Yashoda Half Marathon 4.0",
+  "city": "Shakti Khand 2",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/yashoda_medicity_presents__yashoda_half_marathon_40_45823",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Marathon Sports Hub).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-namma_run_coimbatore__south_edition_52470",
+  "name": "NAMMA RUN COIMBATORE - 2026",
+  "city": "Karthipuram Experience Centre",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "2K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/namma_run_coimbatore__south_edition_52470",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-suyra_half_marathon_2026_22540",
+  "name": "Surya Half Marathon 2026",
+  "city": "Cobra Ground, South Civil Lines",
+  "state": "Madhya Pradesh",
+  "zone": "West",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/suyra_half_marathon_2026_22540",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Headquarters Madhya Bharat Area).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-rohtak_arathon_12123",
+  "name": "Rohtak Marathon",
+  "city": "Jat College",
+  "state": "Haryana",
+  "zone": "North",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/rohtak_arathon_12123",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Kamera Varg Social trust).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-bilaspur_marathon_30_31977",
+  "name": "Bilaspur Marathon 3.0",
+  "city": "Bilaspur",
+  "state": "Chhattisgarh",
+  "zone": "West",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/bilaspur_marathon_30_31977",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Tezzz Club).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-daringbadi_hm_73848",
+  "name": "Daringbadi HM",
+  "city": "Daringbadi",
+  "state": "Odisha",
+  "zone": "East",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/daringbadi_hm_73848",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SPORTIVE).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mumbai_10_km_run__ghatkopar_east_75740",
+  "name": "Mumbai 10 KM Run - Ghatkopar East",
+  "city": "Godrej Mangroves Area",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/mumbai_10_km_run__ghatkopar_east_75740",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Omega events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-janapav_hill_5km_run_31848",
+  "name": "Janapav Hill 5KM Run",
+  "city": "Anwaliya",
+  "state": "Madhya Pradesh",
+  "zone": "West",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/janapav_hill_5km_run_31848",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Janapav Academy ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-aspire_bee_run_5k_25498",
+  "name": "Aspire Bee Run 5k",
+  "city": "East",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/aspire_bee_run_5k_25498",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Aspire Bee School).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-pacex_run__play_lake_runs_and_frisbee_edition_25688",
+  "name": "PaceX Run & Play, Lake Runs and Frisbee Edition",
+  "city": "Kadubeesanahalli",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "2.5K",
+   "5K",
+   "7K"
+  ],
+  "url": "https://indiarunning.com/event/pacex_run__play_lake_runs_and_frisbee_edition_25688",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Book of Youth).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-seniorcitizenwellnessprogramthane13thnovember2026-40016",
+  "name": "Senior citizen wellness program - Ahmedabad- 27th November 2026",
+  "city": "Usmanpura",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "27 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/seniorcitizenwellnessprogramthane13thnovember2026-40016",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_run_maharashtra__nashik_60411",
+  "name": "News18 Run Maharashtra - Nashik",
+  "city": "Hutatma Anant Kanhere Maidan",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "28 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_run_maharashtra__nashik_60411",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-sikkim_manipal_university_sikkim_soldierathon_30_gangtok_sunday_29th_november_2026_54762",
+  "name": "Sikkim Manipal University Sikkim Soldierathon 3.0, Gangtok, Sunday, 29th November, 2026",
+  "city": "Paljor Stadium",
+  "state": "Sikkim",
+  "zone": "East",
+  "dateText": "28 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/sikkim_manipal_university_sikkim_soldierathon_30_gangtok_sunday_29th_november_2026_54762",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitistan).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-the_guwahati_marathon_26840",
+  "name": "Guwahati Marathon 2026",
+  "city": "Nalapara",
+  "state": "Assam",
+  "zone": "East",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half",
+   "42K"
+  ],
+  "url": "https://indiarunning.com/event/the_guwahati_marathon_26840",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Paper Mache Pvt Ltd).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_for_soldiers__bsf_day_marathon_2026_19177",
+  "name": "Run for Soldiers - BSF Day Marathon 2026",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/run_for_soldiers__bsf_day_marathon_2026_19177",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-conscient_gurugram_half_marathon_30_57887",
+  "name": "Conscient Gurugram Half marathon 3.0",
+  "city": "Sector 79",
+  "state": "Haryana",
+  "zone": "North",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/conscient_gurugram_half_marathon_30_57887",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: FTC Foundation).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-runfortheoceanvirtualchallenge-73655",
+  "name": "Run for the Ocean Virtual Challenge",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/runfortheoceanvirtualchallenge-73655",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Omega events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-delhi_neon_run_30225",
+  "name": "DELHI NEON HALF MARATHON",
+  "city": "Sector 19B",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/delhi_neon_run_30225",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: NOBLE FOUNDATION TRUST).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nextmile10kstepsaday7dayhabitchallenge-37625",
+  "name": "NextMile 10K Steps a Day 7 Day Habit Challenge",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "17 Oct 2026",
+  "month": "2026-10",
+  "scope": "india",
+  "distances": [
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nextmile10kstepsaday7dayhabitchallenge-37625",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Next Mile).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nextmile_streak_7_30_minutes_7_days_consistency_challenge_42856",
+  "name": "NEXTMILE STREAK 7 _ 7-Day Consistency Challenge - Run, Walk, Ride",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "17 Oct 2026",
+  "month": "2026-10",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/nextmile_streak_7_30_minutes_7_days_consistency_challenge_42856",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Next Mile).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-60_days_consistency_challenge_14th_edition_38245",
+  "name": "60 Days Consistency Challenge. 14th Edition",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "9 Oct 2026",
+  "month": "2026-10",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/60_days_consistency_challenge_14th_edition_38245",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Koshiqa).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_for_soldiers__indian_navy_day_marathon_2026_24253",
+  "name": "Run for Soldiers - Indian Navy Day Marathon 2026",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "4 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/run_for_soldiers__indian_navy_day_marathon_2026_24253",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-the_ultribe_paderu_47328",
+  "name": "The Ultribe Paderu",
+  "city": "Vanjangi",
+  "state": "Andhra Pradesh",
+  "zone": "South",
+  "dateText": "5 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Ultra",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/the_ultribe_paderu_47328",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Visakha Trail Running Association).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com",
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "ir-fitmumbaimarathonghatkopar-79933",
+  "name": "Fit Mumbai Marathon - 06-12-2026",
+  "city": "Godrej Mangroves Area",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "5 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/fitmumbaimarathonghatkopar-79933",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sukarma Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nammude_run_calicut__south_edition_21419",
+  "name": "NAMMUDE RUN CALICUT - 2026",
+  "city": "Calicut Beach Road",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "2K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nammude_run_calicut__south_edition_21419",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-dosti_thane_half_marathon_5th_edition_30911",
+  "name": "Dosti Thane Half Marathon- 5th Edition",
+  "city": "Balkum Naka",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/dosti_thane_half_marathon_5th_edition_30911",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Play Free Sport India).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-gurugram_legends_half_marathon_66210",
+  "name": "GURUGRAM LEGENDS HALF MARATHON",
+  "city": "Alahawas",
+  "state": "Haryana",
+  "zone": "North",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/gurugram_legends_half_marathon_66210",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: NOBLE FOUNDATION TRUST).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mumbai_ultra_marathon__borivali_national_park_79171",
+  "name": "Mumbai Ultra Marathon - National Park",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/mumbai_ultra_marathon__borivali_national_park_79171",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: India Vision Challenge).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-beathlitlakerundecember2026edition-33614",
+  "name": "BeAthlit Lake Run - December 2026 Edition",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/beathlitlakerundecember2026edition-33614",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Leanpitch Technologies Pvt Ltd).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-arunachal_run__international_mountain_day_2026_19847",
+  "name": "Arunachal Run - International Mountain Day 2026",
+  "city": "Tawang",
+  "state": "Arunachal Pradesh",
+  "zone": "East",
+  "dateText": "11 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/arunachal_run__international_mountain_day_2026_19847",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chennai_juniorthon_2026__5th_edition_36564",
+  "name": "Chennai Juniorthon 2026 - 5th Edition",
+  "city": "Sastri Nagar",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "12 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/chennai_juniorthon_2026__5th_edition_36564",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Global Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_maharashtra__kohlapur_59480",
+  "name": "News18 Run Maharashtra - Kolhapur",
+  "city": "Police Parade Ground, Kohlapur",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "12 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/run_maharashtra__kohlapur_59480",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_for_our_national_heroes_2026_21239",
+  "name": "RUN FOR OUR NATIONAL HEROES 2026",
+  "city": "Sai Ram Colony",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "12 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K"
+  ],
+  "url": "https://indiarunning.com/event/run_for_our_national_heroes_2026_21239",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: BALAJI RAMKUMAR).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-sikar_marathon__2026_3rd_edition_81043",
+  "name": "SIKAR MARATHON - 2026, 3rd Edition",
+  "city": "B-Block",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/sikar_marathon__2026_3rd_edition_81043",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sikar Infotech).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kamothe_half_marathon_2026_63657",
+  "name": "KAMOTHE HALF MARATHON 2026",
+  "city": "Sector 6A",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/kamothe_half_marathon_2026_63657",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: CHHABA FOUNDATION TRUST).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-dwarka_legends_half_marathon_71360",
+  "name": "DWARKA LEGENDS HALF MARATHON",
+  "city": "Sector 19B",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/dwarka_legends_half_marathon_71360",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: NOBLE FOUNDATION TRUST).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-amc_half_marathon_19076",
+  "name": "AMC HALF MARATHON -7th Edition",
+  "city": "Magarpatta",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/amc_half_marathon_19076",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Association of Medical Consultants Pune).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-honour_run_jaipur_2026_15723",
+  "name": "Honour Run Jaipur 2026",
+  "city": "Albert Hall Museum, Main Gate",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/honour_run_jaipur_2026_15723",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Jaipur Veterans Honour Run).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-asa_greenathon_2026_27988",
+  "name": "ASA GREENATHON 2026",
+  "city": "Gothivali Village",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "19 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/asa_greenathon_2026_27988",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: LIVFIT SPORTS AND WELLNESS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-yashadapimprichinchwadhalfmarathon2026-37225",
+  "name": "Yashada Pimpri Chinchwad Half Marathon 2026",
+  "city": "Pimple Saudagar, Pimpri-Chinchwad",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "19 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/yashadapimprichinchwadhalfmarathon2026-37225",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Kishaan Sports India Pvt Ltd).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_run__amdavad_61363",
+  "name": "News18 Run - Amdavad Run",
+  "city": "Sabarmati Riverfront",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "19 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_run__amdavad_61363",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-haribol_run_51770",
+  "name": "HariBol Run",
+  "city": "Wave City",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "19 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/haribol_run_51770",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: NAYI UMANG SAMAJIK SANTHA).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-namma_run_mangalore_27808",
+  "name": "NAMMA RUN MANGALORE",
+  "city": "Canara High School Association",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "2K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/namma_run_mangalore_27808",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-thump_celebration_bengaluru_12_marathon_and_10k_run_2026_38459",
+  "name": "Thump Celebration Bengaluru 1/2 Marathon and 10K RUN 2026",
+  "city": "Dwaraka Nagar",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K",
+   "32K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/thump_celebration_bengaluru_12_marathon_and_10k_run_2026_38459",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: life is calling sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com",
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "ir-pune_junior_marathon_30414",
+  "name": "Pune Junior Marathon",
+  "city": "Pune University",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "3K",
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/pune_junior_marathon_30414",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SS Multi Sports & Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-garwarewaihalfmarathon2026-66696",
+  "name": "Garware Wai Half Marathon 2026",
+  "city": "Maharashtra",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/garwarewaihalfmarathon2026-66696",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Team Wai Marathon).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-rotary_nari_shakti_run_2026_say_no_to_drugs_25252",
+  "name": "Rotary Nari Shakti Run 2026- SAY NO TO DRUGS",
+  "city": "HOC Colony",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/rotary_nari_shakti_run_2026_say_no_to_drugs_25252",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Rotary Club Of Panvel Central Charitable Trust).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-christmaskidsmarathonmalad-48319",
+  "name": "Christmas Kids Marathon - Malad",
+  "city": "Malad",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "25 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "3K"
+  ],
+  "url": "https://indiarunning.com/event/christmaskidsmarathonmalad-48319",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sukarma Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chiplun_half_marathon_2026_44091",
+  "name": "CHIPLUN HALF MARATHON 2026",
+  "city": "Chiplun",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "26 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/chiplun_half_marathon_2026_44091",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sangharsh Krida Mandal).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-she_run_2026_38410",
+  "name": "PCC SHERUN 2026",
+  "city": "Sector 23",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "26 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/she_run_2026_38410",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: ONCOURAGE CANCER CARE FOUNDATION).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kolkata_half_marathon_66641",
+  "name": "Kolkata Half Marathon",
+  "city": "Mollapara",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "26 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/kolkata_half_marathon_66641",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SPORTIVE).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kota_half_marathon_34245",
+  "name": "Kota Half Marathon",
+  "city": "Kota",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "2 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/kota_half_marathon_34245",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RUNNERX LLP).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-aamchimumbaimarathon03012027-28729",
+  "name": "Aamchi Mumbai Marathon - 03-01-2027",
+  "city": "Godrej Mangroves Area",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "3 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/aamchimumbaimarathon03012027-28729",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Omega events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-navimumbaimarathonrunforeducation-79245",
+  "name": "Navi Mumbai Marathon - Run for Education",
+  "city": "Sector 23",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "3 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/navimumbaimarathonrunforeducation-79245",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sukarma Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-vrukshathon_10k_run_2027_27271",
+  "name": "VRUKSHATHON 10K RUN 2027",
+  "city": "Pune University",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "3 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/vrukshathon_10k_run_2027_27271",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SS Multi Sports & Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-bengaluru_corporate_wellness_run_2026_27940",
+  "name": "Bengaluru Corporate Wellness Run",
+  "city": "Nunegundlapalli",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "9 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/bengaluru_corporate_wellness_run_2026_27940",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Global Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_bhubaneswar_run_2027_27416",
+  "name": "News18 Bhubaneswar Run 2027",
+  "city": "Bhubaneswar",
+  "state": "Odisha",
+  "zone": "East",
+  "dateText": "9 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_bhubaneswar_run_2027_27416",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-irun_goa_marathon_2027_40944",
+  "name": "I-RUN GOA MARATHON 2027",
+  "city": "Goa University",
+  "state": "Goa",
+  "zone": "West",
+  "dateText": "9 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2.5K",
+   "5K",
+   "10K",
+   "21.1K",
+   "32K"
+  ],
+  "url": "https://indiarunning.com/event/irun_goa_marathon_2027_40944",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: I-Help Foundation Goa).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chalo_bharat_walkathon_mumbai_edition_2026_41768",
+  "name": "Chalo Bharat Walkathon Mumbai Edition 2027",
+  "city": "Bandra Kurla Complex",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "10 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/chalo_bharat_walkathon_mumbai_edition_2026_41768",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Play Free Sport India).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_run_maharashtra__pune_49040",
+  "name": "News18 Run Maharashtra - Pune",
+  "city": "Savitribai Phule University",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "10 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_run_maharashtra__pune_49040",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-bengaluru_run_by_kar_ies_34754",
+  "name": "BENGALURU RUN FOR EMPOWERMENT by KAR IES",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "10 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/bengaluru_run_by_kar_ies_34754",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: KAR IES).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-marathon_of_other_dreams_dwarka_10_run_18396",
+  "name": "Delhi Dwarka 1.0 Run",
+  "city": "Sector 23",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "10 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/marathon_of_other_dreams_dwarka_10_run_18396",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RAKESH VERMA).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-runforsoldiersindianarmydaymarathon2027-53156",
+  "name": "Run for Soldiers - Indian Army Day Marathon 2027",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "15 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/runforsoldiersindianarmydaymarathon2027-53156",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-climate_awareness_run_india_2027__kochi_24753",
+  "name": "CLIMATE AWARENESS RUN INDIA 2027 - KOCHI",
+  "city": "North Kalamassery",
+  "state": "",
+  "zone": "",
+  "dateText": "16 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/climate_awareness_run_india_2027__kochi_24753",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: BALAJI RAMKUMAR).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-india_republic_half_marathon_69047",
+  "name": "INDIA REPUBLIC HALF MARATHON",
+  "city": "Jawaharlal Nehru Stadium",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "17 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/india_republic_half_marathon_69047",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: NOBLE FOUNDATION TRUST).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-mainpat_hill_marathon_72491",
+  "name": "Mainpat Hill Marathon",
+  "city": "Mainpat",
+  "state": "Chhattisgarh",
+  "zone": "West",
+  "dateText": "17 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/mainpat_hill_marathon_72491",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SPORTIVE).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-telangana_half_marathon_2k27_33872",
+  "name": "Telangana Half Marathon 2K27",
+  "city": "Gachibowli",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "23 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/telangana_half_marathon_2k27_33872",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Global Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_run__surat_60881",
+  "name": "News18 Run - Surat",
+  "city": "VNSGU Ground",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "23 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_run__surat_60881",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_guwahati_run_2027_27919",
+  "name": "News18 Guwahati Run 2027",
+  "city": "Sarusajai Sports Complex",
+  "state": "Assam",
+  "zone": "East",
+  "dateText": "23 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_guwahati_run_2027_27919",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nitrrothon_mumbai_2027_42398",
+  "name": "NITRROTHON MUMBAI 2027",
+  "city": "Breach Candy",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "24 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K"
+  ],
+  "url": "https://indiarunning.com/event/nitrrothon_mumbai_2027_42398",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Roaring Fitness).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nitrrothon_thane_2027_32451",
+  "name": "NITRROTHON THANE 2027",
+  "city": "Runwal Nagar",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "26 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/nitrrothon_thane_2027_32451",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Roaring Fitness).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-prayagraj_6hour_stadium_run_2027_29071",
+  "name": "Prayagraj 6-Hour Stadium Run 2027",
+  "city": "George Town",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "30 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/prayagraj_6hour_stadium_run_2027_29071",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Thrill Zone).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-jawai_trail_run_53909",
+  "name": "JAWAI TRAIL RUN",
+  "city": "Bali",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "12K",
+   "25K"
+  ],
+  "url": "https://indiarunning.com/event/jawai_trail_run_53909",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: KHELDWAR SPORTS SOLUTION).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-bsf_run_road_to_heaven_30531",
+  "name": "BSF RUN, ROAD TO HEAVEN",
+  "city": "Dholavira",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india ultra",
+  "distances": [
+   "10K",
+   "30K",
+   "Ultra"
+  ],
+  "url": "https://indiarunning.com/event/bsf_run_road_to_heaven_30531",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Krish Sports and Fitness LLP).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_for_a_cause_kharghar_marathon_2027_50977",
+  "name": "Run For a Cause Kharghar Marathon 2027",
+  "city": "Kharghar",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/run_for_a_cause_kharghar_marathon_2027_50977",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: The Cause Travellers Social Welfare Organisation).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-india_green_run_2027_39385",
+  "name": "India Green Run 2027",
+  "city": "Ravindra Nagar - A",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "6K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/india_green_run_2027_39385",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Pink Pearl Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kidzathon_pune_marathon_2k27_28304",
+  "name": "KIDZ-A-THON PUNE MARATHON 2K27",
+  "city": "Amanora Park Town",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/kidzathon_pune_marathon_2k27_28304",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Uriel Kids).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-kannur_beach_run_2026_54111",
+  "name": "Kannur Beach Run 2027",
+  "city": "Payyambalam",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "30 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [],
+  "url": "http://www.kannurbeachrun.com",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: North Malabar Chamber of Commerce).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-hare_krishna_run_2027__2nd_edition_9587",
+  "name": "HARE KRISHNA RUN 2027 - 2nd Edition",
+  "city": "Hussain Sagar",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "6 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/hare_krishna_run_2027__2nd_edition_9587",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Global Events ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-azamgarhmarathonrunforcancerawareness-39063",
+  "name": "Azamgarh Marathon, Run for Cancer Awareness",
+  "city": "Tiwaripur - Sidhari",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "6 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/azamgarhmarathonrunforcancerawareness-39063",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Tribhuvan Sevak Cancer Trust).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-wilson_ultra_marathon__edition_4_35904",
+  "name": "Wilson Ultra Marathon Edition 4",
+  "city": "Dharampur",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K",
+   "35K",
+   "50K"
+  ],
+  "url": "https://indiarunning.com/event/wilson_ultra_marathon__edition_4_35904",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Run2gether).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-punekar_half_marathon_4th_edition_20908",
+  "name": "Punekar Half Marathon 4th Edition 2027",
+  "city": "Thite Nagar",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/punekar_half_marathon_4th_edition_20908",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitcover360).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-finrun_2027_run_against_cyber_crime_33424",
+  "name": "Finrun 2027 Run against cyber crime",
+  "city": "Gachibowli",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/finrun_2027_run_against_cyber_crime_33424",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Dfairs Communications(opc) Pvt Ltd.).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-news18_darjeeling_run_2027_28297",
+  "name": "News18 Darjeeling Run 2027",
+  "city": "Darjeeling",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/news18_darjeeling_run_2027_28297",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-jiyosammanserun-45693",
+  "name": "JIYO SAMMAN SE RUN-2027",
+  "city": "Kalina University",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/jiyosammanserun-45693",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Run2gether).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-run_maharashtra__navi_mumbai_29943",
+  "name": "News18 Run Maharashtra - Navi Mumbai",
+  "city": "Navi Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "13 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/run_maharashtra__navi_mumbai_29943",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-times_internet_half_marathon__mumbai_20613",
+  "name": "TIMES INTERNET HALF MARATHON - MUMBAI",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "14 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/times_internet_half_marathon__mumbai_20613",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Times Internet Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-bandra_half_marathon__14th_february_2026_65506",
+  "name": "Bandra Half Marathon - 14th February 2027",
+  "city": "Mount Mary",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "14 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/bandra_half_marathon__14th_february_2026_65506",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: India Vision Challenge).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-noida_grand_marathon_11th_edition_46235",
+  "name": "Noida Grand Marathon- 11th Edition",
+  "city": "Noida",
+  "state": "Uttar Pradesh",
+  "zone": "North",
+  "dateText": "14 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "16K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/noida_grand_marathon_11th_edition_46235",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Pikusports Entertainment Private Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-wesnesswomens5kfunrunmumbai2026-45482",
+  "name": "Wesness Women's 5k Fun Run, Mumbai 2027",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "14 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "5K"
+  ],
+  "url": "https://indiarunning.com/event/wesnesswomens5kfunrunmumbai2026-45482",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-sundarban_tiger_marathon_70185",
+  "name": "Sundarban Tiger Marathon",
+  "city": "Jharkhali Bazar",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "20 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "2K",
+   "5K",
+   "10K",
+   "21K",
+   "42K"
+  ],
+  "url": "https://indiarunning.com/event/sundarban_tiger_marathon_70185",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: SPORTIVE).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chalo_bharat_walkathon_delhi_edition_2027_45654",
+  "name": "Chalo Bharat Walkathon Delhi Edition 2027",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "21 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/chalo_bharat_walkathon_delhi_edition_2027_45654",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Play Free Sport India).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nammude_run_kochi__south_edition_22014",
+  "name": "NAMMUDE RUN KOCHI - 2027",
+  "city": "Ernakulam South",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "28 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "1K",
+   "2K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nammude_run_kochi__south_edition_22014",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: TE SPORTS).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chandigarh_10k_69394",
+  "name": "Chandigarh 10K 2027",
+  "city": "Sector 1",
+  "state": "Chandigarh",
+  "zone": "North",
+  "dateText": "28 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/chandigarh_10k_69394",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Sogrow Ventures Private Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-international_womens_day_run__mana_hyderabad_37854",
+  "name": "INTERNATIONAL WOMEN'S DAY RUN - MANA HYDERABAD HALF MARATHON 2027",
+  "city": "Gachibowli",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "6 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/international_womens_day_run__mana_hyderabad_37854",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: BALAJI RAMKUMAR).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-ahmedabad_half_marathon_28979",
+  "name": "Ahmedabad Half Marathon",
+  "city": "Ellisbridge",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "7 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://indiarunning.com/event/ahmedabad_half_marathon_28979",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Kalki Sports).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chalo_bharat_walkathon_bengaluru_edition_2026_43370",
+  "name": "Chalo Bharat Walkathon Bengaluru Edition 2027",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "14 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/chalo_bharat_walkathon_bengaluru_edition_2026_43370",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Play Free Sport India).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-world_womens_day_run__namma_chennai_2027_22794",
+  "name": "World Women's Day Run - Namma Chennai 2027",
+  "city": "Sai Ram Colony",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "20 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/world_womens_day_run__namma_chennai_2027_22794",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: BALAJI RAMKUMAR).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-runsmileshalfmarathon2ndedition-53420",
+  "name": "Runs & Miles Half Marathon 2nd Edition",
+  "city": "Kharadi",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "21 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/runsmileshalfmarathon2ndedition-53420",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: RunsandMiles).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-times_internet_half_marathon__delhi_30817",
+  "name": "Times Internet Half Marathon - Delhi",
+  "city": "New Delhi",
+  "state": "Delhi",
+  "zone": "North",
+  "dateText": "28 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/times_internet_half_marathon__delhi_30817",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Times Internet Limited).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-clean_city_indore_5km_run_20_44204",
+  "name": "Clean City Indore 5km Run 2.0",
+  "city": "Patel Market",
+  "state": "Madhya Pradesh",
+  "zone": "West",
+  "dateText": "29 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [],
+  "url": "https://indiarunning.com/event/clean_city_indore_5km_run_20_44204",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Janapav Academy ).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-chalo_bharat_walkathon_pune_edition_2027_43932",
+  "name": "Chalo Bharat Walkathon Pune Edition 2027",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "11 Apr 2027",
+  "month": "2027-04",
+  "scope": "pune",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/chalo_bharat_walkathon_pune_edition_2027_43932",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Play Free Sport India).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nextmile3k5k10kchallengerunanytimeearnyourmedal-42203",
+  "name": "NextMile 3K/5K/10K Challenge - Run Anytime, Earn Your Medal",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "dateText": "17 Oct 2026",
+  "month": "2026-10",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nextmile3k5k10kchallengerunanytimeearnyourmedal-42203",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Next Mile).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-patnitopmarathon60-24633",
+  "name": "Patnitop Marathon 2027",
+  "city": "Patnitop",
+  "state": "Jammu and Kashmir",
+  "zone": "North",
+  "dateText": "8 May 2027",
+  "month": "2027-05",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "21.1K",
+   "50K",
+   "75K"
+  ],
+  "url": "https://indiarunning.com/event/patnitopmarathon60-24633",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: K.A.Sports and Events).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "gof-GF-1785388400325-T5FPD5",
+  "name": "Kaveri Trail Marathon 2026",
+  "city": "Srirangapatna",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "22 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785388400325-T5FPD5",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1780659807094-ESS5F6",
+  "name": "Baramati Power Marathon 2026",
+  "city": "Baramati",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "29 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1780659807094-ESS5F6",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1790652377783-61CKFW",
+  "name": "Yercaud Hills Ultra",
+  "city": "Yercaud",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra",
+   "Half"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790652377783-61CKFW",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1788261913100-WXCY5A",
+  "name": "DHASH Bengaluru Half Marathon",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "6 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1788261913100-WXCY5A",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1789526557589-NOTZEO",
+  "name": "SRT Ultra 2026",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "Dec 2026",
+  "month": "2026-12",
+  "scope": "pune ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1789526557589-NOTZEO",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1790651966924-3YYKK3",
+  "name": "Mysuru Marathon 26",
+  "city": "Mysuru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790651966924-3YYKK3",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1785388274087-OM9CWS",
+  "name": "Puri Coastal Marathon 2026",
+  "city": "Puri",
+  "state": "Odisha",
+  "zone": "East",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785388274087-OM9CWS",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1782627553457-VVV25H",
+  "name": "Vizag Navy Marathon",
+  "city": "Visakhapatnam",
+  "state": "Andhra Pradesh",
+  "zone": "South",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1782627553457-VVV25H",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1782627524801-NS5GZJ",
+  "name": "Times Internet Bengaluru Half Marathon 2026",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "13 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1782627524801-NS5GZJ",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1791193022952-I4KZAR",
+  "name": "Udupi Marathon 2026",
+  "city": "Udupi",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791193022952-I4KZAR",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1785383781664-YUOCOL",
+  "name": "Coimbatore Marathon 2026",
+  "city": "Coimbatore",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "dateText": "20 Dec 2026",
+  "month": "2026-12",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785383781664-YUOCOL",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1793260567986-2URI88",
+  "name": "Hyderabad City Slam Winter Run HM",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "3 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1793260567986-2URI88",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1791047070588-WHHRHL",
+  "name": "GHR Hampi 2027",
+  "city": "Hampi",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "24 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791047070588-WHHRHL",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1790872610045-5CRUPJ",
+  "name": "Thrissur Cultural Capital Marathon",
+  "city": "Thrissur",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "31 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790872610045-5CRUPJ",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1791444107224-U5861S",
+  "name": "Tuffman Bengaluru Half Marathon 2027",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791444107224-U5861S",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1785384888678-JSC5VZ",
+  "name": "MG Vadodara Marathon 2027",
+  "city": "Vadodara",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785384888678-JSC5VZ",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1777295718061-WAHES2",
+  "name": "Kolkata Full Marathon 2027",
+  "city": "Kolkata",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "7 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K",
+   "5K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1777295718061-WAHES2",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1791193855170-864UKQ",
+  "name": "Federal Bank Kochi Marathon 2027",
+  "city": "Kochi",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "14 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "Full",
+   "Half",
+   "10K"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791193855170-864UKQ",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1791194158391-EY9ZFF",
+  "name": "Munnar Marathon",
+  "city": "Munnar",
+  "state": "Kerala",
+  "zone": "South",
+  "dateText": "Feb 2027",
+  "month": "2027-02",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra",
+   "Full",
+   "Half"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791194158391-EY9ZFF",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1790652542188-JPGS1L",
+  "name": "Bison Ultra",
+  "city": "Yercaud",
+  "state": "",
+  "zone": "",
+  "dateText": "6 Jun 2027",
+  "month": "2027-06",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790652542188-JPGS1L",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "hellrace-white-sand-ultra",
+  "name": "White Sand Ultra",
+  "city": "",
+  "state": "Gujarat",
+  "zone": "West",
+  "dateText": "27-28 Mar 2027",
+  "month": "2027-03",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/the-hell-race/white-sand-ultra/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-the-buddha-trails",
+  "name": "The Buddha Trails",
+  "city": "",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "25 Apr 2027",
+  "month": "2027-04",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/the-buddha-trails/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-ghrf",
+  "name": "GHRF",
+  "city": "",
+  "state": "Himachal Pradesh",
+  "zone": "North",
+  "dateText": "27 Jun 2027",
+  "month": "2027-06",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/great-himalayan-running-festival/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-goa-ultra",
+  "name": "Goa Ultra",
+  "city": "",
+  "state": "Goa",
+  "zone": "West",
+  "dateText": "08-09 Aug 2026",
+  "month": "2026-08",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/goa-ultra-02-03-aug-2025-the-hell-race/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-solang-skyultra",
+  "name": "Solang Skyultra",
+  "city": "",
+  "state": "Himachal Pradesh",
+  "zone": "North",
+  "dateText": "10-11 Oct 2026",
+  "month": "2026-10",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/solang-sky-ultra/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-the-border",
+  "name": "The Border",
+  "city": "",
+  "state": "Rajasthan",
+  "zone": "North",
+  "dateText": "17-18 Dec 2026",
+  "month": "2026-12",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/the-border/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "hellrace-race-detail",
+  "name": "Race Detail→",
+  "city": "",
+  "state": "Himachal Pradesh",
+  "zone": "North",
+  "dateText": "29-30 May 2027",
+  "month": "2027-05",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/bir-running-festival/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
+  ]
+ },
+ {
+  "id": "ladakh-khardung-la-challenge",
+  "name": "Khardung La Challenge",
+  "city": "Leh",
+  "state": "Ladakh",
+  "zone": "North",
+  "dateText": "11 Sep 2026",
+  "month": "2026-09",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://ladakhmarathon.com/races/khardung-la-challenge/",
+  "certification": "",
+  "note": "Ladakh Marathon organiser site listing; distances per the race pages.",
+  "lastChecked": "Checked 11 Nov 2026 on ladakhmarathon.com",
+  "source": "ladakhmarathon.com",
+  "sources": [
+   "ladakhmarathon.com"
+  ]
+ },
+ {
+  "id": "ladakh-silk-route-ultra",
+  "name": "Silk Route Ultra",
+  "city": "Leh",
+  "state": "Ladakh",
+  "zone": "North",
+  "dateText": "10 Sep 2026",
+  "month": "2026-09",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://ladakhmarathon.com/races/silk-route-ultra/",
+  "certification": "",
+  "note": "Ladakh Marathon organiser site listing; distances per the race pages.",
+  "lastChecked": "Checked 11 Nov 2026 on ladakhmarathon.com",
+  "source": "ladakhmarathon.com",
+  "sources": [
+   "ladakhmarathon.com"
+  ]
+ },
+ {
+  "id": "pangong-pangong-frozen-lake-marathon",
+  "name": "Pangong Frozen Lake Marathon",
+  "city": "Pangong Tso",
+  "state": "Ladakh",
+  "zone": "North",
+  "dateText": "24 Feb 2026",
+  "month": "2026-02",
+  "scope": "india",
+  "distances": [
+   "Half",
+   "Full"
+  ],
+  "url": "https://pangongfrozenlakemarathon.com/pangong-frozen-lake-marathon/",
+  "certification": "",
+  "note": "Organiser site listing; distances per the race pages.",
+  "lastChecked": "Checked 11 Nov 2026 on pangongfrozenlakemarathon.com",
+  "source": "pangongfrozenlakemarathon.com",
+  "sources": [
+   "pangongfrozenlakemarathon.com"
+  ]
+ },
+ {
+  "id": "pangong-pangong-ice-ultra",
+  "name": "Pangong Ice Ultra",
+  "city": "Pangong Tso",
+  "state": "Ladakh",
+  "zone": "North",
+  "dateText": "24 Feb 2027",
+  "month": "2027-02",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://pangongfrozenlakemarathon.com/pangong-ice-ultra/",
+  "certification": "",
+  "note": "Organiser site listing; distances per the race pages.",
+  "lastChecked": "Checked 11 Nov 2026 on pangongfrozenlakemarathon.com",
+  "source": "pangongfrozenlakemarathon.com",
+  "sources": [
+   "pangongfrozenlakemarathon.com"
+  ]
  }
 ]

@@ -1,11 +1,17 @@
 {
- "fetchedAt": "2026-11-11T17:09:58.231Z",
- "races": 57,
+ "fetchedAt": "2026-11-11T17:37:57.114Z",
+ "races": 218,
  "sources": [
   "punerunners.com/races",
   "aims-worldrunning.org India directory",
+  "indiarunning.com listings",
+  "geeksonfeet.com race calendar",
+  "thehellrace.com calendar",
+  "ladakhmarathon.com",
+  "pangongfrozenlakemarathon.com",
+  "procam.in event sites",
   "Eventforce / Fitistan registration pages (fees & categories)"
  ],
- "runUrl": "https://github.com/puneafterhours/marathonindia/actions/runs/43065353908",
+ "runUrl": "",
  "connectorErrors": []
 }

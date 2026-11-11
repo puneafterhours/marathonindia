@@ -124,6 +124,14 @@
       btn.classList.add('is-on');
       state.zone = btn.getAttribute('data-zone');
       state.st = ''; state.citySel = '';
+      // A zone choice is an all-India view: drop the Pune-first city filter
+      // and reflect that on the city chips, otherwise the list goes empty.
+      if (state.city !== 'all') {
+        state.city = 'all';
+        document.querySelectorAll('[data-city]').forEach(function (b) {
+          b.classList.toggle('is-on', b.getAttribute('data-city') === 'all');
+        });
+      }
       refreshFilterOptions();
       render();
     });
