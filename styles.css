@@ -1,0 +1,142 @@
+/* MarathonIndia theme, matched to punerunners.com/races tokens */
+:root {
+  --cream: #FBF4E6;
+  --surface: #FFFBF3;
+  --soft-ash: #E9E1D2;
+  --ink: #1E1A17;
+  --ash: #6F6A64;
+  --maroon: #7A1F2B;
+  --maroon-hover: #5E1720;
+  --saffron: #F28C28;
+  --radius: 16px;
+  --gutter: 28px;
+  --display-slant: -8deg;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* Hero */
+.top {
+  max-width: 1180px; margin: 0 auto; padding: 56px var(--gutter) 24px;
+  position: relative;
+}
+.brand {
+  font-family: Anton, Impact, sans-serif; font-weight: 400;
+  color: var(--maroon);
+  transform: skewX(var(--display-slant));
+  font-size: clamp(44px, 7vw, 84px);
+  line-height: 1.02; letter-spacing: .005em;
+  margin: 0 0 10px;
+}
+.brand::before {
+  content: ""; display: inline-block; width: 30px; height: 8px;
+  background: var(--saffron); border-radius: 4px; margin-right: 18px;
+  vertical-align: middle; transform: translateY(-14px);
+}
+.brand-accent { color: var(--saffron); }
+.tagline { max-width: 640px; color: var(--ash); font-size: 18px; margin: 0; }
+
+/* Filter controls */
+.controls {
+  max-width: 1180px; margin: 18px auto 0; padding: 20px var(--gutter);
+  background: var(--surface);
+  border-top: 1px solid var(--soft-ash);
+  border-bottom: 1px solid var(--soft-ash);
+  position: sticky; top: 0; z-index: 50;
+}
+.city-row { display: flex; gap: 10px; margin-bottom: 14px; }
+.chip {
+  border: 1.5px solid var(--soft-ash); background: var(--cream); color: var(--ink);
+  border-radius: 999px; padding: 9px 18px; font-weight: 700; font-size: 14px; cursor: pointer;
+  font-family: inherit;
+}
+.chip:hover { border-color: var(--maroon); color: var(--maroon); }
+.chip.is-on { background: var(--maroon); border-color: var(--maroon); color: #fff; }
+
+.filter-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: flex-end; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field > span {
+  font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ash);
+}
+.field select {
+  font-family: inherit; font-size: 15px; font-weight: 600; color: var(--ink);
+  background: var(--cream); border: 1.5px solid var(--soft-ash); border-radius: 999px;
+  padding: 9px 38px 9px 16px; cursor: pointer; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A1F2B' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 15px center;
+}
+.field select:focus { outline: none; border-color: var(--maroon); }
+.field--check { flex-direction: row; align-items: center; gap: 9px; padding-bottom: 10px; }
+.field--check input { width: 18px; height: 18px; accent-color: var(--maroon); }
+.field--check span { font-size: 14px; font-weight: 600; color: var(--ink); text-transform: none; letter-spacing: 0; }
+
+.search {
+  width: 100%; margin-top: 14px; font-family: inherit; font-size: 16px;
+  padding: 13px 20px; border-radius: 999px;
+  border: 1.5px solid var(--soft-ash); background: var(--cream); color: var(--ink);
+}
+.search:focus { outline: none; border-color: var(--maroon); }
+.search::placeholder { color: var(--ash); }
+
+/* Race list */
+main { max-width: 1180px; margin: 0 auto; padding: 26px var(--gutter) 10px; }
+.count { color: var(--ash); font-size: 14px; margin: 0 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 22px; }
+.card {
+  background: var(--surface); border: 1px solid var(--soft-ash); border-radius: var(--radius);
+  padding: 20px 22px; display: flex; flex-direction: column; gap: 10px;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.card:hover { border-color: var(--maroon); box-shadow: 0 6px 18px rgba(122,31,43,.10); }
+.card__date {
+  align-self: flex-start;
+  background: var(--cream); border: 1px solid var(--soft-ash); border-radius: 10px;
+  font-family: Anton, Impact, sans-serif; color: var(--maroon);
+  font-size: 15px; letter-spacing: .03em; padding: 6px 12px;
+}
+.card__name { font-size: 19px; font-weight: 700; line-height: 1.25; color: var(--ink); }
+.card__place { color: var(--ash); font-size: 14px; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.tag {
+  font-size: 12.5px; font-weight: 700; padding: 4px 11px; border-radius: 999px;
+  background: var(--soft-ash); color: var(--ink);
+}
+.tag--cert { background: #f8d9d4; color: var(--maroon); }
+.card__cert { margin: 0; color: var(--ash); font-size: 13.5px; }
+.card__discount { margin: 0; color: #6b4100; font-size: 13.5px; font-weight: 600; }
+.card__checked { margin: 0; color: var(--ash); font-size: 12.5px; }
+.card__actions { margin-top: auto; padding-top: 6px; }
+.action {
+  display: inline-block; cursor: pointer;
+  background: var(--maroon); color: #fff; border-radius: 999px;
+  padding: 10px 20px; font-weight: 700; font-size: 14px;
+}
+.action::after { content: " \2197"; }
+.action:hover { background: var(--maroon-hover); }
+
+.empty { color: var(--ash); text-align: center; padding: 40px 0; }
+
+.foot {
+  max-width: 1180px; margin: 30px auto 0; padding: 24px var(--gutter) 42px;
+  border-top: 1px solid var(--soft-ash);
+  color: var(--ash); font-size: 13.5px;
+}
+.foot p { max-width: 760px; }
+
+@media (max-width: 640px) {
+  :root { --gutter: 18px; }
+  .top { padding-top: 38px; }
+  .filter-row { gap: 10px; }
+}
+.card__fees { margin: 0; color: var(--ink); font-size: 14px; font-weight: 700; }
+.card__gst { margin: 0; color: #6b4100; font-size: 13px; }
+.card__req { margin: 0; color: var(--ash); font-size: 13.5px; }

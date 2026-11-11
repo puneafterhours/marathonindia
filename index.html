@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="description" content="MarathonIndia - India's running race calendar. Every race we can find, Pune first, with certification shown by its evidence.">
+<title>MarathonIndia - India's race calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+<header class="top">
+  <h1 class="brand">Marathon<span class="brand-accent">India</span></h1>
+  <p class="tagline">India's running race calendar. Certification shown by its evidence, never a blanket badge.</p>
+</header>
+
+<nav class="controls" aria-label="Filters">
+  <div class="city-row" role="group" aria-label="City">
+    <button class="chip is-on" data-city="Pune">Pune first</button>
+    <button class="chip" data-city="all">All India</button>
+  </div>
+  <div class="filter-row">
+    <label class="field">
+      <span>State</span>
+      <select id="f-state"><option value="">Every state</option></select>
+    </label>
+    <label class="field">
+      <span>City</span>
+      <select id="f-city"><option value="">Every city</option></select>
+    </label>
+    <label class="field">
+      <span>Distance</span>
+      <select id="f-dist">
+        <option value="">Any distance</option>
+        <option>5K</option><option>10K</option><option>Half</option>
+        <option>Full</option><option>Ultra</option><option>Trail</option>
+      </select>
+    </label>
+    <label class="field field--check">
+      <input type="checkbox" id="f-cert">
+      <span>With certification</span>
+    </label>
+  </div>
+  <input id="f-search" class="search" type="search" placeholder="Search a race" aria-label="Search a race">
+</nav>
+
+<main>
+  <p id="count" class="count" role="status"></p>
+  <section id="races" class="grid" aria-label="Races"></section>
+  <p id="empty" class="empty" hidden>No races match these filters yet. Coverage grows as sources are checked.</p>
+</main>
+
+<footer class="foot">
+  <p>Race data is community-maintained from official sources, each race with its own last-checked date.
+  Fees and GST treatment are confirmed on the organiser's registration page before paying.</p>
+</footer>
+
+<script src="app.js?v=5"></script>
+</body>
+</html>
