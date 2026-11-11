@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var state = { city: 'Pune', zone: '', st: '', dist: '', certOnly: false, q: '', when: '' };
+  var state = { city: 'Pune', zone: '', st: '', dist: '', certOnly: false, q: '', when: '', sport: '' };
   var races = [];
 
   var el = {
@@ -53,6 +53,7 @@
   }
 
   function matches(r) {
+    if (state.sport && (r.sport || 'run') !== state.sport) return false;
     if (state.when === 'weekend') {
       var rd = raceDate(r), w = thisWeekend();
       if (!rd || rd < w[0] || rd > w[1]) return false;
@@ -179,6 +180,14 @@
       });
     });
   })();
+  document.querySelectorAll('[data-sport]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('[data-sport]').forEach(function (b) { b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      state.sport = btn.getAttribute('data-sport');
+      render();
+    });
+  });
   document.querySelectorAll('[data-zone]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       document.querySelectorAll('[data-zone]').forEach(function (b) { b.classList.remove('is-on'); });

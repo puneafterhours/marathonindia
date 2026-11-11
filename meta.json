@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-11-11T17:48:33.837Z",
- "races": 219,
+ "fetchedAt": "2026-11-11T18:22:41.241Z",
+ "races": 226,
  "sources": [
   "punerunners.com/races",
   "aims-worldrunning.org India directory",
@@ -12,6 +12,6 @@
   "procam.in event sites",
   "Eventforce / Fitistan registration pages (fees & categories)"
  ],
- "runUrl": "https://github.com/puneafterhours/marathonindia/actions/runs/43071513311",
+ "runUrl": "",
  "connectorErrors": []
 }

@@ -370,6 +370,49 @@ async function fetchProcam() {
   return races;
 }
 
+
+// --- Connector 9: Indian triathlon + road cycling events (official organiser sites) ---
+// Sport-tagged events: triathlon (swim/bike/run) and road cycling. Dates come
+// from each official page (schema.org startDate when present, else visible
+// date text); past editions are marked, next-edition dates never guessed.
+async function fetchMultisport() {
+  const defs = [
+    { url: 'https://www.ironman.com/races/im703-goa', name: 'IRONMAN 70.3 Goa', city: 'Goa', state: 'Goa',
+      sport: 'triathlon', distances: ['70.3 Triathlon'], legs: '1.9K swim - 90K bike - 21.1K run',
+      dateRe: /"startDate":\s*"(\d{4})-(\d{2})-(\d{2})/ },
+    { url: 'https://www.ironman.com/races/im703-amdavad', name: 'IRONMAN 70.3 Amdavad', city: 'Ahmedabad', state: 'Gujarat',
+      sport: 'triathlon', distances: ['70.3 Triathlon'], legs: '1.9K swim - 90K bike - 21.1K run',
+      dateRe: /"startDate":\s*"(\d{4})-(\d{2})-(\d{2})/ },
+    { url: 'https://bergmanindia.com/races/bmpo2026', name: 'Bergman Ozar Triathlon', city: 'Pune', state: 'Maharashtra',
+      sport: 'triathlon', distances: ['Triathlon'], legs: 'Swim - bike - run, sprint and Olympic distances per the race page' },
+    { url: 'https://www.lssports.in/zuuperman-triathlon-2027', name: 'Zuuperman Triathlon Series', city: 'Ahmedabad', state: 'Gujarat',
+      sport: 'triathlon', distances: ['Triathlon'], legs: 'Swim - bike - run, distances per the race page' },
+    { url: 'https://punegrandtour.in/', name: 'Bajaj Pune Grand Tour', city: 'Pune', state: 'Maharashtra',
+      sport: 'cycling', distances: ['Stage race'], legs: 'UCI stage race' },
+  ];
+  const races = [];
+  for (const d of defs) {
+    try {
+      const raw = await getText(d.url);
+      let dt = null;
+      if (d.dateRe) {
+        const m = raw.match(d.dateRe);
+        if (m) dt = { y: +m[1], m: +m[2], d: m[3], label: `${+m[3]} ${MONTHS[+m[2] - 1]} ${m[1]}` };
+      }
+      if (!dt) dt = extractDate(strip(raw));
+      races.push({
+        id: d.sport.slice(0, 3) + '-' + slug(d.name), name: d.name, city: d.city, state: d.state, zone: S2Z[d.state] || '',
+        sport: d.sport,
+        dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+        scope: scopeFor(d.city, []), distances: d.distances, url: d.url, certification: '',
+        note: (d.legs ? d.legs + '. ' : '') + 'Official event site; date per the event page.',
+        lastChecked: `Checked ${TODAY} on ${new URL(d.url).hostname}`, source: new URL(d.url).hostname,
+      });
+    } catch (e) { /* skip single event failures */ }
+  }
+  return races;
+}
+
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
 
 const races = JSON.parse(readFileSync('races.json', 'utf8'));
@@ -474,6 +517,7 @@ const CONNECTORS = [
   ['ladakhmarathon', fetchLadakhMarathon],
   ['pangongfrozenlake', fetchPangong],
   ['procam', fetchProcam],
+  ['multisport', fetchMultisport],
 ];
 for (const [label, fn] of CONNECTORS) {
   try { mergeExternal(races, await fn(), label); }

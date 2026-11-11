@@ -26,6 +26,22 @@ const INDIA_HTML_SOURCES = [
   // The Bridge marathon desk (cross-tagged running stories included).
   { name: 'The Bridge', url: 'https://thebridge.in/marathon', base: 'https://thebridge.in', linkRe: /href="(\/(?:marathon|sports-market|others|national-games)\/[a-z0-9-]+-\d{5})"/g, max: 12, filterRoad: true },
 ];
+// Indian Triathlon Federation news: no RSS; its /latest/news page embeds the
+// article list as JSON. Whole desk is triathlon, so no topic filter.
+async function readItfNews() {
+  const res = await fetch('https://www.triathlonindia.com/latest/news', { headers: { 'user-agent': 'MarathonIndiaFetcher/1.0 (+https://marathonindia.vercel.app)' } });
+  if (!res.ok) throw new Error(`ITF news: HTTP ${res.status}`);
+  // Next.js RSC payload: embedded JSON arrives with escaped quotes.
+  const html = (await res.text()).replace(/\\"/g, '"');
+  const items = [];
+  for (const m of html.matchAll(/\{"id":\d+,"slug":"([^"]+)","title":"((?:[^"\\]|\\.)*)","summary":"(?:[^"\\]|\\.)*","thumbnailUrl":[^,]+,"bodyHtml":"(?:[^"\\]|\\.)*","date":"([^"]+)"/g)) {
+    const d = new Date(m[3]);
+    if (!m[2] || isNaN(d)) continue;
+    items.push({ title: strip(m[2]), url: 'https://www.triathlonindia.com/latest/news/' + m[1], date: d.toISOString().slice(0, 10), published: d.toISOString(), source: 'Indian Triathlon Federation' });
+    if (items.length >= 10) break;
+  }
+  return items;
+}
 const GLOBAL_FEEDS = [
   { name: 'World Athletics', url: 'https://worldathletics.org/news/rss' },
   { name: 'Athletics Weekly', url: 'https://athleticsweekly.com/feed/' },
@@ -112,6 +128,8 @@ for (const s of INDIA_HTML_SOURCES) {
   try { india.push(...await readHtmlSource(s)); }
   catch (e) { errors.push(e.message); }
 }
+try { india.push(...await readItfNews()); }
+catch (e) { errors.push(e.message); }
 for (const f of GLOBAL_FEEDS) {
   try { global.push(...await readFeed(f, { filterRoad: true })); }
   catch (e) { errors.push(e.message); }
