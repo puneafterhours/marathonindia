@@ -33,7 +33,7 @@ jobs:
           git config user.name "PuneAfterhours"
           git config user.email "team@puneafterhours.local"
           git add races.json meta.json news.json
-          git diff --cached --quiet || git commit -m "Weekly fetch: race data update"
+          git diff --cached --quiet || git commit -m "Daily fetch: race data update"
           git push
       - name: Open an issue if the fetch failed
         if: failure()
