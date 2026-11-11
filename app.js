@@ -190,7 +190,14 @@
         ul.appendChild(li);
       });
     }
-    fill('news-india', 'news-india-empty', n.india || []);
+    // India items expire 7 days after their publisher timestamp, even
+    // between daily fetches, so nothing stale stays on view.
+    var freshCut = Date.now() - 7 * 86400000;
+    var indiaItems = (n.india || []).filter(function (it) {
+      var t = new Date(it.published || it.date).getTime();
+      return !isNaN(t) && t >= freshCut;
+    });
+    fill('news-india', 'news-india-empty', indiaItems);
     fill('news-global', 'news-global-empty', n.global || []);
   }).catch(function () {});
 

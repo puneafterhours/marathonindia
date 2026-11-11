@@ -1,115 +1,125 @@
 {
- "fetchedAt": "2026-11-11T17:56:43.680Z",
+ "fetchedAt": "2026-11-11T17:58:13.856Z",
  "note": "India items are running and triathlon coverage from Indian media, published within the last 7 days; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
- "india": [
-  {
-   "title": "Tata Mumbai Marathon ranks 21st globally, wins Economic Impact Award",
-   "url": "https://thebridge.in/sports-market/tata-mumbai-marathon-ranks-21st-globally-wins-economic-impact-award-58275",
-   "date": "2026-11-04",
-   "source": "The Bridge"
-  }
- ],
+ "india": [],
  "global": [
   {
    "title": "Josh Griffiths handed three-month ban",
    "url": "https://athleticsweekly.com/news/josh-griffiths-handed-three-month-ban-1040014073/",
    "date": "2026-11-11",
+   "published": "2026-11-11T14:40:03.000Z",
    "source": "Athletics Weekly"
   },
   {
    "title": "Run the Big Sur International Marathon With Runner’s World",
    "url": "https://www.runnersworld.com/races-places/a73874656/big-sur-marathon-runners-world-2027/",
    "date": "2026-11-10",
+   "published": "2026-11-10T14:00:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "853 Runners Were Disqualified From This Road Race. Many Broke the Same Starting-Line Rule.",
    "url": "https://www.runnersworld.com/news/a74390008/behobia-san-sebastian-disqualifications/",
    "date": "2026-11-10",
+   "published": "2026-11-10T21:08:44.000Z",
    "source": "Runner's World"
   },
   {
    "title": "Los Angeles 2028 qualifying: not for the faint-hearted",
    "url": "https://athleticsweekly.com/news/los-angeles-2028-qualifying-not-for-the-faint-hearted-1040014071/",
    "date": "2026-11-10",
+   "published": "2026-11-10T13:52:09.000Z",
    "source": "Athletics Weekly"
   },
   {
    "title": "Inspired by Fall Marathon Season? Here’s What You Need to Do to Prepare for 26.2",
    "url": "https://www.runnersworld.com/training/a74287251/how-to-prep-for-marathon-training/",
    "date": "2026-11-09",
+   "published": "2026-11-09T20:48:33.000Z",
    "source": "Runner's World"
   },
   {
    "title": "Don’t Get Locked Into a Spring or Fall Marathon Cycle. A Run Coach Explains Why You Should Race in Other Seasons.",
    "url": "https://www.runnersworld.com/training/a74205083/marathon-training-cycle-race-seasons/",
    "date": "2026-11-08",
+   "published": "2026-11-08T13:00:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "I Added 10 More Miles a Week to Marathon Training—and Seriously Felt the Difference at Mile 20. Here’s How to Do It Effectively.",
    "url": "https://www.runnersworld.com/training/a74361142/increase-weekly-mileage-marathon-durability/",
    "date": "2026-11-07",
+   "published": "2026-11-07T13:00:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "How to Master the Run/Walk Method: Train for a Marathon",
    "url": "https://www.runnersworld.com/training/a74230580/run-walk-program-marathon/",
    "date": "2026-11-07",
+   "published": "2026-11-07T14:30:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "How to Master the Run/Walk Method: Train for a Half Marathon",
    "url": "https://www.runnersworld.com/training/a74230567/run-walk-program-half-marathon/",
    "date": "2026-11-06",
+   "published": "2026-11-06T14:30:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "How Runner’s World Training Plans Helped Four Runners Crush the New York City Marathon",
    "url": "https://www.runnersworld.com/training/a74347282/nyc-marathon-training-plans/",
    "date": "2026-11-06",
+   "published": "2026-11-06T15:25:59.000Z",
    "source": "Runner's World"
   },
   {
    "title": "How to Master the Run/Walk Method: Train for a 5K & 10K",
    "url": "https://www.runnersworld.com/training/a74230422/run-walk-program-5k-10k/",
    "date": "2026-11-05",
+   "published": "2026-11-05T14:30:00.000Z",
    "source": "Runner's World"
   },
   {
    "title": "Our Prehistoric Ancestors Were Built for Endurance. In Today’s Increasingly Sedentary World, Could You Outrun Them?",
    "url": "https://www.runnersworld.com/about/a74333118/human-endurance-evolution-marathon/",
    "date": "2026-11-05",
+   "published": "2026-11-05T17:04:09.000Z",
    "source": "Runner's World"
   },
   {
    "title": "‘Relishing the Moment’: A Runner Ran 2:49 at the NYC Marathon—Dressed as a Hot Dog",
    "url": "https://www.runnersworld.com/news/a74346708/nyc-marathon-hot-dog-runner/",
    "date": "2026-11-05",
+   "published": "2026-11-05T20:22:09.000Z",
    "source": "Runner's World"
   },
   {
    "title": "After Training for My First Marathon, I Felt Like My Body Didn’t Look Like the Runner I Thought I’d Become. Experts Helped Me See Otherwise.",
    "url": "https://www.runnersworld.com/training/a74285076/marathon-training-body-image/",
    "date": "2026-11-04",
+   "published": "2026-11-04T21:56:14.000Z",
    "source": "Runner's World"
   },
   {
    "title": "World Mountain and Trail Running Championships 2023 awarded to Innsbruck and Stubai",
    "url": "https://worldathletics.org/news/news/world-mountain-and-trail-running-championship",
    "date": "2022-05-06",
+   "published": "2022-05-06T22:12:00.000Z",
    "source": "World Athletics"
   },
   {
    "title": "Abraham – from refugee to Olympic rings",
    "url": "https://worldathletics.org/news/feature/tadesse-abraham-world-refugee-day",
    "date": "2021-06-18",
+   "published": "2021-06-18T10:01:00.000Z",
    "source": "World Athletics"
   },
   {
    "title": "Rionoripo and Kipruto victorious in Prague",
    "url": "https://worldathletics.org/news/report/battle-teams-prague-2021-rionoripo-kipruto",
    "date": "2021-05-30",
+   "published": "2021-05-30T11:01:00.000Z",
    "source": "World Athletics"
   }
  ]

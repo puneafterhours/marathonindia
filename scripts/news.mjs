@@ -63,7 +63,7 @@ async function readFeed(feed, { filterRoad }) {
     const d = new Date(rawDate);
     if (!title || !link || isNaN(d)) continue;
     if (filterRoad && !ROAD_RE.test(title + ' ' + pick(body, 'description'))) continue;
-    items.push({ title, url: link, date: d.toISOString().slice(0, 10), source: feed.name });
+    items.push({ title, url: link, date: d.toISOString().slice(0, 10), published: d.toISOString(), source: feed.name });
     if (items.length >= MAX_PER_FEED) break;
   }
   return items;
@@ -96,7 +96,7 @@ async function readHtmlSource(src) {
       const d = new Date(rawDate);
       if (!title || isNaN(d)) continue;
       if (src.filterRoad && !ROAD_RE.test(title)) continue;
-      items.push({ title, url: src.base + path, date: d.toISOString().slice(0, 10), source: src.name });
+      items.push({ title, url: src.base + path, date: d.toISOString().slice(0, 10), published: d.toISOString(), source: src.name });
     } catch (e) { /* skip single article */ }
   }
   return items;
@@ -118,9 +118,11 @@ for (const f of GLOBAL_FEEDS) {
 }
 
 // Freshness rule (user-set): India items only if published within the last
-// INDIA_MAX_AGE_DAYS days. Missing dates never reach this list (dropped above).
-const cutoff = new Date(Date.now() - INDIA_MAX_AGE_DAYS * 86400000).toISOString().slice(0, 10);
-const indiaFresh = india.filter((i) => i.date >= cutoff);
+// INDIA_MAX_AGE_DAYS days, on the publisher's exact timestamp (rolling window,
+// not calendar days). Missing dates never reach this list (dropped above).
+// The same rule is enforced client-side in app.js so items expire between runs.
+const cutoffMs = Date.now() - INDIA_MAX_AGE_DAYS * 86400000;
+const indiaFresh = india.filter((i) => new Date(i.published).getTime() >= cutoffMs);
 
 const byDate = (a, b) => (a.date < b.date ? 1 : -1);
 indiaFresh.sort(byDate); global.sort(byDate);
@@ -132,5 +134,5 @@ writeFileSync('news.json', JSON.stringify({
   global: global.slice(0, 20),
 }, null, 1) + '\n');
 
-console.log(`news: india_fresh=${indiaFresh.length} (of ${india.length} matched, cutoff ${cutoff}) global=${global.length} errors=${errors.length}`);
+console.log(`news: india_fresh=${indiaFresh.length} (of ${india.length} matched, rolling ${INDIA_MAX_AGE_DAYS}d window) global=${global.length} errors=${errors.length}`);
 if (errors.length) console.error('NEWS CONNECTOR ERRORS:', errors);
