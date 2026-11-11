@@ -16,7 +16,11 @@ jobs:
         with:
           node-version: 20
       - name: Install headless Chromium for JS-rendered registration pages
-        run: npm init -y >/dev/null 2>&1; npm install playwright >/dev/null 2>&1 && npx playwright install --with-deps chromium
+        timeout-minutes: 15
+        run: |
+          sudo apt-get update
+          npm install playwright
+          npx playwright install --with-deps --only-shell chromium
       - name: Fetch sources and update races.json
         env:
           PLAYWRIGHT: '1'
