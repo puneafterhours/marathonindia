@@ -15,7 +15,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Install headless Chromium for JS-rendered registration pages
+        run: npm init -y >/dev/null 2>&1; npm install playwright >/dev/null 2>&1 && npx playwright install --with-deps chromium
       - name: Fetch sources and update races.json
+        env:
+          PLAYWRIGHT: '1'
         run: node scripts/fetch.mjs
       - name: Commit updated data
         run: |

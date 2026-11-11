@@ -6,6 +6,7 @@
 // Rules: manual fields (fees, gstNote, requirements, certTag) are never
 // overwritten. Unknown stays unknown. Conflicts are flagged in notes.
 import { readFileSync, writeFileSync } from 'node:fs';
+import { fetchFees } from './fees.mjs';
 
 const TODAY = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 const UA = 'MarathonIndiaFetcher/1.0 (+https://marathonindia.vercel.app)';
@@ -157,6 +158,7 @@ try {
   console.log(`aims: ${aims.length} listings, ${matched} matched, ${aimsAdded} added`);
 } catch (e) { errors.push('aims: ' + e.message); }
 
+try { await fetchFees(races); } catch (e) { errors.push('fees: ' + e.message); }
 if (errors.length) { console.error('CONNECTOR ERRORS:', errors); }
 writeFileSync('races.json', JSON.stringify(races, null, 1) + '\n');
 console.log('total races:', races.length);
