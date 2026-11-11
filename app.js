@@ -198,6 +198,14 @@
       document.querySelectorAll('[data-sport]').forEach(function (b) { b.classList.remove('is-on'); });
       btn.classList.add('is-on');
       state.sport = btn.getAttribute('data-sport');
+      // A sport choice is an all-India view: drop the Pune-first city filter,
+      // mirroring the zone chips, otherwise triathlon/cycling look empty.
+      if (state.sport && state.city !== 'all') {
+        state.city = 'all';
+        document.querySelectorAll('[data-city]').forEach(function (b) {
+          b.classList.toggle('is-on', b.getAttribute('data-city') === 'all');
+        });
+      }
       render();
     });
   });
