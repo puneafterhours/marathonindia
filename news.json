@@ -1,7 +1,56 @@
 {
- "fetchedAt": "2026-11-11T17:09:59.483Z",
+ "fetchedAt": "2026-11-11T17:46:50.947Z",
  "note": "India items are marathon and road-running coverage from Indian media; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
- "india": [],
+ "india": [
+  {
+   "title": "Vedanta Delhi Half Marathon 2026 In Numbers",
+   "url": "https://www.geeksonfeet.com/posts/vdhm-2026-in-numbers/",
+   "date": "2026-10-23",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "Training in the Age of AI",
+   "url": "https://www.geeksonfeet.com/posts/finding-next-percent-ai-coach/",
+   "date": "2026-10-22",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "Vedanta Delhi Half Marathon 2026 Route Preview",
+   "url": "https://www.geeksonfeet.com/posts/vdhm-2026-route-preview/",
+   "date": "2026-10-08",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "Pace the Race",
+   "url": "https://www.geeksonfeet.com/posts/finding-next-percent-pacing/",
+   "date": "2026-09-24",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "Wipro Bengaluru Marathon 2026 Route Preview",
+   "url": "https://www.geeksonfeet.com/posts/bengaluru-marathon-2026-route-preview/",
+   "date": "2026-09-21",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "How Mumbai Marathon runners train and spend?",
+   "url": "https://www.geeksonfeet.com/posts/tmm-2026-how-mumbai-runners-train-shop-and-spend/",
+   "date": "2026-09-14",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "NMDC Hyderabad Marathon 2026 In Numbers",
+   "url": "https://www.geeksonfeet.com/posts/nmdc-hyderabad-marathon-2026-in-numbers/",
+   "date": "2026-09-01",
+   "source": "Geeks on Feet"
+  },
+  {
+   "title": "NMDC Hyderabad Marathon 2026 Route Preview",
+   "url": "https://www.geeksonfeet.com/posts/hyderabad-marathon-route-preview-2026/",
+   "date": "2026-08-20",
+   "source": "Geeks on Feet"
+  }
+ ],
  "global": [
   {
    "title": "Josh Griffiths handed three-month ban",
@@ -64,6 +113,12 @@
    "source": "Runner's World"
   },
   {
+   "title": "How to Master the Run/Walk Method: Train for a 5K & 10K",
+   "url": "https://www.runnersworld.com/training/a74230422/run-walk-program-5k-10k/",
+   "date": "2026-11-05",
+   "source": "Runner's World"
+  },
+  {
    "title": "Our Prehistoric Ancestors Were Built for Endurance. In Today’s Increasingly Sedentary World, Could You Outrun Them?",
    "url": "https://www.runnersworld.com/about/a74333118/human-endurance-evolution-marathon/",
    "date": "2026-11-05",
@@ -76,16 +131,16 @@
    "source": "Runner's World"
   },
   {
-   "title": "No Medal, No Aid Stations, No Crowd: What a Solo Ironman Through a National Park Taught Me",
-   "url": "https://www.runnersworld.com/news/a74149613/solo-ironman-national-park/",
-   "date": "2026-11-04",
-   "source": "Runner's World"
-  },
-  {
    "title": "After Training for My First Marathon, I Felt Like My Body Didn’t Look Like the Runner I Thought I’d Become. Experts Helped Me See Otherwise.",
    "url": "https://www.runnersworld.com/training/a74285076/marathon-training-body-image/",
    "date": "2026-11-04",
    "source": "Runner's World"
+  },
+  {
+   "title": "World Mountain and Trail Running Championships 2023 awarded to Innsbruck and Stubai",
+   "url": "https://worldathletics.org/news/news/world-mountain-and-trail-running-championship",
+   "date": "2022-05-06",
+   "source": "World Athletics"
   },
   {
    "title": "Abraham – from refugee to Olympic rings",

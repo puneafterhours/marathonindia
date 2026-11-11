@@ -8,16 +8,23 @@ import { writeFileSync } from 'node:fs';
 
 const INDIA_FEEDS = [
   { name: 'Sportstar (The Hindu)', url: 'https://sportstar.thehindu.com/athletics/feeder/default.rss', filterRoad: true },
-  // General Indian sports desk, filtered down to marathon / road-running items.
+  // General Indian sports desks, filtered down to running / triathlon items.
   { name: 'Times of India Sports', url: 'https://timesofindia.indiatimes.com/rssfeeds/4719148.cms', filterRoad: true },
+  { name: 'The Bridge (athletics)', url: 'https://thebridge.in/athletics/feed', filterRoad: true },
+  { name: 'Khel Now', url: 'https://khelnow.com/feed', filterRoad: true },
+  // Geeks on Feet has no RSS; its /posts page is parsed instead (below).
+];
+const INDIA_HTML_SOURCES = [
+  { name: 'Geeks on Feet', url: 'https://www.geeksonfeet.com/posts', base: 'https://www.geeksonfeet.com', linkRe: /href="(\/posts\/[a-z0-9-]+\/)"/g, max: 8 },
 ];
 const GLOBAL_FEEDS = [
   { name: 'World Athletics', url: 'https://worldathletics.org/news/rss' },
   { name: 'Athletics Weekly', url: 'https://athleticsweekly.com/feed/' },
   { name: "Runner's World", url: 'https://www.runnersworld.com/rss/all.xml/' },
 ];
-// Marathon-topic match: marathon / half / ultra / road-race terms, not generic athletics.
-const ROAD_RE = /marathon|ultra(running|marathon)?|road race|road running/i;
+// India feed is running + triathlon focused (user-confirmed scope): marathon,
+// ultra, road/trail running, triathlon terms - not generic sports coverage.
+const ROAD_RE = /marathon|ultra(running|marathon)?|road race|road running|trail running|triathl|duathl|ironman|half marathon|long[- ]distance|\b(5|10|21|25|42|50|100)\s?k\s(run|race|marathon)?/i;
 const MAX_PER_FEED = 12;
 
 const strip = (s) => (s || '')
@@ -34,7 +41,7 @@ function pick(item, tag) {
 
 async function readFeed(feed, { filterRoad }) {
   const res = await fetch(feed.url, {
-    headers: { 'user-agent': 'Mozilla/5.0 (compatible; MarathonIndiaBot/1.0; +https://marathonindia.vercel.app)' },
+    headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36' },
   });
   if (!res.ok) throw new Error(`${feed.name}: HTTP ${res.status}`);
   const xml = await res.text();
@@ -53,10 +60,43 @@ async function readFeed(feed, { filterRoad }) {
   return items;
 }
 
+// HTML source reader (Geeks on Feet /posts): takes latest article links and
+// reads each article page for its date. Whole publication is running-focused,
+// so no topic filter.
+async function readHtmlSource(src) {
+  const res = await fetch(src.url, { headers: { 'user-agent': 'MarathonIndiaFetcher/1.0 (+https://marathonindia.vercel.app)' } });
+  if (!res.ok) throw new Error(`${src.name}: HTTP ${res.status}`);
+  const html = await res.text();
+  const seen = new Set(); const links = [];
+  for (const m of html.matchAll(src.linkRe)) {
+    if (seen.has(m[1])) continue;
+    seen.add(m[1]); links.push(m[1]);
+    if (links.length >= src.max) break;
+  }
+  const items = [];
+  for (const path of links) {
+    try {
+      const pr = await fetch(src.base + path, { headers: { 'user-agent': 'MarathonIndiaFetcher/1.0 (+https://marathonindia.vercel.app)' } });
+      if (!pr.ok) continue;
+      const page = await pr.text();
+      const title = strip((page.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [])[1] || (page.match(/<title[^>]*>([\s\S]*?)<\/title>/) || [])[1] || '');
+      const rawDate = (page.match(/datetime="([^"]+)"/) || [])[1] || (page.match(/(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s*,?\s*20\d{2})/i) || [])[1] || '';
+      const d = new Date(rawDate);
+      if (!title || isNaN(d)) continue;
+      items.push({ title, url: src.base + path, date: d.toISOString().slice(0, 10), source: src.name });
+    } catch (e) { /* skip single article */ }
+  }
+  return items;
+}
+
 const errors = [];
 const india = [], global = [];
 for (const f of INDIA_FEEDS) {
   try { india.push(...await readFeed(f, { filterRoad: !!f.filterRoad })); }
+  catch (e) { errors.push(e.message); }
+}
+for (const s of INDIA_HTML_SOURCES) {
+  try { india.push(...await readHtmlSource(s)); }
   catch (e) { errors.push(e.message); }
 }
 for (const f of GLOBAL_FEEDS) {
