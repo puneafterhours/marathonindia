@@ -250,12 +250,14 @@
     var el = document.getElementById('data-status');
     if (!el) return;
     var d = new Date(m.fetchedAt);
-    var when = isNaN(d) ? '' : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+    var when = isNaN(d) ? '' : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' })
+      + ', ' + d.toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' }) + ' IST';
     el.textContent = '';
     var dot = document.createElement('span');
     dot.className = 'data-status__dot';
     el.appendChild(dot);
-    el.appendChild(document.createTextNode('Updated automatically ' + when + ' from live sources: ' + (m.upcoming || m.races) + ' upcoming races shown (' + m.races + ' records tracked, past editions hidden). '));
+    // runUrl is set only by the scheduled workflow; manual data refreshes say "Updated".
+    el.appendChild(document.createTextNode((m.runUrl ? 'Updated automatically ' : 'Updated ') + when + ' from live sources: ' + (m.upcoming || m.races) + ' upcoming races shown (' + m.races + ' records tracked, past editions hidden). '));
     if (m.runUrl) {
       var a = document.createElement('a');
       a.href = m.runUrl; a.textContent = 'Latest fetch run'; a.target = '_blank'; a.rel = 'noopener';
