@@ -117,7 +117,9 @@ try {
         }
         cur.distances = p.distances; changed = true;
       }
-      if (!/Fees and requirements checked/.test(cur.lastChecked || '')) cur.lastChecked = `Checked ${TODAY} against punerunners.com/races`;
+      // Never restamp: the existing checked date reflects when the underlying
+      // fields (esp. certification) were actually verified at the source.
+      if (!cur.lastChecked) cur.lastChecked = `Calendar entry seen ${TODAY} on punerunners.com/races`;
       if (changed) updated++;
     }
   }
