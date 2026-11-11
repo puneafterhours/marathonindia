@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-11T17:06:45.854Z",
+ "fetchedAt": "2026-11-11T17:08:28.421Z",
  "note": "India items are marathon and road-running coverage from Indian media; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
  "india": [],
  "global": [
@@ -20,12 +20,6 @@
    "url": "https://www.runnersworld.com/news/a74390008/behobia-san-sebastian-disqualifications/",
    "date": "2026-11-10",
    "source": "Runner's World"
-  },
-  {
-   "title": "Phillipa Williams back in business as Steve Buckle impresses",
-   "url": "https://athleticsweekly.com/news/phillipa-williams-back-in-business-as-steve-buckle-impresses-1040014055/",
-   "date": "2026-11-10",
-   "source": "Athletics Weekly"
   },
   {
    "title": "Los Angeles 2028 qualifying: not for the faint-hearted",
@@ -70,12 +64,6 @@
    "source": "Runner's World"
   },
   {
-   "title": "How to Master the Run/Walk Method: Train for a 5K & 10K",
-   "url": "https://www.runnersworld.com/training/a74230422/run-walk-program-5k-10k/",
-   "date": "2026-11-05",
-   "source": "Runner's World"
-  },
-  {
    "title": "Our Prehistoric Ancestors Were Built for Endurance. In Today’s Increasingly Sedentary World, Could You Outrun Them?",
    "url": "https://www.runnersworld.com/about/a74333118/human-endurance-evolution-marathon/",
    "date": "2026-11-05",
@@ -85,6 +73,12 @@
    "title": "‘Relishing the Moment’: A Runner Ran 2:49 at the NYC Marathon—Dressed as a Hot Dog",
    "url": "https://www.runnersworld.com/news/a74346708/nyc-marathon-hot-dog-runner/",
    "date": "2026-11-05",
+   "source": "Runner's World"
+  },
+  {
+   "title": "No Medal, No Aid Stations, No Crowd: What a Solo Ironman Through a National Park Taught Me",
+   "url": "https://www.runnersworld.com/news/a74149613/solo-ironman-national-park/",
+   "date": "2026-11-04",
    "source": "Runner's World"
   },
   {

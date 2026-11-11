@@ -16,7 +16,8 @@ const GLOBAL_FEEDS = [
   { name: 'Athletics Weekly', url: 'https://athleticsweekly.com/feed/' },
   { name: "Runner's World", url: 'https://www.runnersworld.com/rss/all.xml/' },
 ];
-const ROAD_RE = /marathon|half marathon|road race|road running|10k|25k|ultra/i;
+// Marathon-topic match: marathon / half / ultra / road-race terms, not generic athletics.
+const ROAD_RE = /marathon|ultra(running|marathon)?|road race|road running/i;
 const MAX_PER_FEED = 12;
 
 const strip = (s) => (s || '')
