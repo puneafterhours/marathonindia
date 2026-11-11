@@ -521,7 +521,58 @@ function mergeExternal(races, found, label) {
   console.log(`${label}: ${found.length} listings, ${matched} merged, ${added} added`);
 }
 
+// --- Connector: district.in sports genre pages (server-rendered ld+json event lists) ---
+// Public per-city sports listings. Only endurance races are kept; ticketed-only
+// source, so absence here is not absence in India.
+async function fetchDistrict() {
+  const CITIES = [
+    ['mumbai', 'Mumbai', 'Maharashtra'], ['navi-mumbai', 'Navi Mumbai', 'Maharashtra'],
+    ['thane', 'Thane', 'Maharashtra'], ['pune', 'Pune', 'Maharashtra'], ['nagpur', 'Nagpur', 'Maharashtra'],
+    ['bengaluru', 'Bengaluru', 'Karnataka'], ['chennai', 'Chennai', 'Tamil Nadu'],
+    ['coimbatore', 'Coimbatore', 'Tamil Nadu'], ['hyderabad', 'Hyderabad', 'Telangana'],
+    ['secunderabad', 'Secunderabad', 'Telangana'], ['kolkata', 'Kolkata', 'West Bengal'],
+    ['new-delhi', 'New Delhi', 'Delhi'], ['gurugram', 'Gurugram', 'Haryana'],
+    ['noida', 'Noida', 'Uttar Pradesh'], ['ghaziabad', 'Ghaziabad', 'Uttar Pradesh'],
+    ['lucknow', 'Lucknow', 'Uttar Pradesh'], ['ahmedabad', 'Ahmedabad', 'Gujarat'],
+    ['surat', 'Surat', 'Gujarat'], ['vadodara', 'Vadodara', 'Gujarat'],
+    ['jaipur', 'Jaipur', 'Rajasthan'], ['goa', 'Goa', 'Goa'], ['kochi', 'Kochi', 'Kerala'],
+    ['indore', 'Indore', 'Madhya Pradesh'], ['chandigarh', 'Chandigarh', 'Chandigarh'],
+  ];
+  const KEEP = /(marathon|ultra|trail run|running|\brun\b|triathlon|duathlon|aquathlon|cycling|cyclothon|cycle ride)/i;
+  const DROP = /(padel|chess|badminton|tennis|cricket|football|kabaddi|futsal|pickleball|racing|esports?|gaming|billiards|pool|snooker|darts|archery|shooting|boxing|mma|wrestling|golf|hockey|basketball|volleyball|squash|table tennis|skating|swimming|yoga|trek|hiking|walkathon)/i;
+  const races = [];
+  for (const [slugCity, city, state] of CITIES) {
+    try {
+      const raw = await getText(`https://www.district.in/events/sports-in-${slugCity}-book-tickets`);
+      for (const b of raw.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+        let j; try { j = JSON.parse(b[1]); } catch { continue; }
+        if (!j || j['@type'] !== 'ItemList') continue;
+        for (const li of j.itemListElement || []) {
+          const it = li.item || {};
+          const name = String(it.name || '').trim();
+          if (name.length < 4 || !KEEP.test(name) || DROP.test(name)) continue;
+          const sport = /triathlon/i.test(name) ? 'triathlon' : /(duathlon|aquathlon)/i.test(name) ? 'duathlon' : /cycl/i.test(name) ? 'cycling' : 'run';
+          const dm = String(it.startDate || '').match(/(\d{4})-(\d{2})-(\d{2})/);
+          const dt = dm ? { y: +dm[1], m: +dm[2], d: dm[3], label: `${+dm[3]} ${MONTHS[+dm[2] - 1]} ${dm[1]}` } : null;
+          const locCity = normCity((it.location && it.location.address && it.location.address.addressLocality) || city);
+          races.push({
+            id: 'dis-' + slug(name) + '-' + (dt ? `${dt.y}${String(dt.m).padStart(2, '0')}${dt.d}` : 'tbc'),
+            name, city: locCity, state: normState(locCity) || state, zone: S2Z[normState(locCity) || state] || '',
+            sport,
+            dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+            scope: scopeFor(locCity, []), distances: [], url: it.url || '', certification: '',
+            note: 'Ticketed on District; details per the event page.',
+            lastChecked: `Checked ${TODAY} on district.in`, source: 'district.in',
+          });
+        }
+      }
+    } catch (e) { /* skip single city failures */ }
+  }
+  return races;
+}
+
 const CONNECTORS = [
+  ['district', fetchDistrict],
   ['indiarunning', fetchIndiaRunning],
   ['geeksonfeet', fetchGeeksOnFeet],
   ['hellrace', fetchHellRace],

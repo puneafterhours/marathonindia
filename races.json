@@ -292,7 +292,7 @@
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 25K/10K to 2029",
@@ -483,7 +483,7 @@
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "South",
@@ -585,7 +585,7 @@
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "North",
@@ -2395,7 +2395,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "district.in"
   ]
  },
  {
@@ -3307,7 +3308,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "district.in"
   ]
  },
  {
@@ -3935,7 +3937,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "district.in"
   ]
  },
  {
@@ -4969,6 +4972,46 @@
   "source": "yoska.in",
   "sources": [
    "yoska.in"
+  ]
+ },
+ {
+  "id": "dis-mumbai-midnight-cycling-velocrush-20261113",
+  "name": "Mumbai Midnight Cycling | Velocrush",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "sport": "cycling",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.district.in/events/mumbai-midnight-cycling-velocrush-oct2-2026-buy-tickets",
+  "certification": "",
+  "note": "Ticketed on District; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on district.in",
+  "source": "district.in",
+  "sources": [
+   "district.in"
+  ]
+ },
+ {
+  "id": "dis-mumbai-midnight-cycling-thrillvana-20261113",
+  "name": "Mumbai Midnight Cycling - Thrillvana",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "zone": "West",
+  "sport": "cycling",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.district.in/events/mumbai-midnight-cycling-jul3-2026-buy-tickets",
+  "certification": "",
+  "note": "Ticketed on District; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on district.in",
+  "source": "district.in",
+  "sources": [
+   "district.in"
   ]
  }
 ]
