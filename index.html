@@ -60,12 +60,32 @@
   <section id="races" class="grid" aria-label="Races"></section>
   <p id="empty" class="empty" hidden>No races match these filters yet. Coverage grows as sources are checked.</p>
 </main>
+</div>
+
+<div id="tab-news" hidden>
+<section class="news" aria-label="Marathon news">
+  <h2 class="news__title">Marathon news</h2>
+  <p class="news__note" id="news-note">Fetched automatically from publisher feeds. Titles, links and dates are the publishers' own.</p>
+  <div class="news__cols">
+    <div class="news__col">
+      <h3>India</h3>
+      <ul id="news-india" class="news__list"></ul>
+      <p class="news__empty" id="news-india-empty" hidden>No India marathon stories in the current feeds. This fills in as publishers post.</p>
+    </div>
+    <div class="news__col">
+      <h3>Global</h3>
+      <ul id="news-global" class="news__list"></ul>
+      <p class="news__empty" id="news-global-empty" hidden>No global marathon stories right now.</p>
+    </div>
+  </div>
+</section>
+</div>
 
 <footer class="foot">
   <p>Race data is community-maintained from official sources, each race with its own last-checked date.
   Fees and GST treatment are confirmed on the organiser's registration page before paying.</p>
 </footer>
 
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

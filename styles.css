@@ -169,3 +169,39 @@ main { max-width: 1180px; margin: 0 auto; padding: 26px var(--gutter) 10px; }
 .card__gst { margin: 0; color: #6b4100; font-size: 13px; }
 .card__req { margin: 0; color: var(--ash); font-size: 13.5px; }
 .zone-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+
+/* News section */
+.news { max-width: 1180px; margin: 26px auto 0; padding: 26px var(--gutter) 10px; border-top: 1px solid var(--soft-ash); }
+.news__title {
+  font-family: Anton, Impact, sans-serif; font-weight: 400; color: var(--maroon);
+  transform: skewX(var(--display-slant)); font-size: clamp(26px, 3.4vw, 38px);
+  margin: 0 0 6px; letter-spacing: .01em;
+}
+.news__note { color: var(--ash); font-size: 13.5px; margin: 0 0 18px; }
+.news__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+@media (max-width: 720px) { .news__cols { grid-template-columns: 1fr; } }
+.news__col h3 {
+  font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--teal); margin: 0 0 10px;
+}
+.news__col:last-child h3 { color: var(--cobalt); }
+.news__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.news__list a { color: var(--ink); font-weight: 600; font-size: 15px; line-height: 1.35; text-decoration: none; }
+.news__list a:hover { color: var(--maroon); text-decoration: underline; }
+.news__meta { display: block; color: var(--ash); font-size: 12.5px; margin-top: 2px; }
+.news__empty { color: var(--ash); font-size: 14px; }
+
+/* Tabs */
+.tabs {
+  max-width: 1180px; margin: 26px auto 0; padding: 0 var(--gutter);
+  display: flex; gap: 10px;
+}
+.tab {
+  border: none; background: none; cursor: pointer; font-family: inherit;
+  font-weight: 800; font-size: 15px; letter-spacing: .02em; color: var(--ash);
+  padding: 10px 20px; border-radius: 12px 12px 0 0;
+  border-bottom: 3px solid transparent;
+}
+.tab:hover { color: var(--maroon); }
+.tab.is-on { color: var(--maroon); border-bottom-color: var(--saffron); background: var(--surface); }
+.tab[data-tab="news"].is-on { color: var(--teal); border-bottom-color: var(--teal); }

@@ -160,6 +160,43 @@
     }
   }).catch(function () {});
 
+  fetch('news.json', { cache: 'no-cache' }).then(function (res) { return res.ok ? res.json() : null; }).then(function (n) {
+    if (!n) return;
+    function fill(listId, emptyId, items) {
+      var ul = document.getElementById(listId);
+      if (!ul) return;
+      ul.innerHTML = '';
+      if (!items.length) {
+        var ep = document.getElementById(emptyId);
+        if (ep) ep.hidden = false;
+        return;
+      }
+      items.forEach(function (it) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = it.url; a.textContent = it.title; a.target = '_blank'; a.rel = 'noopener';
+        var meta = document.createElement('span');
+        meta.className = 'news__meta';
+        meta.textContent = it.source + ' \u00b7 ' + it.date;
+        li.appendChild(a); li.appendChild(meta);
+        ul.appendChild(li);
+      });
+    }
+    fill('news-india', 'news-india-empty', n.india || []);
+    fill('news-global', 'news-global-empty', n.global || []);
+  }).catch(function () {});
+
+  document.querySelectorAll('.tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (b) {
+        b.classList.toggle('is-on', b === btn);
+        b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+      });
+      document.getElementById('tab-races').hidden = btn.dataset.tab !== 'races';
+      document.getElementById('tab-news').hidden = btn.dataset.tab !== 'news';
+    });
+  });
+
   fetch('races.json', { cache: 'no-cache' })
     .then(function (res) { return res.json(); })
     .then(function (data) {

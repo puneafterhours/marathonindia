@@ -1,7 +1,7 @@
-name: Weekly race fetch
+name: Daily race fetch
 on:
   schedule:
-    - cron: '30 3 * * 1'   # Mondays 03:30 UTC = 09:00 IST
+    - cron: '30 6 * * *'   # Daily 06:30 UTC = 12:00 IST
   workflow_dispatch:
 
 permissions:
@@ -25,12 +25,14 @@ jobs:
       - name: Fetch sources and update races.json
         env:
           PLAYWRIGHT: '1'
-        run: node scripts/fetch.mjs
+        run: |
+          node scripts/fetch.mjs
+          node scripts/news.mjs
       - name: Commit updated data
         run: |
           git config user.name "PuneAfterhours"
           git config user.email "team@puneafterhours.local"
-          git add races.json meta.json
+          git add races.json meta.json news.json
           git diff --cached --quiet || git commit -m "Weekly fetch: race data update"
           git push
       - name: Open an issue if the fetch failed
@@ -41,7 +43,7 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: 'Weekly race fetch failed',
+              title: 'Daily race fetch failed',
               body: `The automatic race fetch failed. Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\nThe live site keeps serving the last good data until this is fixed.`,
             });
 
