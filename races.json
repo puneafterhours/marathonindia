@@ -4675,7 +4675,7 @@
   "city": "",
   "state": "Goa",
   "zone": "West",
-  "dateText": "08-09 Aug 2026",
+  "dateText": "08-09 Aug 2026 (last edition)",
   "month": "2026-08",
   "scope": "india ultra",
   "distances": [
@@ -4696,7 +4696,7 @@
   "city": "",
   "state": "Himachal Pradesh",
   "zone": "North",
-  "dateText": "10-11 Oct 2026",
+  "dateText": "10-11 Oct 2026 (last edition)",
   "month": "2026-10",
   "scope": "india ultra",
   "distances": [
@@ -4733,33 +4733,12 @@
   ]
  },
  {
-  "id": "hellrace-race-detail",
-  "name": "Race Detail→",
-  "city": "",
-  "state": "Himachal Pradesh",
-  "zone": "North",
-  "dateText": "29-30 May 2027",
-  "month": "2027-05",
-  "scope": "india ultra",
-  "distances": [
-   "Ultra"
-  ],
-  "url": "https://thehellrace.com/bir-running-festival/",
-  "certification": "",
-  "note": "The Hell Race organiser listing; venue per the race page.",
-  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
-  "source": "thehellrace.com",
-  "sources": [
-   "thehellrace.com"
-  ]
- },
- {
   "id": "ladakh-khardung-la-challenge",
   "name": "Khardung La Challenge",
   "city": "Leh",
   "state": "Ladakh",
   "zone": "North",
-  "dateText": "11 Sep 2026",
+  "dateText": "11 Sep 2026 (last edition)",
   "month": "2026-09",
   "scope": "india ultra",
   "distances": [
@@ -4780,7 +4759,7 @@
   "city": "Leh",
   "state": "Ladakh",
   "zone": "North",
-  "dateText": "10 Sep 2026",
+  "dateText": "10 Sep 2026 (last edition)",
   "month": "2026-09",
   "scope": "india ultra",
   "distances": [
@@ -4801,7 +4780,7 @@
   "city": "Pangong Tso",
   "state": "Ladakh",
   "zone": "North",
-  "dateText": "24 Feb 2026",
+  "dateText": "24 Feb 2026 (last edition)",
   "month": "2026-02",
   "scope": "india",
   "distances": [

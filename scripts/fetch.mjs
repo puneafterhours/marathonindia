@@ -137,6 +137,12 @@ function mapDistances(list) {
   }
   return [...new Set(out)];
 }
+const TODAY_UTC = new Date().toISOString().slice(0, 10);
+function pastMark(dt) {
+  if (!dt || !dt.d) return dt ? ' (date to be confirmed for the next edition)' : '';
+  const key = `${dt.y}-${String(dt.m).padStart(2, '0')}-${String(dt.d).padStart(2, '0')}`;
+  return key < TODAY_UTC ? ' (last edition)' : '';
+}
 function extractDate(text) {
   // "17 th January 2027", "13 September 2026", "02-03 Aug 2025"
   let m = text.match(/(\d{1,2})(?:st|nd|rd|th)?\s*[-–]\s*(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?[ ,]*\s*(20\d{2})/i);
@@ -254,6 +260,7 @@ async function fetchHellRace() {
       const url = m[1], label = strip(m[2]);
       if (/contact|privacy|terms|return|sitemap|press|partner|volunteer|results|\/races\/?$/.test(url)) continue;
       if (url.replace(/\/$/, '') === 'https://thehellrace.com') continue;
+      if (/^(race detail|read more|register|view|result)/i.test(label) || label.length < 4) continue;
       if (!links.has(url.replace(/\/$/, ''))) links.set(url.replace(/\/$/, ''), { url, label });
     }
   }
@@ -267,7 +274,7 @@ async function fetchHellRace() {
       races.push({
         id: 'hellrace-' + slug(l.label), name: titleCase(l.label),
         city: '', state, zone: S2Z[state] || '',
-        dateText: dt ? dt.label : 'Date to be confirmed',
+        dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed',
         month: dt ? monthKey(dt.y, dt.m) : '',
         scope: scopeFor('', ['Ultra']), distances: ['Ultra'],
         url: l.url, certification: '',
@@ -297,7 +304,7 @@ async function fetchLadakhMarathon() {
       let r = byName.get(d.name);
       if (!r) {
         r = { id: 'ladakh-' + slug(d.name), name: d.name, city: 'Leh', state: 'Ladakh', zone: S2Z['Ladakh'],
-          dateText: dt ? dt.label : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+          dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
           scope: 'india ultra', distances: [], url: d.url, certification: '',
           note: 'Ladakh Marathon organiser site listing; distances per the race pages.',
           lastChecked: `Checked ${TODAY} on ladakhmarathon.com`, source: 'ladakhmarathon.com' };
@@ -328,7 +335,7 @@ async function fetchPangong() {
       const dt = extractDate(page);
       races.push({
         id: 'pangong-' + slug(d.name), name: d.name, city: 'Pangong Tso', state: 'Ladakh', zone: S2Z['Ladakh'],
-        dateText: dt ? dt.label : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+        dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
         scope: scopeFor('Pangong Tso', d.dists), distances: d.dists, url: d.url, certification: '',
         note: 'Organiser site listing; distances per the race pages.',
         lastChecked: `Checked ${TODAY} on pangongfrozenlakemarathon.com`, source: 'pangongfrozenlakemarathon.com',
@@ -353,7 +360,7 @@ async function fetchProcam() {
       const dt = extractDate(page);
       races.push({
         id: 'procam-' + slug(d.name), name: d.name, city: d.city, state: d.state, zone: S2Z[d.state],
-        dateText: dt ? dt.label : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+        dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
         scope: scopeFor(d.city, d.dists), distances: d.dists, url: d.url, certification: '',
         note: 'Procam International event site; date per the event homepage.',
         lastChecked: `Checked ${TODAY} on procam.in event site`, source: 'procam.in',
