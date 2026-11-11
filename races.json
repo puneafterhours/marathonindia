@@ -292,7 +292,7 @@
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "A Procam race.",
+  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 25K/10K to 2029",
@@ -483,7 +483,7 @@
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify.",
+  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "South",
@@ -585,7 +585,7 @@
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify.",
+  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "North",
@@ -4815,6 +4815,51 @@
   "source": "pangongfrozenlakemarathon.com",
   "sources": [
    "pangongfrozenlakemarathon.com"
+  ]
+ },
+ {
+  "id": "ir-ekal_run_52496",
+  "name": "EKAL RUN",
+  "city": "Godrej Waterside Building",
+  "state": "West Bengal",
+  "zone": "East",
+  "dateText": "9 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K",
+   "21.1K"
+  ],
+  "url": "https://indiarunning.com/event/ekal_run_52496",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: FTS Foundation).",
+  "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "hellrace-ghrf",
+  "name": "GHRF",
+  "city": "",
+  "state": "Himachal Pradesh",
+  "zone": "North",
+  "dateText": "27 Jun 2027",
+  "month": "2027-06",
+  "scope": "india ultra",
+  "distances": [
+   "Ultra"
+  ],
+  "url": "https://thehellrace.com/great-himalayan-running-festival/",
+  "certification": "",
+  "note": "The Hell Race organiser listing; venue per the race page.",
+  "lastChecked": "Checked 11 Nov 2026 on thehellrace.com",
+  "source": "thehellrace.com",
+  "sources": [
+   "thehellrace.com"
   ]
  }
 ]
