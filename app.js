@@ -27,6 +27,15 @@
     if (!m) return null;
     return new Date(Number(m[3]), MONTHS.indexOf(m[2].slice(0, 3)), Number(m[1]));
   }
+  // End of event (ranges use their last day); events expire at end of day IST.
+  function raceEndDate(r) {
+    var t = r.dateText || '';
+    var m = t.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+    if (m) { var e = new Date(Number(m[4]), MONTHS.indexOf(m[3].slice(0, 3)), Number(m[2])); e.setHours(23, 59, 59, 999); return e; }
+    var s = raceDate(r);
+    if (s) s.setHours(23, 59, 59, 999);
+    return s;
+  }
 
   // Next calendar month / next calendar quarter as YYYY-MM keys, computed
   // from today so labels and filtering stay correct over time.
@@ -53,6 +62,10 @@
   }
 
   function matches(r) {
+    // Past editions stay in the data but are not shown; undated races
+    // (next edition to be confirmed) stay visible as unconfirmed.
+    var end = raceEndDate(r);
+    if (end && end < new Date()) return false;
     if (state.sport && (r.sport || 'run') !== state.sport) return false;
     if (state.when === 'weekend') {
       var rd = raceDate(r), w = thisWeekend();

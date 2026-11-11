@@ -145,12 +145,12 @@ function pastMark(dt) {
 }
 function extractDate(text) {
   // "17 th January 2027", "13 September 2026", "02-03 Aug 2025"
-  let m = text.match(/(\d{1,2})(?:st|nd|rd|th)?\s*[-–]\s*(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?[ ,]*\s*(20\d{2})/i);
+  let m = text.match(/(\d{1,2})\s*(?:st|nd|rd|th)?\s*[-–]\s*(\d{1,2})\s*(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?[ ,]*\s*(20\d{2})/i);
   if (m) {
     const mi = MONTHS_LONG.findIndex(x => x.toLowerCase().startsWith(m[3].toLowerCase().slice(0, 3)));
     return { y: +m[4], m: mi + 1, d: m[2], label: `${m[1]}-${m[2]} ${MONTHS[mi]} ${m[4]}` };
   }
-  m = text.match(/(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?[ ,]*\s*(20\d{2})/i);
+  m = text.match(/(\d{1,2})\s*(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?[ ,]*\s*(20\d{2})/i);
   if (m) {
     const mi = MONTHS_LONG.findIndex(x => x.toLowerCase().startsWith(m[2].toLowerCase().slice(0, 3)));
     return { y: +m[3], m: mi + 1, d: m[1], label: `${m[1]} ${MONTHS[mi]} ${m[3]}` };
@@ -388,7 +388,7 @@ async function fetchMultisport() {
     { url: 'https://www.lssports.in/zuuperman-triathlon-2027', name: 'Zuuperman Triathlon Series', city: 'Ahmedabad', state: 'Gujarat',
       sport: 'triathlon', distances: ['Triathlon'], legs: 'Swim - bike - run, distances per the race page' },
     { url: 'https://punegrandtour.in/', name: 'Bajaj Pune Grand Tour', city: 'Pune', state: 'Maharashtra',
-      sport: 'cycling', distances: ['Stage race'], legs: 'UCI stage race' },
+      sport: 'cycling', distances: ['Stage race'], legs: 'UCI pro stage race; public Gran Fondo ride - details to be confirmed' },
   ];
   const races = [];
   for (const d of defs) {
@@ -483,7 +483,7 @@ function mergeExternal(races, found, label) {
   for (const f of found) {
     if (!f.name || f.name.length < 4) continue;
     const key = clean(f.name);
-    const cur = races.find(r => {
+    const cur = races.find(r => r.id === f.id) || races.find(r => {
       const rk = clean(r.name || '');
       if (rk.length < 8 || key.length < 8) return false;
       // Same-name merges allow containment; different-state races must match
