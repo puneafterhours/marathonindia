@@ -32,7 +32,16 @@ async function fetchPuneRunners() {
     const note = b.match(/race-card__note"[^>]*>([\s\S]*?)<\/p>/);
     if (!link || !meta) continue;
     const metaTxt = strip(meta[1]);
-    const m = metaTxt.match(/^(.*?),\s*([A-Za-z ]+?)\s+(.+)$/);
+    let m = null;
+    const comma = metaTxt.indexOf(',');
+    if (comma > -1) {
+      const city = metaTxt.slice(0, comma).trim();
+      const rest = metaTxt.slice(comma + 1).trim();
+      const KNOWN = ['Tamil Nadu','West Bengal','Andhra Pradesh','Madhya Pradesh','Uttar Pradesh','Himachal Pradesh','Arunachal Pradesh','Jammu and Kashmir','Dadra and Nagar Haveli and Daman and Diu','Andaman and Nicobar Islands','Maharashtra','Karnataka','Telangana','Rajasthan','Uttarakhand','Chhattisgarh','Meghalaya','Gujarat','Odisha','Punjab','Haryana','Kerala','Bihar','Assam','Sikkim','Manipur','Mizoram','Nagaland','Tripura','Jharkhand','Delhi','Goa','Ladakh','Puducherry','Chandigarh','Lakshadweep'].sort((a,b)=>b.length-a.length);
+      const st = KNOWN.find(k => rest.startsWith(k));
+      if (st) m = [null, city, st, rest.slice(st.length).trim()];
+      else m = metaTxt.match(/^(.*?),\s*([A-Za-z]+)\s+(.+)$/);
+    }
     const scope = (b.match(/data-scope="([^"]+)"/) || [])[1] || '';
     const month = (b.match(/data-month="([^"]+)"/) || [])[1] || '';
     const tags = [...b.matchAll(/<span class="tag(?:\s[^"]*)?"[^>]*>([\s\S]*?)<\/span>/g)]

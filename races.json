@@ -254,8 +254,8 @@
   "id": "tata-steel-world-25k-kolkata",
   "name": "Tata Steel World 25K Kolkata",
   "city": "Kolkata",
-  "state": "West",
-  "dateText": "Bengal 20 Dec 2026",
+  "state": "West Bengal",
+  "dateText": "20 Dec 2026",
   "month": "2026-12",
   "scope": "india",
   "distances": [
@@ -274,8 +274,8 @@
   "id": "freshworks-chennai-marathon",
   "name": "Freshworks Chennai Marathon",
   "city": "Chennai",
-  "state": "Tamil",
-  "dateText": "Nadu 3 Jan 2027",
+  "state": "Tamil Nadu",
+  "dateText": "3 Jan 2027",
   "month": "2027-01",
   "scope": "india",
   "distances": [
@@ -543,8 +543,8 @@
   "id": "silk-route-ultra-trail-narkanda",
   "name": "Silk Route Ultra Trail (SRUT)",
   "city": "Narkanda",
-  "state": "Himachal",
-  "dateText": "Pradesh 2027 date not announced. Last edition 11 April 2026. Date TBC",
+  "state": "Himachal Pradesh",
+  "dateText": "2027 date not announced. Last edition 11 April 2026. Date TBC",
   "month": "",
   "scope": "india ultra",
   "distances": [
