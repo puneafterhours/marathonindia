@@ -155,6 +155,12 @@ function extractDate(text) {
     const mi = MONTHS_LONG.findIndex(x => x.toLowerCase().startsWith(m[2].toLowerCase().slice(0, 3)));
     return { y: +m[3], m: mi + 1, d: m[1], label: `${m[1]} ${MONTHS[mi]} ${m[3]}` };
   }
+  m = text.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})(?:st|nd|rd|th)?\s*,?\s*(20\d{2})/i);
+  if (m) {
+    const mi = MONTHS_LONG.findIndex(n => n.toLowerCase().startsWith(m[1].toLowerCase().replace(/\.$/, '').slice(0, 3)));
+    const mi2 = mi >= 0 ? mi : MONTHS_LONG.findIndex(n => n.toLowerCase().startsWith(m[1].toLowerCase().slice(0, 3)));
+    return { y: +m[3], m: (mi2 >= 0 ? mi2 : 0) + 1, d: m[2], label: `${+m[2]} ${MONTHS[mi2 >= 0 ? mi2 : 0]} ${m[3]}` };
+  }
   m = text.match(/(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s*(20\d{2})/i);
   if (m) {
     const mi = MONTHS_LONG.findIndex(x => x.toLowerCase().startsWith(m[1].toLowerCase().slice(0, 3)));
@@ -383,6 +389,11 @@ async function fetchMultisport() {
     { url: 'https://www.ironman.com/races/im703-amdavad', name: 'IRONMAN 70.3 Amdavad', city: 'Ahmedabad', state: 'Gujarat',
       sport: 'triathlon', distances: ['70.3 Triathlon'], legs: '1.9K swim - 90K bike - 21.1K run',
       dateRe: /"startDate":\s*"(\d{4})-(\d{2})-(\d{2})/ },
+    { url: 'https://www.ironman.com/races/5150-chennai', name: 'IRONMAN 5150 Chennai', city: 'Chennai', state: 'Tamil Nadu',
+      sport: 'triathlon', distances: ['Olympic Triathlon'], legs: '1.5K swim - 40K bike - 10K run',
+      dateRe: /"startDate":\s*"(\d{4})-(\d{2})-(\d{2})/ },
+    { url: 'https://yoska.in/duyoska-chennai/', name: 'DuYoska Chennai', city: 'Chennai', state: 'Tamil Nadu',
+      sport: 'duathlon', distances: ['Duathlon'], legs: 'Run - bike - run, distances per the race page' },
     { url: 'https://bergmanindia.com/races/bmpo2026', name: 'Bergman Ozar Triathlon', city: 'Pune', state: 'Maharashtra',
       sport: 'triathlon', distances: ['Triathlon'], legs: 'Swim - bike - run, sprint and Olympic distances per the race page' },
     { url: 'https://www.lssports.in/zuuperman-triathlon-2027', name: 'Zuuperman Triathlon Series', city: 'Ahmedabad', state: 'Gujarat',

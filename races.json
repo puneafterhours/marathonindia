@@ -292,7 +292,7 @@
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 25K/10K to 2029",
@@ -483,7 +483,7 @@
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "South",
@@ -585,7 +585,7 @@
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "North",
@@ -4925,6 +4925,50 @@
   "source": "punegrandtour.in",
   "sources": [
    "punegrandtour.in"
+  ]
+ },
+ {
+  "id": "tri-ironman-5150-chennai",
+  "name": "IRONMAN 5150 Chennai",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "sport": "triathlon",
+  "dateText": "11 Jan 2026 (last edition)",
+  "month": "2026-01",
+  "scope": "india",
+  "distances": [
+   "Olympic Triathlon"
+  ],
+  "url": "https://www.ironman.com/races/5150-chennai",
+  "certification": "",
+  "note": "1.5K swim - 40K bike - 10K run. Official event site; date per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on www.ironman.com",
+  "source": "www.ironman.com",
+  "sources": [
+   "www.ironman.com"
+  ]
+ },
+ {
+  "id": "dua-duyoska-chennai",
+  "name": "DuYoska Chennai",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "zone": "South",
+  "sport": "duathlon",
+  "dateText": "11 Jan 2026 (last edition)",
+  "month": "2026-01",
+  "scope": "india",
+  "distances": [
+   "Duathlon"
+  ],
+  "url": "https://yoska.in/duyoska-chennai/",
+  "certification": "",
+  "note": "Run - bike - run, distances per the race page. Official event site; date per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on yoska.in",
+  "source": "yoska.in",
+  "sources": [
+   "yoska.in"
   ]
  }
 ]
