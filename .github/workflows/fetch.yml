@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   fetch:
@@ -29,6 +30,18 @@ jobs:
         run: |
           git config user.name "PuneAfterhours"
           git config user.email "team@puneafterhours.local"
-          git add races.json
+          git add races.json meta.json
           git diff --cached --quiet || git commit -m "Weekly fetch: race data update"
           git push
+      - name: Open an issue if the fetch failed
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'Weekly race fetch failed',
+              body: `The automatic race fetch failed. Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\nThe live site keeps serving the last good data until this is fixed.`,
+            });
+

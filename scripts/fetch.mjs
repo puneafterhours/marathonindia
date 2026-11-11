@@ -161,4 +161,13 @@ try {
 try { await fetchFees(races); } catch (e) { errors.push('fees: ' + e.message); }
 if (errors.length) { console.error('CONNECTOR ERRORS:', errors); }
 writeFileSync('races.json', JSON.stringify(races, null, 1) + '\n');
+const runUrl = (process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID)
+  ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}` : '';
+writeFileSync('meta.json', JSON.stringify({
+  fetchedAt: new Date().toISOString(),
+  races: races.length,
+  sources: ['punerunners.com/races', 'aims-worldrunning.org India directory', 'Eventforce / Fitistan registration pages (fees & categories)'],
+  runUrl,
+  connectorErrors: errors,
+}, null, 1) + '\n');
 console.log('total races:', races.length);

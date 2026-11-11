@@ -142,6 +142,24 @@
   el.fCert.addEventListener('change', function () { state.certOnly = el.fCert.checked; render(); });
   el.fSearch.addEventListener('input', function () { state.q = el.fSearch.value.trim().toLowerCase(); render(); });
 
+  fetch('meta.json', { cache: 'no-cache' }).then(function (res) { return res.ok ? res.json() : null; }).then(function (m) {
+    if (!m) return;
+    var el = document.getElementById('data-status');
+    if (!el) return;
+    var d = new Date(m.fetchedAt);
+    var when = isNaN(d) ? '' : d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+    el.textContent = '';
+    var dot = document.createElement('span');
+    dot.className = 'data-status__dot';
+    el.appendChild(dot);
+    el.appendChild(document.createTextNode('Updated automatically ' + when + ' from live sources (' + m.races + ' races). '));
+    if (m.runUrl) {
+      var a = document.createElement('a');
+      a.href = m.runUrl; a.textContent = 'Latest fetch run'; a.target = '_blank'; a.rel = 'noopener';
+      el.appendChild(a);
+    }
+  }).catch(function () {});
+
   fetch('races.json', { cache: 'no-cache' })
     .then(function (res) { return res.json(); })
     .then(function (data) {
