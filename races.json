@@ -105,15 +105,15 @@
   ],
   "url": "https://registration.eventforce.ai/event/45/lokmat-mahamarathon-season-10-pune",
   "certification": "WA course cert: \"Pune Maha\" half, 10K and 5K to 2030 (route tbc)",
-  "lastChecked": "Fees and requirements checked 11 Nov 2026 on the Eventforce registration page",
+  "lastChecked": "Fees re-checked 11 Nov 2026 on the registration page",
   "note": "Coupon code AK1 for Pune City runners, valid on the 10K and 21K only. Activated 6 October 2026. No expiry or usage limit stated. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "fees": [
-   "3K run ₹501",
-   "5K run ₹501",
-   "10K run ₹1,500",
-   "21K half marathon ₹1,800"
+   "21K ₹1800",
+   "10K ₹1500",
+   "5K ₹501",
+   "3K ₹501"
   ],
   "gstNote": "Listed fees exclude GST: the registration page heads its fee list 'Fees + GST'. Final total (GST and any platform fee) is confirmed at checkout. 10K and 21K kits include timing chip; all kits include T-shirt, medal and breakfast.",
   "requirements": "Age categories for 10K and 21K only: Open 18-35, Neo Veteran 36-45, Veteran 46+. Waiver requires declaring medical fitness certified by a licensed practitioner. Refunds: 30+ days before race day (platform fees never refunded); within 30 days no refund.",
