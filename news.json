@@ -1,54 +1,12 @@
 {
- "fetchedAt": "2026-11-11T17:48:37.988Z",
- "note": "India items are marathon and road-running coverage from Indian media; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
+ "fetchedAt": "2026-11-11T17:55:29.414Z",
+ "note": "India items are running and triathlon coverage from Indian media, published within the last 7 days; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
  "india": [
   {
-   "title": "Vedanta Delhi Half Marathon 2026 In Numbers",
-   "url": "https://www.geeksonfeet.com/posts/vdhm-2026-in-numbers/",
-   "date": "2026-10-24",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "Training in the Age of AI",
-   "url": "https://www.geeksonfeet.com/posts/finding-next-percent-ai-coach/",
-   "date": "2026-10-23",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "Vedanta Delhi Half Marathon 2026 Route Preview",
-   "url": "https://www.geeksonfeet.com/posts/vdhm-2026-route-preview/",
-   "date": "2026-10-09",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "Pace the Race",
-   "url": "https://www.geeksonfeet.com/posts/finding-next-percent-pacing/",
-   "date": "2026-09-25",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "Wipro Bengaluru Marathon 2026 Route Preview",
-   "url": "https://www.geeksonfeet.com/posts/bengaluru-marathon-2026-route-preview/",
-   "date": "2026-09-22",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "How Mumbai Marathon runners train and spend?",
-   "url": "https://www.geeksonfeet.com/posts/tmm-2026-how-mumbai-runners-train-shop-and-spend/",
-   "date": "2026-09-15",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "NMDC Hyderabad Marathon 2026 In Numbers",
-   "url": "https://www.geeksonfeet.com/posts/nmdc-hyderabad-marathon-2026-in-numbers/",
-   "date": "2026-09-02",
-   "source": "Geeks on Feet"
-  },
-  {
-   "title": "NMDC Hyderabad Marathon 2026 Route Preview",
-   "url": "https://www.geeksonfeet.com/posts/hyderabad-marathon-route-preview-2026/",
-   "date": "2026-08-21",
-   "source": "Geeks on Feet"
+   "title": "Tata Mumbai Marathon ranks 21st globally, wins Economic Impact Award",
+   "url": "https://thebridge.in/sports-market/tata-mumbai-marathon-ranks-21st-globally-wins-economic-impact-award-58275",
+   "date": "2026-11-04",
+   "source": "The Bridge"
   }
  ],
  "global": [
