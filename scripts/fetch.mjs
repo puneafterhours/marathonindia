@@ -571,8 +571,44 @@ async function fetchDistrict() {
   return races;
 }
 
+// --- Connector: endorfin.run/running-events (server-rendered ld+json India running listing) ---
+async function fetchEndorfin() {
+  const races = [];
+  try {
+    const raw = await getText('https://www.endorfin.run/running-events');
+    const DROP = /(trek|hik(e|ing)|walkathon|yoga|cycling|cyclothon)/i; // cycling comes from the District connector
+    for (const b of raw.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      let j; try { j = JSON.parse(b[1]); } catch { continue; }
+      const items = [j, ...(j['itemListElement'] || []), ...(j['@graph'] || [])];
+      for (const it0 of items) {
+        const it = (it0 && typeof it0 === 'object' && it0.item && typeof it0.item === 'object') ? it0.item : it0;
+        if (!it || it['@type'] !== 'Event') continue;
+        const name = String(it.name || '').trim();
+        if (name.length < 4 || DROP.test(name)) continue;
+        const sport = /triathlon/i.test(name) ? 'triathlon' : /(duathlon|aquathlon)/i.test(name) ? 'duathlon' : 'run';
+        const dm = String(it.startDate || '').match(/(\d{4})-(\d{2})-(\d{2})/);
+        const dt = dm ? { y: +dm[1], m: +dm[2], d: dm[3], label: `${+dm[3]} ${MONTHS[+dm[2] - 1]} ${dm[1]}` } : null;
+        const addr = it.location && it.location.address;
+        const locCity = normCity((addr && addr.addressLocality) || '');
+        const state = normState((addr && addr.addressRegion) || '') || normState(locCity) || '';
+        races.push({
+          id: 'end-' + slug(name),
+          name, city: locCity, state, zone: S2Z[state] || '',
+          sport,
+          dateText: dt ? dt.label + pastMark(dt) : 'Date to be confirmed', month: dt ? monthKey(dt.y, dt.m) : '',
+          scope: scopeFor(locCity, []), distances: [], url: it.url || '', certification: '',
+          note: 'Listed on Endorfin; details per the event page.',
+          lastChecked: `Checked ${TODAY} on endorfin.run`, source: 'endorfin.run',
+        });
+      }
+    }
+  } catch (e) { /* listing fetch failed; keep prior records */ }
+  return races;
+}
+
 const CONNECTORS = [
   ['district', fetchDistrict],
+  ['endorfin', fetchEndorfin],
   ['indiarunning', fetchIndiaRunning],
   ['geeksonfeet', fetchGeeksOnFeet],
   ['hellrace', fetchHellRace],

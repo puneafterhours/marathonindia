@@ -20,7 +20,11 @@
   "hasDiscount": true,
   "source": "punerunners.com/races",
   "requirements": "Half (timed) 18+, 10K (timed) 12+, 5K run/walk 10+, 1K celebration walk 3+ including specially abled; Cheer Buddy supporter category. Registration for the 15 Nov 2026 edition closed 2 Nov 2026. Tickets non-refundable and non-transferable.",
-  "zone": "West"
+  "zone": "West",
+  "sources": [
+   "punerunners.com/races",
+   "endorfin.run"
+  ]
  },
  {
   "id": "pune-international-marathon",
@@ -292,7 +296,7 @@
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "A Procam race. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 25K/10K to 2029",
@@ -483,7 +487,7 @@
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "10th edition. 50K runs as a day race and a night race. The 100K has a 21 hour limit, per ITRA. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "South",
@@ -585,7 +589,7 @@
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
+  "note": "In the northern Aravalli range. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "North",
@@ -918,7 +922,8 @@
   "source": "aims-worldrunning.org/directory.html",
   "sources": [
    "aims-worldrunning.org/directory.html",
-   "geeksonfeet.com/races"
+   "geeksonfeet.com/races",
+   "endorfin.run"
   ]
  },
  {
@@ -1136,7 +1141,8 @@
   "source": "aims-worldrunning.org/directory.html",
   "sources": [
    "aims-worldrunning.org/directory.html",
-   "geeksonfeet.com/races"
+   "geeksonfeet.com/races",
+   "endorfin.run"
   ]
  },
  {
@@ -1215,7 +1221,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1609,7 +1616,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1651,7 +1659,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1676,7 +1685,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1700,7 +1710,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1723,7 +1734,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -1789,7 +1801,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -2477,7 +2490,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -3058,7 +3072,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -4166,7 +4181,8 @@
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
-   "geeksonfeet.com/races"
+   "geeksonfeet.com/races",
+   "endorfin.run"
   ]
  },
  {
@@ -5012,6 +5028,526 @@
   "source": "district.in",
   "sources": [
    "district.in"
+  ]
+ },
+ {
+  "id": "end-udaipur-marathon",
+  "name": "Udaipur Marathon",
+  "city": "Udaipur",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/udaipur_marathon_31353",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-sbi-green-marathon-s7-guwahati",
+  "name": "SBI Green Marathon S7 Guwahati",
+  "city": "",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/edcc0c32-7dc6-4ecb-bd51-f5b6b78d3ff2",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-the-great-majha-run-2026",
+  "name": "THE GREAT MAJHA RUN 2026",
+  "city": "",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/544316f5-553c-459f-b97f-40fe1db5146b",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-mumbai-kids-marathon-children-s-day-edition",
+  "name": "Mumbai Kids Marathon - Children's Day Edition",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/mumbai_kidz_run__childrens_day_edition_63487",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-premiethon-2026",
+  "name": "Premiethon 2026",
+  "city": "Hyderabad",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/PRE_26",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-mission-green-telangana-run-2026",
+  "name": "Mission Green Telangana Run 2026",
+  "city": "",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/2e235baf-474c-4bac-9c9a-f503c2864fc4",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-purple-preemie-global-run-2026",
+  "name": "Purple Preemie Global Run 2026",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/purple_preemie_global_run_2026_25433",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-hrx-half-marathon-4-bengaluru",
+  "name": "HRX HALF MARATHON 4 - Bengaluru",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/hrx_4_half_marathon_bengaluru_37807",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-ludhiana-10k-run-2026-6th-edition",
+  "name": "LUDHIANA 10K RUN 2026 (6th Edition)",
+  "city": "Ludhiana",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/30ac7620-7036-4cb9-b679-eeb9fa8aa2fb",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-ethnic-run-2026",
+  "name": "ETHNIC RUN 2026",
+  "city": "Hyderabad",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/ERun26",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-13th-patiala-half-marathon-2026",
+  "name": "13th Patiala Half Marathon-2026",
+  "city": "Patiala (Punjab)",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/47a4bf3e-61e9-4d90-97c5-d53fff28c9f1",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-mini-marathon-2026-at-mahindra-world-city",
+  "name": "Mini Marathon 2026 at Mahindra World City",
+  "city": "Thirutheri R.F",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/e6295ae9-2115-4b8d-ae93-7ecdc368c1a3",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-indianoil-wnc-navy-half-marathon-2026",
+  "name": "IndianOil WNC Navy Half Marathon 2026",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/indianoilwncnavyhalfmarathon2026-35263",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-halloween-spooky-run-2026-run-if-you-dare",
+  "name": "HALLOWEEN SPOOKY RUN 2026 - RUN IF YOU DARE",
+  "city": "Anywhere",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/running-events/halloweenspookyrun2026runifyoudare-50390",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-ignite-football-tournament",
+  "name": "Ignite Football Tournament",
+  "city": "Chennai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/xcetra-club/events/f9dec867-4964-474c-870e-ab553a849514",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-it-girls-run-8th-drop",
+  "name": "IT Girls Run - 8th Drop",
+  "city": "Vadodara",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/coffee-run-btown/events/ca7b6c14-a42f-440d-9f0a-bcbbbdfa85ab",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-miles-that-matter-4km-fun-run",
+  "name": "Miles That Matter - 4KM Fun Run",
+  "city": "Ghaziabad",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/brewrun-club/events/1757bbca-ad1d-4d34-bcac-cecb9a79c31e",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-cadance-x-play-blue-store-launch-run",
+  "name": "Cadance x Play Blue Store Launch Run",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/cadancerunclub/events/62ed626e-d4e6-4a54-86f1-baa10620b044",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-beginner-footy-session-noida",
+  "name": "Beginner Footy Session - Noida",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/sistersinsweat-in/events/9e783d4d-602b-40d4-9dee-12117b29b230",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-sis-x-kusp-contrast-therapy",
+  "name": "SIS x KUSP Contrast Therapy",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/sistersinsweat-in/events/f23469da-7845-4910-8bec-82dab219dfbb",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-sis-x-si-nonna-s-pizza-making-workshop",
+  "name": "SIS x Si Nonna's Pizza Making Workshop",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/sistersinsweat-in/events/39fa0e6a-0cf7-4112-b07c-9df19cc99007",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-baddy-pop-up-badminton",
+  "name": "Baddy Pop-Up Badminton",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/sistersinsweat-in/events/cfb4d35e-704d-4096-b85d-26cbe8c0f1b9",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-hyrox-simulation",
+  "name": "HYROX Simulation",
+  "city": "Ahmedabad",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/runcrew-in/events/804e06a2-582c-4cd2-9065-4216e475264b",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-hrx-half-marathon-bengaluru-4-0",
+  "name": "HRX Half Marathon Bengaluru 4.0",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/jpnagarrunclub/events/704609f4-d28e-4157-8d5e-8c755f89c079",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-odisha-runs-2026-a-step-to-heal",
+  "name": "Odisha Runs 2026 – A Step to Heal",
+  "city": "Bhubaneswar",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/rebuildtime-fitnessclub/events/5fd51f08-3754-436a-8c66-95777a5cc57f",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-chennai-fitness-run-2026",
+  "name": "Chennai Fitness Run 2026",
+  "city": "Chennai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "15 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/vamos-run-club/events/dcafa7a2-c724-4c95-934a-008c1e204865",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
   ]
  }
 ]
