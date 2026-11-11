@@ -7,7 +7,7 @@
 import { writeFileSync } from 'node:fs';
 
 const INDIA_FEEDS = [
-  { name: 'Sportstar (The Hindu)', url: 'https://sportstar.thehindu.com/athletics/feeder/default.rss', filterRoad: false },
+  { name: 'Sportstar (The Hindu)', url: 'https://sportstar.thehindu.com/athletics/feeder/default.rss', filterRoad: true },
   // General Indian sports desk, filtered down to marathon / road-running items.
   { name: 'Times of India Sports', url: 'https://timesofindia.indiatimes.com/rssfeeds/4719148.cms', filterRoad: true },
 ];
@@ -68,7 +68,7 @@ india.sort(byDate); global.sort(byDate);
 
 writeFileSync('news.json', JSON.stringify({
   fetchedAt: new Date().toISOString(),
-  note: 'India items are athletics coverage from Indian media; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.',
+  note: 'India items are marathon and road-running coverage from Indian media; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.',
   india: india.slice(0, 20),
   global: global.slice(0, 20),
 }, null, 1) + '\n');
