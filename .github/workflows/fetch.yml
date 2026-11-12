@@ -1,7 +1,7 @@
 name: Daily race fetch
 on:
   schedule:
-    - cron: '30 6,14,22 * * *'   # Every 8 hours: 12:00, 20:00, 04:00 IST
+    - cron: '17 6,14,22 * * *'   # Every 8 hours, off-peak minute: 11:47, 19:47, 03:47 IST
   workflow_dispatch:
 
 permissions:
