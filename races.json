@@ -24,7 +24,8 @@
   "sources": [
    "punerunners.com/races",
    "endorfin.run"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "pune-international-marathon",
@@ -40,7 +41,7 @@
    "10K",
    "5K"
   ],
-  "url": "/races/pune-international-marathon/",
+  "url": "https://www.marathonpune.com/raceinfo.html",
   "certification": "WA course cert: full, half and 10K to 2029 (route tbc) · AIMS member",
   "lastChecked": "Last checked 28 Oct 2026",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
@@ -50,7 +51,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "bajaj-pune-marathon",
@@ -66,7 +68,7 @@
    "Half",
    "Full"
   ],
-  "url": "/races/bajaj-pune-marathon/",
+  "url": "https://bajajpunemarathon.com/",
   "certification": "WA course cert: half, 10K and 5K to 2027 (full not listed; route tbc)",
   "lastChecked": "Last checked 6 Oct 2026",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
@@ -77,7 +79,8 @@
    "punerunners.com/races",
    "indiarunning.com",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "ekal-run-pune-marathon",
@@ -100,7 +103,8 @@
   "hasDiscount": true,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: full/10K/10mi to 2027, not every category",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "lokmat-maha-marathon-pune",
@@ -130,7 +134,8 @@
   ],
   "gstNote": "Listed fees exclude GST: the registration page heads its fee list 'Fees + GST'. Final total (GST and any platform fee) is confirmed at checkout. 10K and 21K kits include timing chip; all kits include T-shirt, medal and breakfast.",
   "requirements": "Age categories for 10K and 21K only: Open 18-35, Neo Veteran 36-45, Veteran 46+. Waiver requires declaring medical fitness certified by a licensed practitioner. Refunds: 30+ days before race day (platform fees never refunded); within 30 days no refund.",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "apla-pune-marathon",
@@ -152,7 +157,8 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: full/half/10mi/10K/50K to 2027, 5K to 2026",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "nda-marathon",
@@ -175,7 +181,8 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "pune-city-half-marathon",
@@ -197,7 +204,8 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "tata-mumbai-marathon",
@@ -212,7 +220,7 @@
    "Half",
    "10K"
   ],
-  "url": "/races/tata-mumbai-marathon/",
+  "url": "https://tatamumbaimarathon.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: marathon and 10K to 2030, half marathon to 2027 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
   "note": "Procam International event site; date per the event homepage.",
@@ -224,7 +232,8 @@
    "punerunners.com/races",
    "geeksonfeet.com/races",
    "procam.in"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "vasai-virar-marathon",
@@ -238,7 +247,8 @@
    "Full",
    "Half",
    "10K",
-   "5K"
+   "5K",
+   "3K"
   ],
   "url": "https://vvmm.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: marathon and half to 2026, 5K to 2027 (half separation over 50%; route tbc)",
@@ -251,7 +261,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "skf-goa-river-marathon",
@@ -268,7 +279,7 @@
    "32K",
    "Full"
   ],
-  "url": "/races/skf-goa-river-marathon/",
+  "url": "https://skfgoarivermarathon.com/index.php",
   "certification": "WA course cert: half and 10K to 2027 (route tbc) · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
@@ -278,7 +289,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "tata-steel-world-25k-kolkata",
@@ -290,8 +302,8 @@
   "scope": "india",
   "distances": [
    "25K",
-   "Half",
-   "10K"
+   "10K",
+   "Half"
   ],
   "url": "https://tatasteelworld25k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 25K and 10K to 2029 (route tbc) · AIMS member",
@@ -305,7 +317,8 @@
    "punerunners.com/races",
    "geeksonfeet.com/races",
    "procam.in"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "freshworks-chennai-marathon",
@@ -332,7 +345,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "tcs-world-10k-bengaluru",
@@ -345,7 +359,7 @@
   "distances": [
    "10K"
   ],
-  "url": "/races/tcs-world-10k-bengaluru/",
+  "url": "https://tcsworld10k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 10K to 2029 (route tbc)",
   "lastChecked": "Last checked 6 Oct 2026",
   "note": "Procam International event site; date per the event homepage.",
@@ -356,7 +370,8 @@
   "sources": [
    "punerunners.com/races",
    "procam.in"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "cognizant-new-delhi-marathon",
@@ -383,7 +398,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "nmdc-hyderabad-marathon",
@@ -405,7 +421,8 @@
   "note": "Categories from the 2026 lineup.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "South"
+  "zone": "South",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "burj100-jumping-gorilla",
@@ -427,7 +444,8 @@
   "note": "8th edition, 22 to 24 January 2027. Organised by Jumping Gorilla. Dates and categories checked 28 October 2026; check category start times on the organiser page. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "tata-ultra-marathon",
@@ -448,7 +466,8 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 50K to 2027 only, not 35K",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "deccan-ultra",
@@ -469,7 +488,8 @@
   "note": "A mountain race in the Sahyadris that climbs Mt. Kalsubai, the highest point in Maharashtra, per ITRA. Categories from the 2026 edition. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "malnad-ultra",
@@ -481,8 +501,7 @@
   "scope": "india ultra",
   "distances": [
    "50K",
-   "100K",
-   "Ultra"
+   "100K"
   ],
   "url": "https://itra.run/Races/RaceDetails/Tekion.Malnad.Ultra.100K/2026/116497",
   "certification": "ITRA listed",
@@ -494,7 +513,8 @@
   "sources": [
    "punerunners.com/races",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "dudhsagar-ultra-trail",
@@ -515,7 +535,8 @@
   "note": "Through Mollem National Park and Bhagwan Mahaveer Wildlife Sanctuary. Up to 150 runners per race, per ITRA. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "mukteshwar-ultra",
@@ -534,7 +555,8 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "North"
+  "zone": "North",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "bhatti-mines-ultra",
@@ -553,7 +575,8 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "North"
+  "zone": "North",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "bmf-ultra",
@@ -572,7 +595,8 @@
   "note": " Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "South"
+  "zone": "South",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "red-stone-ultra",
@@ -596,7 +620,8 @@
   "sources": [
    "punerunners.com/races",
    "thehellrace.com"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "silk-route-ultra-trail-narkanda",
@@ -616,7 +641,8 @@
   "note": "Not the same race as the Silk Route Ultra in Ladakh. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
-  "zone": "North"
+  "zone": "North",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "pune-run-for-unity",
@@ -639,7 +665,8 @@
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "certTag": "WA course cert: 10K/half to 2029, not every distance",
-  "zone": "West"
+  "zone": "West",
+  "ctaLabel": "Official race site"
  },
  {
   "id": "vedanta-delhi-half-marathon",
@@ -652,7 +679,7 @@
   "distances": [
    "Half"
   ],
-  "url": "/races/vedanta-delhi-half-marathon/",
+  "url": "https://vedantadelhihalfmarathon.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: half and 10K to 2026 · AIMS member",
   "lastChecked": "Last checked 6 Oct 2026",
   "note": "Procam International event site; date per the event homepage.",
@@ -663,7 +690,8 @@
   "sources": [
    "punerunners.com/races",
    "procam.in"
-  ]
+  ],
+  "ctaLabel": ""
  },
  {
   "id": "run-bhopal-run",
@@ -736,7 +764,8 @@
   "sources": [
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "kd-amdavad-marathon",
@@ -809,7 +838,8 @@
   "sources": [
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "bodhgaya-marathon-run-for-global-peace",
@@ -882,7 +912,8 @@
   "sources": [
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "indore-marathon",
@@ -924,7 +955,8 @@
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races",
    "endorfin.run"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "kashmir-marathon",
@@ -1143,7 +1175,8 @@
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races",
    "endorfin.run"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "mg-vadodara-international-marathon",
@@ -1183,7 +1216,8 @@
   "sources": [
    "aims-worldrunning.org/directory.html",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "vedanta-zinc-city-half-marathon",
@@ -1483,7 +1517,8 @@
   "sources": [
    "indiarunning.com",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "ir-dehradun_ultra_run_2027__4th_edition_20591",
@@ -2315,7 +2350,8 @@
   "sources": [
    "indiarunning.com",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "ir-fitmumbaimarathonghatkopar-79933",
@@ -2803,7 +2839,8 @@
   "sources": [
    "indiarunning.com",
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "ir-pune_junior_marathon_30414",
@@ -4178,7 +4215,7 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785388400325-T5FPD5",
+  "url": "https://www.endorfin.run/running-events/KTM26",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
@@ -4186,7 +4223,8 @@
   "sources": [
    "geeksonfeet.com/races",
    "endorfin.run"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1780659807094-ESS5F6",
@@ -4203,14 +4241,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1780659807094-ESS5F6",
+  "url": "https://www.bpmorg.com",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1790652377783-61CKFW",
@@ -4223,16 +4262,23 @@
   "scope": "india ultra",
   "distances": [
    "Ultra",
-   "Half"
+   "Half",
+   "6.5K",
+   "13K",
+   "32K",
+   "50K",
+   "62K",
+   "64K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790652377783-61CKFW",
+  "url": "https://www.salemrunnersclub.com",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1788261913100-WXCY5A",
@@ -4248,14 +4294,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1788261913100-WXCY5A",
+  "url": "https://raceiq.in/dbhm2026",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1789526557589-NOTZEO",
@@ -4267,16 +4314,19 @@
   "month": "2026-12",
   "scope": "pune ultra",
   "distances": [
-   "Ultra"
+   "Ultra",
+   "11K",
+   "25K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1789526557589-NOTZEO",
+  "url": "https://registration.eventforce.ai/event/35/srt-ultra-2026",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1790651966924-3YYKK3",
@@ -4293,14 +4343,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790651966924-3YYKK3",
+  "url": "https://www.mysamay.in/event/mysuru-marathon-26",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1785388274087-OM9CWS",
@@ -4317,14 +4368,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785388274087-OM9CWS",
+  "url": "https://www.puricoastalmarathon.in/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1782627553457-VVV25H",
@@ -4341,14 +4393,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1782627553457-VVV25H",
+  "url": "https://indiannavy.gov.in/content/vizag-navy-marathon-2026",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1782627524801-NS5GZJ",
@@ -4364,14 +4417,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1782627524801-NS5GZJ",
+  "url": "https://timesofindia.indiatimes.com/times-events/marathon/bengaluru/2026",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1791193022952-I4KZAR",
@@ -4388,14 +4442,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791193022952-I4KZAR",
+  "url": "https://www.udupimarathon.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1785383781664-YUOCOL",
@@ -4411,14 +4466,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785383781664-YUOCOL",
+  "url": "https://coimbatoremarathon.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1793260567986-2URI88",
@@ -4434,14 +4490,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1793260567986-2URI88",
+  "url": "https://ifinish.in/running/HCSWR_27_01",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1791047070588-WHHRHL",
@@ -4457,14 +4514,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791047070588-WHHRHL",
+  "url": "https://www.goheritagerun.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1790872610045-5CRUPJ",
@@ -4479,16 +4537,18 @@
    "Full",
    "Half",
    "10K",
-   "5K"
+   "5K",
+   "32K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790872610045-5CRUPJ",
+  "url": "https://www.thrissurmarathon.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1791444107224-U5861S",
@@ -4502,16 +4562,18 @@
   "distances": [
    "Half",
    "10K",
-   "5K"
+   "5K",
+   "3K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791444107224-U5861S",
+  "url": "https://www.tuffmanindia.com/races/bengaluru-half-marathon.html",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1785384888678-JSC5VZ",
@@ -4528,14 +4590,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1785384888678-JSC5VZ",
+  "url": "https://vadodaramarathon.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1777295718061-WAHES2",
@@ -4552,14 +4615,15 @@
    "10K",
    "5K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1777295718061-WAHES2",
+  "url": "https://kolkatafullmarathon.com",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1791193855170-864UKQ",
@@ -4573,16 +4637,18 @@
   "distances": [
    "Full",
    "Half",
-   "10K"
+   "10K",
+   "3K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791193855170-864UKQ",
+  "url": "https://www.kochimarathon.in/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar; AIMS flag shown there.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1791194158391-EY9ZFF",
@@ -4596,16 +4662,19 @@
   "distances": [
    "Ultra",
    "Full",
-   "Half"
+   "Half",
+   "7K",
+   "71K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1791194158391-EY9ZFF",
+  "url": "https://munnarmarathon.com/",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "gof-GF-1790652542188-JPGS1L",
@@ -4617,16 +4686,21 @@
   "month": "2027-06",
   "scope": "india ultra",
   "distances": [
-   "Ultra"
+   "Ultra",
+   "18K",
+   "36K",
+   "45K",
+   "60K"
   ],
-  "url": "https://runstrong.geeksonfeet.com/racedetails?id=GF-1790652542188-JPGS1L",
+  "url": "https://bisonultra.com",
   "certification": "",
   "note": "Listed on the Geeks on Feet race calendar.",
   "lastChecked": "Checked 11 Nov 2026 on geeksonfeet.com/races",
   "source": "geeksonfeet.com/races",
   "sources": [
    "geeksonfeet.com/races"
-  ]
+  ],
+  "ctaLabel": "Official race site"
  },
  {
   "id": "hellrace-white-sand-ultra",

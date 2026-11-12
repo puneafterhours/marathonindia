@@ -130,7 +130,7 @@
       var card = document.createElement('div');
       card.className = 'card';
       var url = r.url || '';
-      if (url.charAt(0) === '/') url = 'https://punerunners.com' + url;
+      if (url.charAt(0) === '/' && url.charAt(1) !== '/') url = 'https://punerunners.com' + url;
 
       var html = '';
       html += '<div class="card__date">' + (r.dateText || 'Date to be confirmed') + '</div>';

@@ -20,6 +20,8 @@ const strip = (s) => s.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<style
   .replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#x27;|&apos;/g, "'").replace(/&quot;/g, '"')
   .replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+// Aggregator/listing URLs a card should not present as the race destination.
+const isAggUrl = (u) => /^\/races\//.test(u || '') || /geeksonfeet\.com/i.test(u || '');
 
 // --- Connector 1: punerunners.com/races ---
 async function fetchPuneRunners() {
@@ -54,6 +56,28 @@ async function fetchPuneRunners() {
       distances: tags.filter(t => /^(1K|3K|5K|10K|10 mile|10K|Half|Full|Ultra|Trail|\d+K)$/i.test(t)),
       note: note ? strip(note[1]) : '',
     });
+  }
+  // Resolve official race sites from punerunners detail pages so cards link
+  // direct; keep the punerunners listing with an honest label when unresolved.
+  for (const r of races) {
+    if (/^https?:\/\//.test(r.url)) { r.ctaLabel = 'Official race site'; continue; }
+    try {
+      const html = await getText('https://punerunners.com' + r.url);
+      const ld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+        .map(m => { try { return JSON.parse(m[1]); } catch { return null; } })
+        .flatMap(x => Array.isArray(x) ? x : [x]).filter(Boolean);
+      let official = '';
+      for (const node of ld) {
+        const u = node && node.url;
+        if (typeof u === 'string' && /^https?:\/\//.test(u) && !/punerunners\.com/i.test(u)) { official = u; break; }
+      }
+      if (!official) {
+        const btn = html.match(/<a href="(https?:\/\/[^"]+)" class="btn/);
+        if (btn && !/punerunners\.com|whatsapp|strava|instagram|facebook/i.test(btn[1])) official = btn[1];
+      }
+      if (official) { r.url = official; r.ctaLabel = 'Official race site'; }
+      else r.ctaLabel = 'Race listing on PuneRunners';
+    } catch { r.ctaLabel = 'Race listing on PuneRunners'; }
   }
   return races;
 }
@@ -215,41 +239,50 @@ async function fetchIndiaRunning() {
   return races;
 }
 
-// --- Connector 4: Geeks on Feet race calendar (region=domestic) ---
+// --- Connector 4: Geeks on Feet race calendar (runstrong API) ---
+// The listing pages call this JSON API themselves; robots.txt carries no
+// Disallow rules. It returns the race's OFFICIAL site link, ISO dates and the
+// AIMS flag, so cards can point direct instead of at the aggregator. Races
+// without an official link fall back to the Geeks on Feet detail page with an
+// honest listing label.
 async function fetchGeeksOnFeet() {
   const races = [];
-  for (let page = 1; page <= 25; page++) {
-    const html = await getText(`https://www.geeksonfeet.com/races?region=domestic&scope=upcoming&page=${page}`);
-    const cards = html.match(/<article class="rcard"[\s\S]*?<\/article>/g) || [];
-    if (!cards.length) break;
-    for (const c of cards) {
-      const link = (c.match(/class="rcard-link" href="([^"]+)"/) || [])[1] || '';
-      const mo = (c.match(/rcard-date-mo">([A-Z]+)</) || [])[1] || '';
-      const yr = (c.match(/rcard-date-yr">(\d{4})</) || [])[1] || '';
-      const day = (c.match(/rcard-date-day">(\d{1,2})</) || [])[1] || '';
-      const title = strip((c.match(/rcard-title">([\s\S]*?)<\/h3>/) || [])[1] || '');
-      const loc = strip((c.match(/rcard-loc">([\s\S]*?)<\/div>/) || [])[1] || '');
-      const dists = mapDistances([...c.matchAll(/rcard-dist[^"]*">([^<]+)</g)].map(m => m[1]));
-      const aims = /rcard-aims/.test(c);
-      const mi = MONTHS.findIndex(x => x.toUpperCase() === mo.toUpperCase());
-      const parts = loc.split(',').map(s => s.trim()).filter(Boolean);
-      const state = normState(parts[parts.length - 1] || '');
-      const city = normCity(parts.slice(0, -1).join(', ') || parts[0] || '');
+  for (let page = 1; page <= 10; page++) {
+    const res = await fetch(`https://runstrong.geeksonfeet.com/api/races?page=${page}&limit=20`, { headers: { 'user-agent': UA } });
+    if (!res.ok) throw new Error('runstrong api -> HTTP ' + res.status);
+    const data = await res.json();
+    const rows = data.data || [];
+    if (!rows.length) break;
+    for (const r of rows) {
+      if (r.international) continue;
+      const title = String(r.title || '').trim();
+      if (title.length < 4) continue;
+      let dateText = 'Date to be confirmed', month = '';
+      const dm = String(r.date_start || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (dm) {
+        dateText = dateTextFrom(+dm[1], +dm[2], +dm[3]);
+        month = monthKey(+dm[1], +dm[2]);
+      }
+      const state = normState(r.state || '');
+      const city = normCity(r.city || '');
+      const dists = mapDistances((r.distanceOptions || r.distance_options || []).map(o => o.label));
+      const link = String(r.link || '').trim();
+      const official = /^https?:\/\//i.test(link) && !/geeksonfeet\.com/i.test(link) ? link : '';
       races.push({
-        id: 'gof-' + ((link.match(/id=([A-Z0-9-]+)/) || [])[1] || slug(title)),
+        id: 'gof-' + r.id,
         name: title, city, state, zone: S2Z[state] || '',
-        dateText: yr ? dateTextFrom(+yr, mi + 1, +day) : 'Date to be confirmed',
-        month: yr ? monthKey(+yr, mi + 1) : '',
+        dateText, month,
         scope: scopeFor(city, dists),
         distances: dists,
-        url: link,
+        url: official || `https://runstrong.geeksonfeet.com/racedetails?id=${r.id}`,
+        ctaLabel: official ? 'Official race site' : 'Race listing on Geeks on Feet',
         certification: '',
-        note: 'Listed on the Geeks on Feet race calendar' + (aims ? '; AIMS flag shown there.' : '.'),
+        note: 'Listed on the Geeks on Feet race calendar' + (r.aims_certified ? '; AIMS flag shown there.' : '.'),
         lastChecked: `Checked ${TODAY} on geeksonfeet.com/races`,
         source: 'geeksonfeet.com/races',
       });
     }
-    if (!new RegExp(`page=${page + 1}[^\d]`).test(html)) break;
+    if (!data.hasMore) break;
   }
   return races;
 }
@@ -440,9 +473,15 @@ try {
       byId.set(p.id, races[races.length - 1]); added++;
     } else {
       let changed = false;
-      for (const k of ['dateText', 'month', 'url', 'scope', 'city', 'state']) {
+      for (const k of ['dateText', 'month', 'scope', 'city', 'state']) {
         if (p[k] && cur[k] !== p[k]) { cur[k] = p[k]; changed = true; }
       }
+      // URL: a direct race site always wins; never replace a direct link with
+      // an aggregator listing.
+      if (p.url && cur.url !== p.url && (!isAggUrl(p.url) || isAggUrl(cur.url) || !cur.url)) { cur.url = p.url; changed = true; }
+      // Labels follow the link: a listing label is only valid on a listing URL.
+      if (isAggUrl(p.url) && !isAggUrl(cur.url) && /^Race listing/.test(cur.ctaLabel || '')) { cur.ctaLabel = ''; changed = true; }
+      else if (p.ctaLabel && cur.ctaLabel !== p.ctaLabel) { cur.ctaLabel = p.ctaLabel; changed = true; }
       if (p.distances.length && JSON.stringify(cur.distances) !== JSON.stringify(p.distances)) {
         if ((cur.distances || []).length && JSON.stringify(cur.distances) !== JSON.stringify(p.distances)) {
           cur.note = (cur.note || '') + ` Distance list differs between manual entry and punerunners - verify.` ;
@@ -508,9 +547,15 @@ function mergeExternal(races, found, label) {
       for (const k of ['city', 'state', 'zone', 'month']) { if (!cur[k] && f[k]) cur[k] = f[k]; }
       if (cur.city && cur.city === cur.state && f.city && f.city !== f.state) cur.city = f.city;
       if ((!cur.dateText || /to be confirmed/i.test(cur.dateText)) && f.dateText && !/to be confirmed/i.test(f.dateText)) cur.dateText = f.dateText;
-      if (!cur.url && f.url) cur.url = f.url;
+      // Upgrade aggregator listing URLs to direct race sites when the
+      // connector resolved one; never replace a direct link with a listing.
+      if (f.url && (!cur.url || (isAggUrl(cur.url) && !isAggUrl(f.url)))) {
+        cur.url = f.url;
+        cur.ctaLabel = f.ctaLabel || ''; // drop any stale listing label on upgrade
+      }
       if (f.note) cur.note = f.note;
-      if (f.ctaLabel) cur.ctaLabel = f.ctaLabel;
+      // Listing labels only describe listing URLs; skip them on direct links.
+      if (f.ctaLabel && (isAggUrl(cur.url) || !/^Race listing/.test(f.ctaLabel))) cur.ctaLabel = f.ctaLabel;
       if ((f.distances || []).length) {
         const both = [...new Set([...(cur.distances || []), ...f.distances])];
         if (both.length !== (cur.distances || []).length) cur.distances = both;
@@ -657,7 +702,7 @@ function preRenderRaces(races) {
   const order = (r) => (r.scope || '').indexOf('pune') === 0 ? 0 : (r.scope || '').indexOf('near-pune') === 0 ? 1 : 2;
   up.sort((a, b) => (order(a) - order(b)) || dayKey(a).localeCompare(dayKey(b)));
   const cards = up.map(r => {
-    const url = r.url && r.url[0] === '/' ? 'https://punerunners.com' + r.url : (r.url || '');
+    const url = r.url && r.url[0] === '/' && r.url[1] !== '/' ? 'https://punerunners.com' + r.url : (r.url || '');
     return '<article class="card"><div class="card__date">' + escHtml(r.dateText || 'Date to be confirmed') + '</div>'
       + '<div class="card__name">' + escHtml(r.name) + '</div>'
       + '<div class="card__place">' + escHtml([r.city, r.state].filter(Boolean).join(', ')) + '</div>'
