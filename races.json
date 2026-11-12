@@ -122,7 +122,7 @@
   ],
   "url": "https://registration.eventforce.ai/event/45/lokmat-mahamarathon-season-10-pune",
   "certification": "WA course cert: \"Pune Maha\" half, 10K and 5K to 2030 (route tbc)",
-  "lastChecked": "Fees re-checked 11 Nov 2026 on the registration page",
+  "lastChecked": "Fees re-checked 12 Nov 2026 on the registration page",
   "note": "Coupon code AK1 for Pune City runners, valid on the 10K and 21K only. Activated 6 October 2026. No expiry or usage limit stated. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
@@ -691,7 +691,7 @@
    "punerunners.com/races",
    "procam.in"
   ],
-  "ctaLabel": ""
+  "ctaLabel": "Race listing on PuneRunners"
  },
  {
   "id": "run-bhopal-run",
@@ -5630,6 +5630,315 @@
   "source": "endorfin.run",
   "sources": [
    "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-friday-night-run",
+  "name": "Friday Night Run",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/sacredspacerunclub/events/b9a57199-db60-4a77-bd68-e0fcca0d4767",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-traitors-run",
+  "name": "Traitors Run",
+  "city": "Unknown",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "13 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/csn-bhagclub/events/245245a9-27e3-417b-b0e1-20342ea7d50f",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-kiprun-community-run-2-0",
+  "name": "Kiprun Community Run 2.0",
+  "city": "Kolkata",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "Community ride"
+  ],
+  "url": "https://www.endorfin.run/clubs/runrawclub/events/202d1375-0e2a-47e5-9f09-4fafaef6bdd8",
+  "certification": "",
+  "note": "Community ride, not a timed race; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-run-together-at-knk",
+  "name": "Run Together at KNK",
+  "city": "Chennai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/batclub/events/abe4d372-2479-4ef2-b770-a5830aadbd73",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-miles-that-matter-north-campus-fun-run-balle-balle-weekend",
+  "name": "Miles That Matter: North Campus Fun Run & Balle Balle Weekend",
+  "city": "Ghaziabad",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/brewrun-club/events/b4e9f780-0d74-4ae4-9dec-f6979e6bc349",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-frc-mumbai-weekend-run",
+  "name": "FRC Mumbai Weekend Run",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/foundersrunningclubmumbai/events/6f382fcd-4aba-4824-967b-c408bdcbb473",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-weekend-5k-coffee",
+  "name": "Weekend 5K & Coffee",
+  "city": "Chennai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/vamos-run-club/events/a88eefa8-a3e8-4aa0-9292-808bfe995197",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-weekly-run",
+  "name": "Weekly Run",
+  "city": "Kochi",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/kochirunclub/events/4779c264-fc79-463a-83cb-0a10a4b3af4a",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-the-home-run-agara-lake-to-playblue",
+  "name": "The Home Run: Agara Lake to PlayBlue",
+  "city": "Bengaluru",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/pacexrunclubbangalore/events/3d2d4e17-57b4-4e9f-8480-b8e547b1946e",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-run-for-helpless",
+  "name": "Run for Helpless",
+  "city": "Haridwar",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/runclubharidwar/events/4cf65a09-7f84-4bd5-a9cb-df91c8683036",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-catch-the-bandra-bus",
+  "name": "Catch the Bandra Bus",
+  "city": "Mumbai",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/therunbayclub/events/121ba556-d5bf-4584-992c-e175224a3744",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "end-unity-cme-shakeout-run",
+  "name": "Unity & CME Shakeout Run",
+  "city": "Pune",
+  "state": "",
+  "zone": "",
+  "sport": "run",
+  "dateText": "14 Nov 2026",
+  "month": "2026-11",
+  "scope": "pune",
+  "distances": [],
+  "url": "https://www.endorfin.run/clubs/stridetribe-runclub/events/42e9fc26-67db-4203-8082-67125bbac313",
+  "certification": "",
+  "note": "Listed on Endorfin; details per the event page.",
+  "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
+  "source": "endorfin.run",
+  "sources": [
+   "endorfin.run"
+  ]
+ },
+ {
+  "id": "ir-after_pace__inaugural_run_22922",
+  "name": "AFTER PACE - The Inaugural Community Run, Pune",
+  "city": "Bharati Vidyapeeth Campus",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "18 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [],
+  "url": "https://forms.gle/XtT6PK9kroXQ6ECk8",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: AFTER PACE).",
+  "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-cubbon_run_and_coffee_rave_with_pacex_26282",
+  "name": "Cubbon Run and Coffee Rave with PaceX",
+  "city": "Ambedkar Veedhi",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "21 Nov 2026",
+  "month": "2026-11",
+  "scope": "india",
+  "distances": [
+   "2.5K",
+   "5K",
+   "7K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/cubbon_run_and_coffee_rave_with_pacex_26282",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Book of Youth).",
+  "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-revolution_run_2027_41108",
+  "name": "REVOLUTION RUN 2027",
+  "city": "Bhartiya City",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "30 Jan 2027",
+  "month": "2027-01",
+  "scope": "india",
+  "distances": [
+   "1.5K",
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/revolution_run_2027_41108",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Byg Sports).",
+  "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
   ]
  }
 ]
