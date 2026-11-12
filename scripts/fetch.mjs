@@ -633,15 +633,47 @@ writeFileSync('races.json', JSON.stringify(races, null, 1) + '\n');
 const runUrl = (process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID)
   ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}` : '';
 // Same expiry rule as the client: hidden once the event's end day (IST-ish) has passed.
-const nowUtc = new Date();
-const upcoming = races.filter(r => {
+// --- SEO pre-render: stamp upcoming races as static HTML so crawlers without JS see them.
+// app.js replaces this block on load; the markers persist only in the file on disk.
+const escHtml = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function dayKey(r) {
   const t = r.dateText || '';
   let m = t.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
-  if (m) return new Date(Date.UTC(+m[4], MONTHS.indexOf(m[3].slice(0, 3)), +m[2], 23, 59, 59)) >= nowUtc;
+  if (m) return `${m[4]}-${String(MONTHS.indexOf(m[3].slice(0, 3)) + 1).padStart(2, '0')}-${String(+m[1]).padStart(2, '0')}`;
   m = t.match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
-  if (m) return new Date(Date.UTC(+m[3], MONTHS.indexOf(m[2].slice(0, 3)), +m[1], 23, 59, 59)) >= nowUtc;
-  return true; // undated races stay visible as unconfirmed
-}).length;
+  if (m) return `${m[3]}-${String(MONTHS.indexOf(m[2].slice(0, 3)) + 1).padStart(2, '0')}-${String(+m[1]).padStart(2, '0')}`;
+  return '9999-99-99';
+}
+function isHiddenPast(r, nowUtc) {
+  const t = r.dateText || '';
+  let m = t.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+  if (m) return new Date(Date.UTC(+m[4], MONTHS.indexOf(m[3].slice(0, 3)), +m[2], 23, 59, 59)) < nowUtc;
+  m = t.match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
+  if (m) return new Date(Date.UTC(+m[3], MONTHS.indexOf(m[2].slice(0, 3)), +m[1], 23, 59, 59)) < nowUtc;
+  return false; // undated races stay visible as unconfirmed
+}
+function preRenderRaces(races) {
+  const up = races.filter(r => !isHiddenPast(r, new Date()));
+  const order = (r) => (r.scope || '').indexOf('pune') === 0 ? 0 : (r.scope || '').indexOf('near-pune') === 0 ? 1 : 2;
+  up.sort((a, b) => (order(a) - order(b)) || dayKey(a).localeCompare(dayKey(b)));
+  const cards = up.map(r => {
+    const url = r.url && r.url[0] === '/' ? 'https://punerunners.com' + r.url : (r.url || '');
+    return '<article class="card"><div class="card__date">' + escHtml(r.dateText || 'Date to be confirmed') + '</div>'
+      + '<div class="card__name">' + escHtml(r.name) + '</div>'
+      + '<div class="card__place">' + escHtml([r.city, r.state].filter(Boolean).join(', ')) + '</div>'
+      + ((r.distances || []).length ? '<div class="tags">' + r.distances.map(d => '<span class="tag">' + escHtml(d) + '</span>').join('') + '</div>' : '')
+      + (r.note ? '<p class="card__note">' + escHtml(r.note) + '</p>' : '')
+      + (r.lastChecked ? '<p class="card__checked">' + escHtml(r.lastChecked) + '</p>' : '')
+      + (url ? '<div class="card__actions"><a class="action" href="' + escHtml(url) + '" target="_blank" rel="noopener">' + escHtml(r.ctaLabel || 'Official site and registration') + '</a></div>' : '')
+      + '</article>';
+  }).join('\n');
+  let html = readFileSync('index.html', 'utf8');
+  const next = '<section id="races" class="grid" aria-label="Races"><!--PRERENDER-->\n' + cards + '\n<!--/PRERENDER--></section>';
+  if (!/<section id="races" class="grid" aria-label="Races">[\s\S]*?<\/section>/.test(html)) { console.log('prerender: section marker missing, skipped'); return; }
+  writeFileSync('index.html', html.replace(/<section id="races" class="grid" aria-label="Races">[\s\S]*?<\/section>/, next));
+}
+
+const upcoming = races.filter(r => !isHiddenPast(r, new Date())).length;
 writeFileSync('meta.json', JSON.stringify({
   fetchedAt: new Date().toISOString(),
   races: races.length,
@@ -650,4 +682,6 @@ writeFileSync('meta.json', JSON.stringify({
   runUrl,
   connectorErrors: errors,
 }, null, 1) + '\n');
+writeFileSync('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://marathonindia.vercel.app/</loc><lastmod>' + TODAY_UTC + '</lastmod><changefreq>daily</changefreq></url>\n</urlset>\n');
+preRenderRaces(races);
 console.log('total races:', races.length);

@@ -1630,7 +1630,8 @@
   "month": "2026-11",
   "scope": "india",
   "distances": [
-   "5K"
+   "5K",
+   "Community ride"
   ],
   "url": "https://indiarunning.com/event/run_together_ascend_x_bmc_community_run_20910",
   "certification": "",
@@ -1638,7 +1639,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
