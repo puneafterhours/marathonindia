@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400">
+  <rect width="1600" height="400" rx="48" fill="#0d1117"/>
+  <g fill="none" stroke-width="26">
+    <ellipse cx="1408" cy="200" rx="560" ry="300" stroke="#ff9933"/>
+    <ellipse cx="1408" cy="200" rx="450" ry="235" stroke="#f8f8f5"/>
+    <ellipse cx="1408" cy="200" rx="340" ry="172" stroke="#138808"/>
+  </g>
+  <line x1="80" y1="120" x2="125" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="170" y1="120" x2="215" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="260" y1="120" x2="305" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="350" y1="120" x2="395" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="440" y1="120" x2="485" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="530" y1="120" x2="575" y2="120" stroke="#ff9933" stroke-width="8" opacity="0.35"/>
+  <line x1="80" y1="200" x2="125" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="170" y1="200" x2="215" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="260" y1="200" x2="305" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="350" y1="200" x2="395" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="440" y1="200" x2="485" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="530" y1="200" x2="575" y2="200" stroke="#f8f8f5" stroke-width="8" opacity="0.35"/>
+  <line x1="80" y1="280" x2="125" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+  <line x1="170" y1="280" x2="215" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+  <line x1="260" y1="280" x2="305" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+  <line x1="350" y1="280" x2="395" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+  <line x1="440" y1="280" x2="485" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+  <line x1="530" y1="280" x2="575" y2="280" stroke="#138808" stroke-width="8" opacity="0.35"/>
+</svg>
