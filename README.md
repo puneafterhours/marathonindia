@@ -1,8 +1,19 @@
-# MarathonIndia
+<div align="center">
 
-[![Weekly race fetch](https://github.com/puneafterhours/marathonindia/actions/workflows/fetch.yml/badge.svg)](https://github.com/puneafterhours/marathonindia/actions/workflows/fetch.yml)
+# Marathon India
 
-India's running race calendar. Static site: `index.html` + `styles.css` + `app.js` + `races.json`. No build step, no backend, no tracking.
+India's running race calendar.
+
+**[marathonindia.vercel.app](https://marathonindia.vercel.app)** · [Data](#data) · [Contributing](#contributing)
+
+[![Daily race fetch](https://github.com/IndianRunners/marathonindia/actions/workflows/fetch.yml/badge.svg)](https://github.com/IndianRunners/marathonindia/actions/workflows/fetch.yml)
+
+</div>
+
+> **Status: live.** 268 races tracked across India, 247 of them upcoming, refreshed every 8 hours.
+> Every race links back to its own source. Nothing here promises current availability - always check the organiser's page.
+
+A static site: `index.html` + `styles.css` + `app.js` + `races.json`. No build step, no backend, no tracking.
 
 - Pune-first default view with an All India toggle, state / city / distance filters, certified-only filter, and search.
 - Every race card carries its certification evidence (AIMS member / WA Label / WA course cert with expiry / ITRA) and its own last-checked date. No blanket verified badge.
@@ -10,12 +21,14 @@ India's running race calendar. Static site: `index.html` + `styles.css` + `app.j
 
 ## Data
 
-`races.json` is the whole data layer. Current seed: 28 races extracted 11 Nov 2026 from the live punerunners.com race calendar (its per-race cert tags and last-checked dates carried over unchanged). Scope `pune` / `near-pune` powers the Pune-first view.
+`races.json` is the whole data layer. Sources include the punerunners.com race calendar, the AIMS / World Athletics India directory, indiarunning.com, geeksonfeet.com and official event sites.
 
 Fields per race: `id, name, city, state, dateText, month, scope, distances[], url, certification, lastChecked, note, hasDiscount, source`.
 
-## Deploy (once the account setup is confirmed)
+## Update flow
 
-Static hosting on Vercel: push this folder to the GitHub repo, import in Vercel as a static project, set the chosen subdomain. No framework preset needed.
+A GitHub Action fetches sources every 8 hours and commits refreshed data. See UPDATING.md.
 
-## Update flow - see UPDATING.md
+## Contributing
+
+Spotted a wrong date, a dead link or a missing race? Open an issue or a pull request.
