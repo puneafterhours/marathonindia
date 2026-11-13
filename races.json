@@ -691,7 +691,7 @@
    "punerunners.com/races",
    "procam.in"
   ],
-  "ctaLabel": ""
+  "ctaLabel": "Race listing on PuneRunners"
  },
  {
   "id": "run-bhopal-run",
@@ -1670,7 +1670,7 @@
   ],
   "url": "https://indiarunning.com/event/run_together_ascend_x_bmc_community_run_20910",
   "certification": "",
-  "note": "Listed on indiarunning.com (organiser: Fitpage).",
+  "note": "Community ride, not a timed race; details per the event page.",
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
@@ -5941,6 +5941,29 @@
   "certification": "",
   "note": "Listed on indiarunning.com (organiser: Byg Sports).",
   "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-nitrrothon_pune_2027_43442",
+  "name": "NITRROTHON PUNE 2027",
+  "city": "Prathamesh Society",
+  "state": "Maharashtra",
+  "zone": "West",
+  "dateText": "21 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "3K",
+   "5K",
+   "10K"
+  ],
+  "url": "https://indiarunning.com/event/nitrrothon_pune_2027_43442",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Roaring Fitness).",
+  "lastChecked": "Checked 13 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
    "indiarunning.com"
