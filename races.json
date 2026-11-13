@@ -122,7 +122,7 @@
   ],
   "url": "https://registration.eventforce.ai/event/45/lokmat-mahamarathon-season-10-pune",
   "certification": "WA course cert: \"Pune Maha\" half, 10K and 5K to 2030 (route tbc)",
-  "lastChecked": "Fees re-checked 12 Nov 2026 on the registration page",
+  "lastChecked": "Fees re-checked 13 Nov 2026 on the registration page",
   "note": "Coupon code AK1 for Pune City runners, valid on the 10K and 21K only. Activated 6 October 2026. No expiry or usage limit stated. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
@@ -691,7 +691,7 @@
    "punerunners.com/races",
    "procam.in"
   ],
-  "ctaLabel": "Race listing on PuneRunners"
+  "ctaLabel": ""
  },
  {
   "id": "run-bhopal-run",
@@ -5883,14 +5883,17 @@
   "dateText": "18 Nov 2026",
   "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "Community ride"
+  ],
   "url": "https://forms.gle/XtT6PK9kroXQ6ECk8",
   "certification": "",
   "note": "Listed on indiarunning.com (organiser: AFTER PACE).",
   "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -5906,7 +5909,8 @@
    "2.5K",
    "5K",
    "7K",
-   "10K"
+   "10K",
+   "Community ride"
   ],
   "url": "https://indiarunning.com/event/cubbon_run_and_coffee_rave_with_pacex_26282",
   "certification": "",
@@ -5914,7 +5918,8 @@
   "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
