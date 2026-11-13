@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.svg" alt="Marathon India" width="100%">
+
 # Marathon India
 
 India's running race calendar.
