@@ -357,7 +357,9 @@
   "month": "2027-04",
   "scope": "india",
   "distances": [
-   "10K"
+   "10K",
+   "5K",
+   "4.2K"
   ],
   "url": "https://tcsworld10k.procam.in/",
   "certification": "WA course cert per the WA list of 16 March 2026: 10K to 2029 (route tbc)",
@@ -369,7 +371,8 @@
   "zone": "South",
   "sources": [
    "punerunners.com/races",
-   "procam.in"
+   "procam.in",
+   "geeksonfeet.com/races"
   ],
   "ctaLabel": "Official race site"
  },
@@ -607,13 +610,12 @@
   "month": "2027-02",
   "scope": "india ultra",
   "distances": [
-   "50K",
-   "Ultra"
+   "50K"
   ],
   "url": "https://itra.run/Races/RaceDetails/Red.Stone.Ultra.50km/2026/115734",
   "certification": "Last verified: 2026 edition, ITRA listed",
   "lastChecked": "Last checked 6 Oct 2026",
-  "note": "The Hell Race organiser listing; venue per the race page.",
+  "note": "The Hell Race organiser listing; venue per the race page. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
   "zone": "North",
@@ -691,7 +693,7 @@
    "punerunners.com/races",
    "procam.in"
   ],
-  "ctaLabel": ""
+  "ctaLabel": "Race listing on PuneRunners"
  },
  {
   "id": "run-bhopal-run",
@@ -5894,7 +5896,7 @@
   ],
   "url": "https://forms.gle/XtT6PK9kroXQ6ECk8",
   "certification": "",
-  "note": "Listed on indiarunning.com (organiser: AFTER PACE).",
+  "note": "Community ride, not a timed race; details per the event page.",
   "lastChecked": "Checked 12 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
@@ -5973,6 +5975,75 @@
   "source": "indiarunning.com",
   "sources": [
    "indiarunning.com"
+  ]
+ },
+ {
+  "id": "ir-shaheedeazam_bhagat_singh_haryana_marathon_2027_20495",
+  "name": "Shaheed-E-Azam Bhagat Singh Haryana Marathon 2027",
+  "city": "Sector 3",
+  "state": "Haryana",
+  "zone": "North",
+  "dateText": "20 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "21K"
+  ],
+  "url": "https://indiarunning.com/event/shaheedeazam_bhagat_singh_haryana_marathon_2027_20495",
+  "certification": "",
+  "note": "Listed on indiarunning.com (organiser: Forever legend Foundation).",
+  "lastChecked": "Checked 14 Nov 2026 on indiarunning.com",
+  "source": "indiarunning.com",
+  "sources": [
+   "indiarunning.com"
+  ]
+ },
+ {
+  "id": "gof-GF-1793463604288-JF0E2P",
+  "name": "CLUB RUN 2027",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "zone": "South",
+  "dateText": "21 Feb 2027",
+  "month": "2027-02",
+  "scope": "india",
+  "distances": [
+   "10K",
+   "Half",
+   "32K"
+  ],
+  "url": "https://hyderabadrunners.com/club-run-2027/",
+  "ctaLabel": "Official race site",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 14 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
+  ]
+ },
+ {
+  "id": "gof-GF-1794635142567-GN10PS",
+  "name": "Namma Power Run 2027",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "zone": "South",
+  "dateText": "14 Mar 2027",
+  "month": "2027-03",
+  "scope": "india",
+  "distances": [
+   "5K",
+   "10K",
+   "Half"
+  ],
+  "url": "https://www.nammapowerrun.com/",
+  "ctaLabel": "Official race site",
+  "certification": "",
+  "note": "Listed on the Geeks on Feet race calendar.",
+  "lastChecked": "Checked 14 Nov 2026 on geeksonfeet.com/races",
+  "source": "geeksonfeet.com/races",
+  "sources": [
+   "geeksonfeet.com/races"
   ]
  }
 ]

@@ -1,7 +1,14 @@
 {
- "fetchedAt": "2026-11-14T02:30:57.890Z",
+ "fetchedAt": "2026-11-14T13:38:17.432Z",
  "note": "India items are running and triathlon coverage from Indian media, published within the last 7 days; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
  "india": [
+  {
+   "title": "Ladakh Marathon launches 111-mile long Siachen Ultra",
+   "url": "https://thebridge.in/marathon/ladakh-marathon-launches-111-mile-long-siachen-ultra-58374",
+   "date": "2026-11-14",
+   "published": "2026-11-14T11:10:27.000Z",
+   "source": "The Bridge"
+  },
   {
    "title": "Ladakh Marathon to introduce 180-km Siachen Ultra in September 2027",
    "url": "https://www.hindustantimes.com/sports/others/ladakh-marathon-to-introduce-180-km-siachen-ultra-in-september-2027-101794583428556.html",
@@ -11,6 +18,13 @@
   }
  ],
  "global": [
+  {
+   "title": "The 3 Types of Running Workouts You Need to Train for Your First Half Marathon",
+   "url": "https://www.runnersworld.com/training/a74415330/half-marathon-workouts-beginners/",
+   "date": "2026-11-14",
+   "published": "2026-11-14T13:00:00.000Z",
+   "source": "Runner's World"
+  },
   {
    "title": "A Runner Went Viral for High-Fiving Ariana Grande at the NYC Marathon. Now He’s Banned for Using a Fake Bib.",
    "url": "https://www.runnersworld.com/news/a74414250/nyc-marathon-fake-bib-ban/",
@@ -114,13 +128,6 @@
    "url": "https://www.runnersworld.com/training/a74230580/run-walk-program-marathon/",
    "date": "2026-11-07",
    "published": "2026-11-07T14:30:00.000Z",
-   "source": "Runner's World"
-  },
-  {
-   "title": "How Runner’s World Training Plans Helped Four Runners Crush the New York City Marathon",
-   "url": "https://www.runnersworld.com/training/a74347282/nyc-marathon-training-plans/",
-   "date": "2026-11-06",
-   "published": "2026-11-06T15:25:59.000Z",
    "source": "Runner's World"
   },
   {
