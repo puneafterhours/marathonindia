@@ -122,7 +122,7 @@
   ],
   "url": "https://registration.eventforce.ai/event/45/lokmat-mahamarathon-season-10-pune",
   "certification": "WA course cert: \"Pune Maha\" half, 10K and 5K to 2030 (route tbc)",
-  "lastChecked": "Fees re-checked 13 Nov 2026 on the registration page",
+  "lastChecked": "Fees re-checked 14 Nov 2026 on the registration page",
   "note": "Coupon code AK1 for Pune City runners, valid on the 10K and 21K only. Activated 6 October 2026. No expiry or usage limit stated. Distance list differs between manual entry and punerunners - verify.",
   "hasDiscount": false,
   "source": "punerunners.com/races",
@@ -691,7 +691,7 @@
    "punerunners.com/races",
    "procam.in"
   ],
-  "ctaLabel": "Race listing on PuneRunners"
+  "ctaLabel": ""
  },
  {
   "id": "run-bhopal-run",
@@ -1647,7 +1647,7 @@
   ],
   "url": "https://indiarunning.com/event/world_diabetes_day_marathon_2026_38597",
   "certification": "",
-  "note": "Listed on indiarunning.com (organiser: RJ14 Sports).",
+  "note": "Listed on Endorfin; details per the event page.",
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
@@ -1693,7 +1693,7 @@
   ],
   "url": "https://indiarunning.com/event/run_and_socialise_with_pacex_and_playblue_35539",
   "certification": "",
-  "note": "Listed on indiarunning.com (organiser: Book of Youth).",
+  "note": "Community ride, not a timed race; details per the event page.",
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
@@ -1864,7 +1864,8 @@
   "lastChecked": "Checked 11 Nov 2026 on indiarunning.com",
   "source": "indiarunning.com",
   "sources": [
-   "indiarunning.com"
+   "indiarunning.com",
+   "endorfin.run"
   ]
  },
  {
@@ -5176,20 +5177,25 @@
   "id": "end-mumbai-kids-marathon-children-s-day-edition",
   "name": "Mumbai Kids Marathon - Children's Day Edition",
   "city": "Mumbai",
-  "state": "",
-  "zone": "",
+  "state": "Maharashtra",
+  "zone": "West",
   "sport": "run",
   "dateText": "15 Nov 2026",
   "month": "2026-11",
   "scope": "india",
-  "distances": [],
+  "distances": [
+   "1K",
+   "2K",
+   "3K"
+  ],
   "url": "https://www.endorfin.run/running-events/mumbai_kidz_run__childrens_day_edition_63487",
   "certification": "",
-  "note": "Listed on Endorfin; details per the event page.",
+  "note": "Listed on indiarunning.com (organiser: Omega events).",
   "lastChecked": "Checked 12 Nov 2026 on endorfin.run",
   "source": "endorfin.run",
   "sources": [
-   "endorfin.run"
+   "endorfin.run",
+   "indiarunning.com"
   ]
  },
  {

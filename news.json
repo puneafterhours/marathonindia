@@ -1,8 +1,23 @@
 {
- "fetchedAt": "2026-11-13T14:41:52.441Z",
+ "fetchedAt": "2026-11-14T02:30:57.890Z",
  "note": "India items are running and triathlon coverage from Indian media, published within the last 7 days; global items are filtered to marathon and road-running news. Titles, links and dates are the publishers own.",
- "india": [],
+ "india": [
+  {
+   "title": "Ladakh Marathon to introduce 180-km Siachen Ultra in September 2027",
+   "url": "https://www.hindustantimes.com/sports/others/ladakh-marathon-to-introduce-180-km-siachen-ultra-in-september-2027-101794583428556.html",
+   "date": "2026-11-13",
+   "published": "2026-11-13T15:36:27.000Z",
+   "source": "Hindustan Times Sports"
+  }
+ ],
  "global": [
+  {
+   "title": "A Runner Went Viral for High-Fiving Ariana Grande at the NYC Marathon. Now He’s Banned for Using a Fake Bib.",
+   "url": "https://www.runnersworld.com/news/a74414250/nyc-marathon-fake-bib-ban/",
+   "date": "2026-11-13",
+   "published": "2026-11-13T14:43:48.000Z",
+   "source": "Runner's World"
+  },
   {
    "title": "7 Common 5K Training Mistakes Runners Make",
    "url": "https://www.runnersworld.com/training/a74411367/5k-race-prep-mistakes/",
@@ -99,13 +114,6 @@
    "url": "https://www.runnersworld.com/training/a74230580/run-walk-program-marathon/",
    "date": "2026-11-07",
    "published": "2026-11-07T14:30:00.000Z",
-   "source": "Runner's World"
-  },
-  {
-   "title": "How to Master the Run/Walk Method: Train for a Half Marathon",
-   "url": "https://www.runnersworld.com/training/a74230567/run-walk-program-half-marathon/",
-   "date": "2026-11-06",
-   "published": "2026-11-06T14:30:00.000Z",
    "source": "Runner's World"
   },
   {
